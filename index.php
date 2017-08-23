@@ -13,7 +13,7 @@
 
 // 检测PHP环境
 if (version_compare(PHP_VERSION, '5.3.0', '<')) die('require PHP > 5.3.0 !');
-echo 'this is index.php';
+//echo 'this is index.php';
 if (ini_get('magic_quotes_gpc')) {
     function stripslashesRecursive(array $array){
         foreach ($array as $k => $v) {
