@@ -1466,3 +1466,740 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
 
+[ 2017-08-23T17:32:28+08:00 ] 183.25.125.207 /amdin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Amdin
+
+[ 2017-08-23T17:32:28+08:00 ] 183.25.125.207 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-23T17:32:35+08:00 ] 183.25.125.207 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-08-23T17:32:35+08:00 ] 183.25.125.207 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: uid E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\Admin\Controller\PublicController.class.php 第 49 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-23T17:32:35+08:00 ] 183.25.125.207 /Admin/Public/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-23T17:32:38+08:00 ] 61.151.228.22 /amdin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Amdin
+
+[ 2017-08-23T17:32:38+08:00 ] 101.226.33.202 /amdin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Amdin
+
+[ 2017-08-23T17:32:40+08:00 ] 183.25.125.207 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_user` WHERE `username` = 'admin' AND `userpass` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_employee` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_employee` WHERE `username` = 'admin' AND `userpass` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-23T17:32:44+08:00 ] 183.25.125.207 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: uid E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\Admin\Controller\PublicController.class.php 第 49 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-23T17:32:49+08:00 ] 183.25.125.207 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-23T17:32:50+08:00 ] 183.25.125.207 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: uid E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\Admin\Controller\PublicController.class.php 第 49 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-23T17:32:54+08:00 ] 183.25.125.207 /Admin/Public/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-23T17:32:58+08:00 ] 183.25.125.207 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_user` WHERE `username` = 'admin' AND `userpass` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_employee` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_employee` WHERE `username` = 'admin' AND `userpass` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-23T17:33:01+08:00 ] 183.25.125.207 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: uid E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\Admin\Controller\PublicController.class.php 第 49 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-23T17:33:08+08:00 ] 183.25.125.207 /Admin/Public/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-23T17:33:12+08:00 ] 183.25.125.207 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_user` WHERE `username` = 'admin' AND `userpass` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_employee` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_employee` WHERE `username` = 'admin' AND `userpass` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-23T17:33:15+08:00 ] 183.25.125.207 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: uid E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\Admin\Controller\PublicController.class.php 第 49 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-23T17:33:24+08:00 ] 183.25.125.207 /Admin/Public/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-23T17:33:30+08:00 ] 183.25.125.207 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-23T17:33:33+08:00 ] 183.25.125.207 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: uid E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\Admin\Controller\PublicController.class.php 第 49 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-23T17:34:05+08:00 ] 183.25.125.207 /Admin/Public/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-23T17:34:09+08:00 ] 183.25.125.207 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_user` WHERE `username` = 'admin' AND `userpass` = 'f379eaf3c831b04de153469d1bec345e' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_employee` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `wfx_employee` WHERE `username` = 'admin' AND `userpass` = 'f379eaf3c831b04de153469d1bec345e' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-08-23T17:34:09+08:00 ] 183.25.125.207 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_user_oath` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_user_oath`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-23T17:34:10+08:00 ] 183.25.125.207 /Admin/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` WHERE ( subscribe=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` WHERE `ctime` BETWEEN 1503417600 AND 1503503999 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` WHERE `ctime` BETWEEN 1503331200 AND 1503417599 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_order` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE ( status=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE ( status=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE ( status=3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE ( status=4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE ( status=5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE ( status=6 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE `ctime` BETWEEN 1503417600 AND 1503503999 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE `ctime` BETWEEN 1503331200 AND 1503417599 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_fx_syslog` [ RunTime:0.0000s ]
+SQL: SELECT SUM(fxyj) AS tp_sum FROM `wfx_fx_syslog` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(fxyj) AS tp_sum FROM `wfx_fx_syslog` WHERE `ctime` BETWEEN 1503417600 AND 1503503999 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(fxyj) AS tp_sum FROM `wfx_fx_syslog` WHERE `ctime` BETWEEN 1503331200 AND 1503417599 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Division by zero E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\Admin\Controller\IndexController.class.php 第 138 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` WHERE `isfx` = 0 AND `isfxgd` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` WHERE `isfx` = 1 AND `isfxgd` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` WHERE ( isfxgd=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_log_sub` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_vip_log_sub` ORDER BY ctime desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=1132 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=1131 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=1131 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=1130 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=1129 ) LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT * FROM `wfx_fx_syslog` ORDER BY ctime desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_fx_log_tj` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_fx_log_tj` ORDER BY ctime desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_order` WHERE `ispay` = 1 AND `status` = 2 ORDER BY ctime desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=662 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=749 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=1053 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(totalprice) AS tp_sum FROM `wfx_shop_order` WHERE `ispay` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(totalprice) AS tp_sum FROM `wfx_shop_order` WHERE `status` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(totalnum) AS tp_sum FROM `wfx_shop_order` WHERE `ispay` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_tx` [ RunTime:0.0000s ]
+SQL: SELECT SUM(txprice) AS tp_sum FROM `wfx_vip_tx` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.046875s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.046875s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-23T17:34:19+08:00 ] 101.226.33.237 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-08-23T17:34:19+08:00 ] 101.226.33.237 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: uid E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\Admin\Controller\PublicController.class.php 第 49 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-23T17:34:19+08:00 ] 183.25.125.207 /Admin/Shop/ads
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_ads` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: p E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\Admin\Controller\ShopController.class.php 第 972 行.
+NOTIC: [8] Undefined variable: map E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\Admin\Controller\ShopController.class.php 第 979 行.
+SQL: SELECT * FROM `wfx_shop_ads` LIMIT 0,20   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 137 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: map E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\Admin\Controller\ShopController.class.php 第 984 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_ads` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\Admin\Controller\ShopController.class.php on line 985 and defined E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\Admin\Controller\BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\Admin\Controller\BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015625s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-23T17:34:22+08:00 ] 183.25.125.207 /Admin/Shop/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0000s ]
+ERR: 模板不存在:./Tpl/Admin/Shop_index.html
+
+[ 2017-08-23T17:34:24+08:00 ] 183.25.125.207 /Admin/Shop/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0000s ]
+ERR: 模板不存在:./Tpl/Admin/Shop_index.html
+
+[ 2017-08-23T17:34:25+08:00 ] 183.25.125.207 /Admin/Shop/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0000s ]
+ERR: 模板不存在:./Tpl/Admin/Shop_index.html
+
+[ 2017-08-23T17:36:50+08:00 ] 183.25.125.207 /Admin/Shop/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-23T17:45:38+08:00 ] 61.151.226.189 /amdin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Amdin
+
+[ 2017-08-23T17:47:50+08:00 ] 61.151.226.189 /amdin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Amdin
+

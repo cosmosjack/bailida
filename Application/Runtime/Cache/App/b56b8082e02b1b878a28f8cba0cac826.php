@@ -132,9 +132,9 @@
                     <!--<div class="p-focon">来自好友<?php echo ($father['nickname']); ?>的分享</div>-->
                     <!--<?php else: ?>-->
                     <img class="p-fopic" src="<?php echo ($_SESSION['WAP']['shopset']['sharepic']); ?>">
-                    <div class="p-focon">欢迎关注哟！</div>
+                    <div class="p-focon"></div>
                 <!--<?php endif; ?>-->
-                <div class="p-fofo"><a href="<?php echo ($_SESSION['SET']['wxsuburl']); ?>">关注我们</a></div>
+                <div style="float: right" class="p-fofo"><a href="<?php echo ($_SESSION['SET']['wxsuburl']); ?>">关注我们</a></div>
                 <div class="clear"></div>
             </div><?php endif; ?>
         <!-- 每日 -->
