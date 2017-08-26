@@ -83,6 +83,7 @@ class ShopController extends BaseController
         //分组调用
         $mapx['id'] = array('in', in_parse_str(self::$WAP['shopset']['indexgroup']));
 
+        P(self::$WAP['shopset']['indexgroup']);
         $indexicons = M('Shop_cate')->where($mapx)->select();
         p($indexicons);
         foreach ($indexicons as $k => $v) {
