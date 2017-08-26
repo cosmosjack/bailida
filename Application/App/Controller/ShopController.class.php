@@ -82,7 +82,9 @@ class ShopController extends BaseController
         $this->assign('cache', $cache);
         //分组调用
         $mapx['id'] = array('in', in_parse_str(self::$WAP['shopset']['indexgroup']));
+
         $indexicons = M('Shop_cate')->where($mapx)->select();
+
         foreach ($indexicons as $k => $v) {
             $listpic = $this->getPic($v['icon']);
             $indexicons[$k]['iconurl'] = $listpic['imgurl'];
@@ -105,6 +107,7 @@ class ShopController extends BaseController
             }
 
         }
+
         //首页轮播图集
         $indexalbum = M('Shop_ads')->where('id', array('in', in_parse_str(self::$WAP['shopset']['indexalbum'])))->select();
         foreach ($indexalbum as $k => $v) {
@@ -893,6 +896,9 @@ class ShopController extends BaseController
 
     //订单详情
     //订单列表
+    /**
+     *
+     */
     public function orderDetail()
     {
         $sid = I('sid') <> '' ? I('sid') : $this->diemsg(0, '缺少SID参数');//sid可以为0
