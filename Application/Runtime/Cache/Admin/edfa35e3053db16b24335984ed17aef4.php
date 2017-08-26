@@ -766,7 +766,7 @@
     <script src="/Public/Admin/js/charts/flot/jquery.flot.pie.js"></script>
     <script src="/Public/Admin/js/charts/chartjs/Chart.js"></script>
     <!--百度地图类库-->
-    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=StGl5qQsPbsCVg8tizbLbkOw"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=3eKQH6wIw2X72bpScOfEx6La9HpFjOen"></script>
     <!--App全局API-->
     <script src="/Public/Admin/js/appapi.js"></script>
     <script type="text/javascript">
