@@ -40,6 +40,7 @@ define('CONFIG_PATH', ROOT_PATH . 'Public/Config/');
 define('ADDON_PATH','Addons');//严格要求
 define('DATA_PATH', './Data/');
 
+
 // 引入ThinkPHP入口文件
 require './ThinkPHP/ThinkPHP.php';
 
