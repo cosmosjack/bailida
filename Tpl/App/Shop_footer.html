@@ -29,6 +29,15 @@
     fieldset, img {
         border: 0;
     }
+    .tgc {
+        width: 13vw;
+        height: 13vw;
+        border-radius: 50%;
+        border: 1px solid #8a8989;
+        background: #fff;
+        position: relative;
+        top: -3.1vw;
+    }
 </style>
 <div class="insert1"></div>
         <!--<footer class="support footer">
@@ -46,6 +55,7 @@
 				<li><a href="{:U('App/Shop/index')}" id="fthome"><span class="iconfont">&#xe6b8</span><p class="ui-navtt">首页</p></a></li>
 				<!-- <li><a href="{:U('App/Shop/orderList',array('sid'=>0))}" id="ftorder"><span class="iconfont">&#xe699</span><p class="ui-navtt">订单</p></a></li> -->
 				<li><a href="{:U('App/Search/index')}" id="ftorder"><span class="iconfont">&#xe699</span><p class="ui-navtt">购车</p></a></li>
+                <li><a href="#"><div class="tgc"><img src="__PUBLIC__/App/images/tgc.png" /></div></a></li>
 				<li><a href="{:U('App/Shop/basket',array('sid'=>0,'lasturl'=>$footlasturl))}" id="ftbasket"><span class="iconfont">&#xe6af</span><p class="ui-navtt">购物车</p></a></li>
 				<li><a href="{:U('App/Vip/index')}" id="ftvip"><span class="iconfont">&#xe686</span><p class="ui-navtt">个人中心</p></a></li>
 			</ul>
