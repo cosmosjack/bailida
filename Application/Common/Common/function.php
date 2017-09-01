@@ -1042,3 +1042,28 @@ function  log_result($file,$word)
     flock($fp, LOCK_UN);
     fclose($fp);
 }
+function p1($r){
+    echo "<pre>";
+    print_r($r);
+}
+
+function dp($t='',$arr){
+    p1($t,$arr);
+    die;
+}
+
+// 获取搜索筛选
+function get_search($k,$v){
+    $arr = $_GET;
+    $arr[$k] = $v;
+    return $arr;
+}
+// 字符串截取
+function utf8_strcut($str, $start = 0, $length, $charset = "utf-8", $suffix = true)
+{
+    $slice = mb_substr($str, $start, $length, $charset);
+    if (mb_strlen($str) > mb_strlen($slice)) {
+        $slice.='...';
+    }
+    return $slice;
+}

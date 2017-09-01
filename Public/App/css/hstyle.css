@@ -1,0 +1,377 @@
+/*字体边框等初始化*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+    font-family:微软雅黑, 宋体;
+}
+body{
+    font-size:4vw;
+    color:#666;
+}
+fieldset,img {
+    border: 0;
+}
+ol,ul {
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6 {
+     font-weight: normal;
+     font-size: 100%;
+}
+a {
+    text-decoration:none;
+    color:#666666;
+}
+a,button,input,optgroup,select,textarea {
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+input,button,textarea{
+    outline:none;
+}
+
+.header{
+    background-image: url(../images/logo.png);
+    background-color: #77b6fd;
+    background-repeat: no-repeat;
+    background-size: 17vw;
+    background-position: 3vw 3.5vw;
+    width: 100%;
+    height: 12vw;
+    text-indent: 22vw;
+    color: #fff;
+    font-size: 4.5vw;
+    line-height: 12vw;
+    position: relative;
+}
+.nav_btn{
+    position: absolute;
+    top: 3vw;
+    right: 3vw;
+    width: 6vw;
+    height: 5vw;
+}
+.nav_btn span{
+    display: block;
+    height: 17%;
+    width: 100%;
+    background: #fff;
+    margin: 1vw 0vw;
+}
+/*搜索*/
+.search{
+    padding: 1.3vw 3vw;
+    background: #e3e3e3;
+    height: 11.5vw;
+}
+.search p{
+    display: inline-block;
+    height: 100%;
+    width: 88%;
+    background: #fff;
+}
+.search button{
+    background-image: url(../images/search.png);
+    background-size: 100% 100%;
+    border: none;
+    height: 100%;
+    width: 12%;
+    float: right;
+}
+.pull_down{
+    display: inline-block;
+    width: 14vw;
+    height: 100%;
+    background-image: url(../images/pull-down.png);
+    background-size: 8vw;
+    background-repeat: no-repeat;
+    background-position: center 4vw;
+}
+.search p input{
+    position: relative;
+    border: none;
+    left: 2vw;
+    height: 9vw;
+    font-size: 4.8vw;
+    color: #000;
+    bottom: 4vw;
+}
+/*筛选*/
+.filtrate{
+    border-bottom:1px solid #9d9d9d;
+    position:relative;
+}
+.filtrate_hover{
+    color:#0e7aff !important;
+    border-bottom:1px solid #0e7aff;
+}
+.filtrate a{
+    display:inline-block;
+    padding: 3vw 7.9vw;
+    color: #242424;
+}
+.price_box{
+    display:none;
+}
+.price_filtrate li{
+    border-bottom: 1px solid #9d9d9d;
+    padding: 0vw 4vw;
+    background-image: url(../images/arrows_right.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-origin: content-box;
+    background-size: 3.3vw;
+}
+.price_filtrate li a{
+    display:block;
+    padding: 3vw 0vw;
+}
+.up,.up_1,.up_2{
+    text-align:center;
+    display:block;
+    box-shadow: 0 1vw 1vw #bdbdbd;
+}
+.up img,.up_1 img,.up_2 img{
+    width: 5vw;
+}
+/*车型列表*/
+.motorcycle_type{
+    margin-top:1vw;
+}
+.motorcycle_type li{
+    border-bottom:1px solid #e8e8e8;
+    padding:3vw;
+}
+.vehicle{
+    float:left;
+    width: 20vw;
+    height: 18.5vw;
+    position:relative;
+    overflow:hidden;
+    margin-top: 0.3vw;
+}
+.vehicle span{
+    display: block;
+    background: #f12d2d;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0vw 0.6vw;
+    font-size: 3vw;
+}
+.vehicle img{
+    width:100%;
+}
+.intro{
+    float:left;
+    margin-left: 4vw;
+    overflow:hidden;
+}
+.intro h5{
+    color: #242424;
+    width: 70vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 3vw;
+}
+.intro p{
+    font-size:3vw;
+    color: #8c8989;
+    margin-top: 1vw;
+}
+.intro span{
+    display: inline-block;
+    border-right: 1px solid #c0c0c0;
+    padding-right: 1vw;
+    margin-right: 1vw;
+}
+.intro p b{
+    font-size:4vw;
+}
+/*底部导航*/
+.footer{
+    background-image:url(../images/footer_bg.png);
+    background-size:100% 100%;
+    position:fixed;
+    bottom:0;
+    left:0;
+    text-align:center;
+}
+.support{
+    height:12vw;
+    width:100%;
+}
+.footer a{
+    display:inline-block;
+}
+.footer li{
+    display:inline-block;
+    padding: 0vw 5vw;
+}
+.footer_hover{
+    color:#0072ff;
+}
+.footer li img{
+    height: 5vw;
+    position: relative;
+    top: 1.5vw;
+}
+.footer li p{
+    padding-top: 1vw;
+    font-size: 3.5vw;
+}
+.footer li .tgc{
+    width: 13vw;
+    height: 13vw;
+    border-radius: 50%;
+    border: 1px solid #8a8989;
+    background: #fff;
+    position: relative;
+    top: -3.1vw;
+}
+.footer li .tgc img{
+    width: 63%;
+    height: auto;
+}
+/*买车-卖车*/
+.deal{
+    width: 12vw;
+    position: fixed;
+    right: 4vw;
+    bottom: 15vw;
+    text-align: center;
+}
+.deal a{
+    display:block;
+    width:100%;
+    background:#77B6FD;
+    color:#fff;
+    margin-bottom: 1vw;
+    box-shadow: 0.5vw 0.5vw 1.5vw #938d8d;
+}
+.deal a img{
+    width:50%;
+    position:relative;
+    top:1vw;
+}
+/*车型筛选框*/
+.motorcycle_type_frame,.brand{
+    display:none;
+}
+.motorcycle_type_frame li,.brand li{
+    display: inline-block;
+    text-align: center;
+    width: 24%;
+    margin-top: 6vw;
+}
+.motorcycle_type_frame li img{
+    width:50%;
+}
+.motorcycle_type_frame ul,.brand ul{
+    border-bottom: 1px solid #c0c0c0;
+    padding-bottom: 5vw;
+}
+.choice img{
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+.choice_no{
+    top:0;
+}
+.choice_yes{
+    bottom:0;
+}
+.choice{
+    width: 40%;
+    margin: 1vw auto;
+    height: 9vw;
+    overflow: hidden;
+    position: relative;
+}
+.all{
+    position: absolute;
+    top: 11.5vw;
+    right: 1.2vw;
+    background:#77B6FD;
+    text-align: center;
+    width: 24vw;
+    display:none;
+}
+.all li{
+    width:100%;
+    border-bottom: 1px solid #fff;
+}
+.all li a{
+    padding: 2vw 0;
+    color: #fff;
+}
+
+
+/*卖车*/
+.header_2{
+    width: 100%;
+    height: 12vw;
+    color: #fff;
+    font-size: 4.5vw;
+    line-height: 12vw;
+    position: relative;
+    text-align: center;
+    background-color: #77b6fd;
+    border-bottom: 1px solid #9e9e9f;
+}
+.header_2 a{
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    color: #fff;
+    font-size: 11vw;
+    line-height: 11vw;
+    padding: 0px 3vw;
+    height: 100%;
+}
+.sell{
+	width:85%;
+	text-align:center;
+	margin:0 auto;
+}
+.sell img{
+	margin: 7vw;
+	width: 50vw;
+}
+.sell p{
+	background:#fff;
+	border:1px solid #e2e2e2;
+	border-radius:5px;
+	margin:2vw 0;
+	padding: 0.5vw 1.5vw;
+}
+.sell p input{
+	width:75%;
+	height: 7vw;
+	font-size: 4vw;
+	border: none;
+}
+.sell p textarea{
+	display: block;
+	width: 100%;
+	height: 21vw;
+	resize: none;
+	border: none;
+	text-indent: 8vw;
+	font-size: 3.5vw;
+	padding: 1vw 0;
+}
+.confirm_btn{
+	width: 90%;
+	height: 9vw;
+	margin: 4vw auto;
+	display: block;
+	background: #4693f2;
+	color: #fff;
+	border: none;
+	border-radius: 1.5vw;
+	box-shadow: 0.5vw 1vw 1vw #a2bad8;
+	font-size: 4vw;
+}

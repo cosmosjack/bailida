@@ -23,7 +23,7 @@
     <style type="text/css" src="/Public/App/css/style.css"></style>
 
     <script type="text/javascript" src="/Public/App/js/zepto.min.js"></script>
-    <script type="text/javascript" src="http://api.map.baidu.com/api?type=quick&ak=StGl5qQsPbsCVg8tizbLbkOw&v=1.0"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?type=quick&ak=3eKQH6wIw2X72bpScOfEx6La9HpFjOen&v=1.0"></script>
     <style type="text/css">
     #map {
         width: 100%;

@@ -1499,7 +1499,7 @@ class ShopController extends BaseController
     }
 
     //完成订单
-    public function orderSuccess()
+    public function orderSuccess($rfxlog)
     {
         $id = I('id');
         if (!$id) {
@@ -2185,5 +2185,83 @@ class ShopController extends BaseController
         }
 
     }
+     // 二手车申请管理
+    public function old()
+    {
+        //设置面包导航，主加载器请配置
+        $bread = array(
+            '0' => array(
+                'name' => '商城首页',
+                'url' => U('Admin/Shop/index'),
+            ),
+            '1' => array(
+                'name' => '商品管理',
+                'url' => U('Admin/Shop/goods'),
+            ),
+        );
+        $this->assign('breadhtml', $this->getBread($bread));
+        //绑定搜索条件与分页
+        $m = M('Old_car');
+        $p = $_GET['p'] ? $_GET['p'] : 1;
+        $name = I('name') ? I('name') : '';
+        if ($name) {
+            $map['a.name'] = array('like', "%$name%");
+            $map['a.link_name'] = array('like', "%$name%");
+            $map['a.phone'] = array('like', "%$name%");
+            $map['a.address'] = array('like', "%$name%");
+            $map['a.desc'] = array('like', "%$name%");
+            $map['v.nickname'] = array('like', "%$name%");
+            $map['_logic'] = 'or';
+            $this->assign('name', $name);
+        }
+        $psize = self::$CMS['set']['pagesize'] ? self::$CMS['set']['pagesize'] : 20;
+        $cache = $m
+                ->alias('a')
+                ->join('__VIP__ v on a.vipid = v.id')
+                ->field('a.*,v.nickname')
+                ->where($map)
+                ->page($p, $psize)
+                ->order('addtime desc')
+                ->select();
+        foreach ($cache as $k => $v) {
+            $cache[$k]['desc'] = utf8_strcut($v['desc'],0,20);
+        }
+        $count = $m->where($map)->count();
+        $this->getPage($count, $psize, 'App-loader', '商品管理', 'App-search');
+        $this->assign('cache', $cache);
+        $this->display();
+    }
+    // 获取二手车详情和设置状态
+    public function getOneOld(){
+        $m = M('Old_car');
+        $map['id'] = array('eq',I('id'));
+        $res = $m->where($map)->find();
+        if (I('type') == 1) {
+            $this->ajaxReturn($res);
+        }else{
+            if ($res['state'] == 1) {
+                $data['state'] = 2;
+                $data['readtime'] = time();
+                $m->where($map)->setField($data);
+                $this->ajaxReturn(array('status'=>1,'msg'=>'消息阅读完成！'));
+            }else{
+                $data['state'] = 1;
+                $data['readtime'] = '';
+                $m->where($map)->setField($data);
+                $this->ajaxReturn(array('status'=>0,'msg'=>'已取消已读！'));
+            }
+        }
+    }
+    // 删除二手车
+    public function oldDel(){
+        $map['id'] = array('eq',$_GET['id']);
+        M('Old_car')->where($map)->delete();
+        $this->ajaxReturn(array('status'=>1,'msg'=>'数据删除成功！'));
+    }
 
+    public function oldDelAll(){
+        $m = M('Old_car');
+        $r = $m->where(array('id'=>array('in',$_GET['id'])))->delete();
+        $this->ajaxReturn(array('status'=>1,'msg'=>'数据删除成功！'));
+    }
 }

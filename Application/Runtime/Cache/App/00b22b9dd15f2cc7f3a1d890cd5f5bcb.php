@@ -77,10 +77,15 @@
 				<li><a href="<?php echo U('App/Vip/index');?>" id="ftvip"><span class="iconfont">&#xe686</span><p class="ui-navtt">个人中心</p></a></li>
 			</ul>
 		</div>
-		<script type="text/javascript">
+        <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1263819895'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1263819895' type='text/javascript'%3E%3C/script%3E"));</script>
+
+        <script type="text/javascript">
 			 var actname="<?php echo ($actname); ?>";
 			 $('#'+actname).css('color','#19a5f3');
+//            var cnzz = 'test';
+
 		</script>
+
 		<!--通用分享-->
 		<script type="text/javascript">
 	function onBridgeReady(){

@@ -249,6 +249,11 @@
                                         <span class="menu-text">商品管理</span>
                                     </a>
                                 </li>
+                                <li>
+                                    <a href="<?php echo U('Admin/Shop/old');?>" data-loader="App-loader" data-loadername="卖车申请">
+                                        <span class="menu-text">卖车申请</span>
+                                    </a>
+                                </li>
                             </ul>
                         </li><?php endif; ?>
                     <?php if(in_array(($card), is_array($useroath)?$useroath:explode(',',$useroath))): ?><li>
