@@ -1,0 +1,214 @@
+/* CSS Document */
+a,address,body,dd,div,dl,dt,em,form,h1,h2,h3,h4,h5,h6,html,img,input,li,ol,p,span,strong,textarea,ul{margin:0;padding:0}
+body{font-size:12px;color:#333;font-family:"Î¢ÈíÑÅºÚ"; min-width:1240px;}
+body,html{ width:100%; height:100%;}
+dl,ul{list-style:none}
+button,input,select,textarea{font-size:12px}
+img{border:none}
+a{color:#000;text-decoration:none;blr:expression(this.onFocus=this.blur());outline:0}
+a:hover{ color:#bb0408}
+em,i{font-style:normal}
+i{ display:inline-block; vertical-align:top;}
+.clear{clear:both;height:0;line-height:0;font-size:0;overflow:hidden;visibility:hidden}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.pr{position:relative;z-index:0}
+.pa{position:absolute}
+.fl{float:left}
+.fr{float:right}
+.w100{ width:100%;}
+.w1024{ width:1240px; margin:0 auto; overflow:hidden;}
+select{color:#333;height:26px;margin-left:12px;margin-top:10px;padding:2px 3px;}
+.header{ height:70px; background:#000; color:#FFF; overflow:hidden; position:fixed; top:0px; z-index:999}
+.header .logo{ margin:13px 0px; display:inline-block; float:left;}
+.header .nav{ float:left; margin-left:70px}
+.header .nav ul{margin:auto}
+.header .nav ul li{width:98px;float:left;text-align:center;height:47px;padding-top:23px;font-size:16px; font-weight:bold;}
+.header .nav li a{display:block;width:98px;height:47px;color:#fff;}
+.header .nav li.on a{ color:#eb6316;}
+.header .nav li a:hover{color:#eb6316;}
+.header .member{ float:right; height:47px;padding-top:23px;font-size:16px; font-weight:bold;}
+.header .member a{ float:left; color:#fff; display:inline-block; height:47px;}
+.header .member .center{ margin-right:20px;}
+.header .member a .icon-tou{ display:inline-block; height:19px; width:19px; background:url(./images/icon-tou.png) no-repeat; vertical-align:top; margin-right:3px;}
+.header .member a:hover{color:#eb6316;}
+
+.main{width:100%; height:auto;}
+.banner{width:100%; overflow:hidden;position:absolute; top:70px; bottom:0px;}
+.banner .item,.items{position:absolute;left:0;top:0;width:100%;height:100%;overflow:hidden}
+.banner .item a{ display:block; width:100%;height:100%;position:absolute;left:0;top:0; z-index:9}
+.banner .items{overflow:visible}
+.banner .item{background:#fff none no-repeat center center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;}
+.banner .hd{ height:15px; overflow:hidden; position:absolute; left:50%; bottom:60px; z-index:10; width:100px; margin-left:-50px; }
+.banner .hd ul{ overflow:hidden; zoom:1; float:left;  }
+.banner .hd ul li{float:left;  width:15px; height:15px; overflow:hidden; margin-right:10px; text-indent:-999px; cursor:pointer; background:url(./images/fontdian.png) 0 -15px no-repeat;}
+.banner .hd ul li.on{ background-position:0 0;}
+.banner .prev,
+.banner .next{ position:absolute; left:3%; top:50%; margin-top:-25px; display:block; width:76px; height:76px; background:url(./images/slider-arrow.png) no-repeat; filter:alpha(opacity=80);opacity:0.8;  z-index:10000}
+.banner .next{ left:auto; right:3%; background-position:-76px 0px; }
+.banner .prev:hover,
+.banner .next:hover{ filter:alpha(opacity=100);opacity:1;  }
+.main{ position:absolute; width:100%; top:100%; left:0px;}
+.item_wrap{ width:1240px; overflow:hidden;}
+.main .item_title{margin-top:30px; font-size:16px; color:#bb0408}
+.item_list{font-size:0;overflow:hidden;padding:10px 0px;width:1245px; margin-top:10px;}
+.item_list li{float:left;height:277px;margin-right:6px;width:409px; margin-bottom:10px; overflow:hidden}
+.item_list li .pic_go{display:inline-block;height:277px;position:relative;width:409px}
+.item_list li .pic_go img{height:277px;width:409px}
+.item_list li .pic_go .list_cover{background:#FFF none repeat scroll 0 0;height:277px;left:0;opacity:0;filter:alpha(opacity=0);position:absolute;top:0;width:409px}
+.item_list li .pic_go .left_line{background:#000 none repeat scroll 0 0;height:2px;left:60px;opacity:0;filter:alpha(opacity=0);position:absolute;top:130px;width:40px}
+.item_list li .pic_go .right_line{background:#000 none repeat scroll 0 0;height:2px;opacity:0;filter:alpha(opacity=0);position:absolute;right:60px;top:130px;width:40px}
+.item_list li .pic_go .list_play{color:#000;font-size:1px;height:277px; line-height:30px;left:0;opacity:0;filter:alpha(opacity=0);position:absolute;text-align:center;top:100px;width:409px; font-weight:bold;}
+.footer{ margin-top:20px;}
+.footer .sever{ width:100%;}
+.footer .tel .icon-tel{ height:47px; width:47px; background:url(./images/icon-all.png) no-repeat;}
+.footer .tel b{ font-size:28px;  color:#bb0408; margin-left:5px; margin-top:5px; display:inline-block;}
+.footer .tel span{ font-size:14px; margin-left:20px;}
+.footer .assure{ height:59px; width:543px; background:url(./images/icon-ass.png) no-repeat;}
+.footer .line{ width:90%; margin:0 auto; border-bottom:1px solid #333; margin-top:15px;}
+.footer .mp{ width:128px; height:128px; margin-top:24px; text-align:center}
+.footer .mp b{ font-size:18px}
+.footer .help{ width:1032px; margin-top:15px;}
+.footer .help ul li{ float:left; display:block; text-align:left; width:172px; font-size:16px; line-height:40px}
+.footer .help ul li span{ font-weight:bold; font-size:18px;}
+.footer .copyright{padding:15px 0px; float:left; width:100%;}
+.footer .copyright p{text-align:center;}
+.item_list li .pic_go .blur{filter: url(blur.svg#blur);-webkit-filter: blur(5px);  -moz-filter: blur(5px);-ms-filter: blur(5px);     filter: blur(5px);
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=5, MakeShadow=false);}
+
+
+.ny_header{ width:100%}
+.ny_header .min_bat{ height:78px; width:100%}
+.ny_header .min_bat .ny_logo{ margin:15px 0px; float:left; display:inline-block;}
+
+.ny_header #myCar{background-color:#f5f5f5;border-radius:20px;cursor:pointer;display:inline-block;font-size:14px;height:40px;padding:0 10px;position:relative; margin:25px 50px 0px; float:left;}
+.ny_header #myCar .iconNew{background-position:-101px -148px;float:left;height:22px;margin-top:4px;width:22px}
+.ny_header #myCar .tCar{color:#000000;display:inline-block;font-size:12px;line-height:40px;margin-left:15px}
+.ny_header #myCar .tCar .openVehicleWin{background:url(./images/icon_new.png) no-repeat scroll -102px -181px;display:inline-block;font-size:0;height:15px;margin-left:18px;margin-top:-3px;transition:transform .5s ease-in 0s;vertical-align:middle;width:15px}
+.ny_header #myCar:hover .i-add, .ny_header #myCar:hover .openVehicleWin { transform: rotate(360deg);}
+
+.ny_header .ny_server{float:left;left:280px;position:relative;top:19px;width:200px}
+.ny_header .ny_server ul li{color:#1e1b29;float:left; font-weight:bold;text-align:center;width:33%}
+.ny_header .ny_server ul li i{background:url(./images/icon-all.png) repeat scroll 0 0;display:block;height:29px;margin:0 auto;width:30px; margin-bottom:5px;}
+.ny_header .ny_server ul li i.i-zp{background-position:0px -51px;}
+.ny_header .ny_server ul li i.i-sds{background-position:0px -81px}
+.ny_header .ny_server ul li i.i-zhf{background-position:0px -111px}
+.ny_header .ny_member{ float:right; margin-top:35px; font-size:14px; color:#000; font-weight:bold;}
+.ny_header .ny_member .center{ margin-right:10px}
+.ny_header .ny_member .icon-tou{ display:inline-block; width:22px; height:22px; background:url(./images/icon-all.png) no-repeat; background-position:-53px 0px; vertical-align:bottom;}
+
+.ny_header .ny_nav{ width:100%; height:42px; background:#323338}
+.ny_header .ny_nav ul{margin:auto}
+.ny_header .ny_nav ul li{width:120px;float:left;text-align:center;height:42px; line-height:42px;font-size:16px; font-weight:bold;}
+.ny_header .ny_nav li a{display:block;width:130px;height:42px;color:#fff;}
+.ny_header .ny_nav li.on a{ color:#eb6316;}
+.ny_header .ny_nav li a:hover{color:#eb6316;}
+.ny_header .ny_nav .ny_tel{ font-size:18px; float:right; height:42px; color:#FFF; line-height:42px;}
+.ny_header .ny_nav .ny_tel .icon-tel{ display:inline-block; width:27px; height:27px; background:url(./images/icon-all.png) no-repeat; background-position:-81px 0px; vertical-align:top; margin-top:9px;}
+
+.vehicleInfo{background-color:#efefef;line-height:70px;min-height:70px;position:relative;text-align:center}
+.vehicleInfo .carIcon{display:inline-block;height:35px;margin-right:10px;vertical-align:middle;width:35px}
+.vehicleInfo .carIcon img{vertical-align:top}
+.vehicleInfo .title{color:#616161;display:inline-block;font-size:18px}
+.vehicleInfo .title .reselectdistance{background:#fffaf9 url(./images/resetCX.png) no-repeat scroll left center;border:1px dotted #bb0408;display:inline-block;font-size:12px;height:24px;line-height:24px;margin:0 15px 0 6px;padding-left:16px;text-align:center;width:35px}
+.fnav{ height:40px; line-height:40px;}
+.fnav span{ color:#bb0408}
+.CarMark{position: fixed; z-index: 9999998; background-color: black; opacity: 0.3;filter:alpha(opacity=30); right: 0px; bottom: 0px; left: 0px; top: 0px;}
+.Carbody{background-color:#fff;box-shadow:0 0 0 2px #bb0408;padding-bottom:10px;padding-left:20px;padding-right:20px;width:721px}
+
+.over{background:transparent url(./images/icon_modal.png) repeat scroll 0 -260px;float:left;height:26px;margin-left:300px;margin-top:30px;width:26px}
+.Car_title{background:transparent url(./images/icon_modal.png) repeat scroll 0 -180px;float:left;height:16px;margin-left:20px;margin-top:13px;width:20px}
+.close{cursor:pointer;background: url(./images/icon_modal.png);width: 20px;height: 16px;background-position: 0px -220px;margin-top: 14px;float: right}
+.div div{margin-bottom:6px}
+.Carbody .moreCarInfoTip{background-color:#ffffeb;border:1px solid #fce1a9;color:#f3815a;font-size:16px;line-height:40px;padding-left:20px}
+.Carbody .hs1{color:#333;display:inline-block;font-size:14px;margin-left:4px}
+.Carbody .hs2{color:#999;font-size:16px}
+.div div:hover{border-color:#d12a3e}
+#div5{height:370px;overflow-x:hidden;overflow-y:auto;width:100%}
+#div5 .CarLiYang{border:1px solid #ddd;color:#666;float:left;font-size:14px;height:40px;line-height:40px;margin-bottom:15px;margin-right:20px;overflow:hidden;padding:0 15px;width:300px}
+#div5 .CarLiYang:hover{border-color:#d12b3f;color:#333;cursor:pointer}
+#div5 .CarBrandTitle{margin-top:8px}
+#div5 .CarBrandTitle:nth-child(1){margin-top:0}
+#div6{height:186px;overflow-x:hidden;overflow-y:auto;width:100%}
+.CarTitlediv{border:2px solid #d33447;cursor:pointer;float:left;margin-right:10px}
+.CarTitlediv:hover .CarTitle{color:#333}
+.CarTitlediv:hover .CarTitleDel::before{background-color:#d33447}
+.CarTitlediv:hover .CarTitleDel::after{background-color:#d33447}
+#div7{height:186px;overflow-x:hidden;overflow-y:auto;width:100%}
+#div8{height:186px;overflow-x:hidden;overflow-y:auto;width:100%}
+.CarZiMu1NotSel:hover{background-color:#d12a3e;color:#fff}
+.HistroyHead{height:20px;margin-bottom:10px}
+.Histroy{color:#666;cursor:pointer;display:block;float:left;font-family:ËÎÌå;font-size:12px;height:18px;line-height:18px;padding-right:10px}
+#Carhistory div .Histroy{font-family:ËÎÌå}
+.Delte{background-color:#ccc;color:#fff;cursor:pointer;display:none;float:left;height:15px;line-height:15px;text-align:center;width:15px}
+.Delte:hover{background-color:#d12a3e}
+#div2{clear:both;height:302px;overflow:hidden}
+.head_div2{color:#FFF;float:left;font-size:15px;font-weight:700;height:40px;line-height:40px;margin-bottom:5px;text-indent:2em;width:25%}
+.head_div3{background:url(./images/icon_modal.png) repeat;color:#bb0408;float:left;font-size:15px;font-weight:700;height:37px;line-height:40px;margin-bottom:5px;text-indent:2em;width:25%}
+.head_div4{background:url(./images/icon_modal.png) repeat scroll 0 -60px;color:#FFF;float:left;font-size:15px;font-weight:700;height:37px;line-height:40px;margin-bottom:5px;text-indent:2em;width:25%}
+.head_div5{background:url(./images/icon_modal.png) repeat scroll 0 -120px;color:#bb0408;float:left;font-size:15px;font-weight:700;height:37px;line-height:40px;margin-bottom:5px;text-indent:2em;width:25%}
+.Tires{background-color:#f7f7f7;border:1px solid #c1c1c1;clear:both;color:#d64354;cursor:pointer;float:right;font-size:16px;font-weight:700;height:45px;line-height:45px;margin-right:250px;margin-top:50px;position:relative;text-align:center;width:200px;z-index:10}
+.div4{border:1px solid #c1c1c1;float:left;height:39px;margin-right:8px;margin-top:10px;width:136px}
+.CarHistoryTitleDel{cursor:pointer}
+.round{background:#FFF none repeat scroll 0 0;border-radius:10px;color:#bb0408;display:inline-block;font-size:16px;font-weight:700;height:20px;line-height:20px;margin-left:10px;margin-right:10px;text-align:center;text-indent:0;width:20px}
+.CarBrandTitlespan{background-color:#d12a3e;display:inline-block;float:left;height:30px;margin:0 15px 0 0;padding:0;width:5px}
+.round2{background:#bb0408 none repeat scroll 0 0;border-radius:10px;color:#fff;display:inline-block;font-size:16px;font-weight:700;height:20px;line-height:20px;margin-left:10px;margin-right:10px;text-align:center;text-indent:0;width:20px}
+.hr{-moz-border-bottom-colors:none;-moz-border-left-colors:none;-moz-border-right-colors:none;-moz-border-top-colors:none;border-color:-moz-use-text-color -moz-use-text-color #d12a3e;border-image:none;border-style:none none solid;border-width:0 0 1px;float:left;height:1px;margin-bottom:6px;margin-top:6px;padding-bottom:0;width:100%}
+.hr2{-moz-border-bottom-colors:none;-moz-border-left-colors:none;-moz-border-right-colors:none;-moz-border-top-colors:none;border-color:-moz-use-text-color -moz-use-text-color #c1c1c1;border-image:none;border-style:none none dotted;border-width:0 0 1px;clear:both;height:1px;margin-bottom:0;margin-top:16px;width:98%}
+.Line{background:#c1c1c1 none repeat scroll 0 0;float:left;height:50px;margin-left:5px;margin-right:10px}
+#CarBrands div:nth-child(4n){margin-right:0}
+.CarBrand{border:1px solid #ddd;color:#666;cursor:pointer;float:left;font-size:14px;font-weight:700;height:50px;line-height:50px;margin-bottom:2px;margin-right:15px;margin-top:11px;width:162px}
+.CarBrand div:first-child{width:50px}
+.CarBrand div img{height:30px;margin-top:10px;padding-left:10px;width:30px}
+.Car_p0{color:#898989;cursor:pointer;float:left;font-weight:700;height:25px;line-height:25px;margin-bottom:5px;margin-left:10px;text-align:center;width:80px}
+.Car_p1{background-color:#bb0408;color:#fff;cursor:pointer;float:left;font-weight:700;height:25px;line-height:25px;text-align:center;width:40px; border-radius:20px; -webkit-border-radius:20px;}
+.Car_p2{color:#898989;cursor:pointer;float:left;font-weight:700;height:25px;line-height:25px;margin-bottom:5px;margin-left:6px;text-align:center;width:20px}
+.Car_p2:hover{background-color:#bb0408;color:#fff}
+.Car_p1:hover{background-color:#bb0408;color:#fff}
+.SelectCar{color:#333;float:left;font-size:16px;font-weight:700;line-height:44px;margin-left:10px;margin-top:0;width:610px}
+#noSelectCar{color:#555;float:right;font-size:12px;font-weight:400;position:relative;top:5px}
+.ZMSelect{background-color:#bb0408;color:#fff;cursor:pointer;float:left;font-weight:700;height:25px;line-height:25px;margin-left:10px;text-align:center;width:20px}
+.CarBrand:hover{border-color:#d12b3f;color:#333}
+.CarBrand2:hover{border-color:#d12b3f;color:#333}
+.CarZiMu1NotSel{background-color:#f5f5f5;color:#898989;cursor:pointer;float:left;font-size:13px;font-weight:700;height:25px;line-height:25px;margin-left:-3px;text-align:center;width:40px}
+.CarVecl1{border:1px solid #ddd;color:#666;cursor:pointer;float:left;font-size:14px;font-weight:700;height:40px;line-height:40px;margin:0 14px 15px 0;text-align:center;width:160px}
+.CarVecl1:hover{border-color:#d12b3f;color:#333}
+.CarPaiLiang1{border:1px solid #ddd;color:#666;cursor:pointer;float:left;font-size:14px;font-weight:700;height:40px;line-height:40px;margin-bottom:15px;margin-right:15px;text-align:center;width:159px}
+.CarPaiLiang1:hover{border-color:#d12a3e;color:#333}
+.CarNian1{border:1px solid #ddd;color:#666;cursor:pointer;float:left;font-size:14px;font-weight:700;height:40px;line-height:40px;margin-right:15px;margin-top:15px;text-align:center;width:159px}
+.CarNian1:hover{border-color:#d12a3e;color:#333}
+.CarNK{border:1px solid #ddd;color:#666;cursor:pointer;float:left;font-size:14px;font-weight:700;height:40px;line-height:40px;margin-right:15px;margin-top:15px;text-align:center;width:159px}
+.CarNK:hover{border-color:#d12a3e;color:#333}
+#div8{background-color:#fff;display:none;height:216px;margin-top:10px;width:740px}
+.succeed{color:#666;float:left;font-size:17px;height:84px;line-height:86px;margin-left:15px;text-align:center}
+#CarOver{clear:both;color:#666;font-size:15px;margin-top:20px;text-align:center}
+#div7{background-color:#fff;display:none;height:425px;margin-bottom:10px;margin-top:10px;overflow:hidden}
+#CarNianTips{background-color:#ffffeb;border:1px solid #fce1a9;box-sizing:border-box;color:#666;font-size:16px;line-height:40px;margin:0 auto 5px;overflow:hidden;padding:8px 20px}
+#CarNianTips img{float:left;height:25px;margin-right:8px;margin-top:12px;width:25px}
+#CarNianTips .wenxin_tit{color:#f3815a;float:left;line-height:48px}
+#CarNianTips .wenxin_tips{color:#666;float:left;font-size:14px;line-height:24px;margin-left:13px;width:550px}
+#div40{margin-bottom:17px;margin-top:9px}
+#div4{border:1px solid #fff;color:#333;float:left;font-size:14px;font-weight:700;line-height:25px;width:82px}
+.CarBrandTitle{background-color:#f3f3f3;color:#333;float:left;font-size:14px;font-weight:700;height:30px;line-height:30px;margin-bottom:15px;width:689px}
+.CarTitle{color:#666;float:left;height:21px;line-height:21px;padding-left:10px;width:65px;overflow: hidden;}
+.CarTitle:hover{border-color:#d12a3e;color:#d12a3e}
+.CarTitleDel{color:#999;display:block;float:left;font-size:12px;height:15px;line-height:21px;margin-right:9px;margin-top:3px;text-align:center;width:15px}
+.CarTitleDel::before{background-color:#999;border-radius:2px;content:"";display:inline-block;height:15px;position:absolute;transform:rotate(135deg);width:2px}
+.CarTitleDel::after{background-color:#999;border-radius:2px;content:"";display:inline-block;height:15px;position:absolute;transform:rotate(45deg);width:2px}
+.CarTitleDel:hover::before{background-color:#d12a3e}
+.CarTitleDel:hover::after{background-color:#d12a3e}
+.noMyModel{background-color:#fff;border:1px solid #ccc;color:#333;font-family:"ËÎÌå";font-size:12px;width:740px}
+.userinfos{margin:30px 0 0 200px}
+.subBtnModel{background:#d12a3e none repeat scroll 0 0;border:0 none;color:#fff;display:block;font-size:18px;height:40px;line-height:40px;margin:0 auto 30px;text-align:center;width:200px}
+.userinfos input{border:1px solid #ddd;border-radius:3px;height:33px;padding-left:10px;width:188px}
+.errors,.required{color:#d12a3e}
+.userinfos label{display:inline-block;text-align:right;width:70px}
+#myTel{margin:10px 0 40px}
+#car_p{margin-top: -4px;width:710px;height:32px; background-color:#f5f5f5;}
+.Car_icom{float: left;background: url(./images/icon_modal.png);width: 20px;height: 16px;background-position: 0px -180px; margin-top: 14px;}
+.tab{margin:5px 0;border-width:1px;border-style:solid;border-color:#ddd #ddd #fff #fff;text-shadow:0 1px 0 #FFF;border-collapse:separate}
+.tab td{padding:5px;margin:15px 0;line-height:22px;border-width:1px;border-style:solid;border-color:#fff #fff #ddd #ddd}
+.tab thead td{text-align:center}
+.tab tbody tr:hover{background:#fff}
+.paybtn{display:inline-block; height:30px; width:80px; text-align:center; color:#FFF; background:#bb0408; line-height:30px; font-size:14px;}
+.paybtn:hover{ color:#ccc;}
+
