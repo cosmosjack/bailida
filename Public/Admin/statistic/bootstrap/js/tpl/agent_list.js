@@ -29,7 +29,7 @@ $(document).ready(function(){
                      console.log(e);
                      }},*/
                     { data:null,render:function(e){
-                        return "<span  value='' class='show_span'><em style='width:"+ e.exp+";' class='show_em' ></em></span>";
+                        return "<span  value='' class='show_span'><em style='width:"+ e.exp+"%;' class='show_em' ></em></span>";
                     }},
                     { data: 'mobile' },//电话
                     { data: null,
