@@ -13,6 +13,7 @@ class StatisticControl extends BaseController{
         parent::__construct();
     }
     public function index(){
+        echo 'ddd';
         $this->display();
     }
 }
