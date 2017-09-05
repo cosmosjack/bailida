@@ -588,6 +588,14 @@
                                 <span class="menu-text">帮助中心</span>
                             </a>
                         </li><?php endif; ?>
+                    <?php if(!in_array(($employee), is_array($useroath)?$useroath:explode(',',$useroath))): ?><li>
+                            <a href="<?php echo U('Admin/Statisti/index');?>" data-loader="App-loader" data-loadername="统计报表">
+                                <i class="menu-icon glyphicon glyphicon-book"></i>
+                                <span class="menu-text">报表统计</span>
+                            </a>
+                        </li><?php endif; ?>
+
+
 
                     <!--员工-->
                     <?php if(in_array(($employee), is_array($useroath)?$useroath:explode(',',$useroath))): ?><li>
