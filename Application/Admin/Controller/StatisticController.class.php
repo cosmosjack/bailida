@@ -8,7 +8,7 @@
  * QQ:  997823131 
  */
 namespace Admin\Controller;
-class StatisticControl extends BaseController{
+class StatisticController extends BaseController{
     public function __construct(){
         parent::__construct();
     }
