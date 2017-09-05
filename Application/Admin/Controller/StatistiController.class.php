@@ -25,7 +25,7 @@ class StatistiController extends BaseController
     }
     public function agent_list(){
         $db_vip = M("vip");
-        $data_vip = $db_vip->where(array("id"=>array("GT"=>600)))->select();
+        $data_vip = $db_vip->where(array("id"=>array("GT",600)))->select();
         $this->ajaxReturn($data_vip,"JSON");
     }
 
