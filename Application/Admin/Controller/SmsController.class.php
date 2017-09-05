@@ -19,7 +19,7 @@ class SmsController extends BaseController
 
     public function index()
     {
-
+        echo '发送短信的首页';
     }
 
     public function set()

@@ -14,6 +14,6 @@ class StatisticControl extends BaseController{
     }
     public function index(){
         echo 'ddd';
-        $this->display();
+//        $this->display();
     }
 }
