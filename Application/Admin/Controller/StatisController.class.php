@@ -8,12 +8,18 @@
  * QQ:  997823131 
  */
 namespace Admin\Controller;
-class StatisticController extends BaseController{
-    public function __construct(){
+
+
+class StatisController extends BaseController
+{
+
+    public function __construct()
+    {
         parent::__construct();
     }
-    public function index(){
-        echo 'ddd';
-//        $this->display();
+
+    public function index()
+    {
+        echo '统计的首页';
     }
 }
