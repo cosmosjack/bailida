@@ -240,16 +240,17 @@ class AlipayController extends Controller
                     $mslog->add($dlog);
 
                     //支付成功后设置为花蜜
-                    $mvip = M('Vip');
-                    $vip = $mvip->where('id=' . $order['vipid'])->find();
-                    if ($vip && !$vip['isfx']) {
-                        $rvip = $mvip->where('id=' . $order['vipid'])->setField('isfx', 1);
-                        $data_msg['pids'] = $order['vipid'];
-                        $data_msg['title'] = "您成功升级为花漾兰嘉的花蜜！";
-                        $data_msg['content'] = "欢迎成为花漾兰嘉的花蜜，开启一个新的旅程！";
-                        $data_msg['ctime'] = time();
-                        $rmsg = M('vip_message')->add($data_msg);
-                    }
+                    // 2017-9-5  取消自动成为经销商
+                    // $mvip = M('Vip');
+                    // $vip = $mvip->where('id=' . $order['vipid'])->find();
+                    // if ($vip && !$vip['isfx']) {
+                    //     $rvip = $mvip->where('id=' . $order['vipid'])->setField('isfx', 1);
+                    //     $data_msg['pids'] = $order['vipid'];
+                    //     $data_msg['title'] = "您成功升级为花漾兰嘉的花蜜！";
+                    //     $data_msg['content'] = "欢迎成为花漾兰嘉的花蜜，开启一个新的旅程！";
+                    //     $data_msg['ctime'] = time();
+                    //     $rmsg = M('vip_message')->add($data_msg);
+                    // }
 
                     //代收花生米计算-只减不增
                     $rds = $this->doDs($order);
@@ -263,7 +264,7 @@ class AlipayController extends Controller
                 //$this -> sendMobanMsmToShop($order['id'],1);
                 //发送支付成功莫办消息给会员
                 // $this -> sendMobanMsmToVip1($order['id']);
-                 
+
                 
                 // 插入订单支付成功模板消息=====================
                 $templateidshort = 'OPENTM200444326';

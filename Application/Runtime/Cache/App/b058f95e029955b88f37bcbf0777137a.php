@@ -121,15 +121,70 @@
 		
 			</div><?php endif; ?>
 		<!-- 底部导航 -->
-				<div class="insert1"></div>
+		<style>
+    .support {
+        height: 12vw;
+        width: 100%;
+    }
+    .footer {
+        background-image: url(../images/footer_bg.png);
+        background-size: 100% 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+    }
+    ol, ul {
+        list-style: none;
+    }
+    .footer a {
+        display: inline-block;
+    }
+    .footer li {
+        display: inline-block;
+        padding: 0vw 5vw;
+    }
+    .footer li img {
+        height: 5vw;
+        position: relative;
+        top: 1.5vw;
+    }
+    fieldset, img {
+        border: 0;
+    }
+    .tgc {
+        width: 10vw;
+        height: 10vw;
+        border-radius: 50%;
+        border: 1px solid #8a8989;
+        background: #fff;
+        position: relative;
+        /* top: -3.1vw; */
+        left: 0.8em;
+    }
+</style>
+<div class="insert1"></div>
+        <!--<footer class="support footer">
+            <ul>
+                <a href="<?php echo U('App/Shop/index');?>"><li><img src="/Public/App/images/home.png" /><p>主页</p></li></a>
+                <a href=""><li class="footer_hover"><img src="/Public/App/images/purchase.png" /><p>购车</p></li></a>
+                <a href=""><li><div class="tgc"><img src="/Public/App/images/tgc.png" /></div></li></a>
+                <a href="<?php echo U('App/Shop/basket',array('sid'=>0,'lasturl'=>$footlasturl));?>"><li><img src="/Public/App/images/information.png" /><p>购物车</p></li></a>
+                <a href="<?php echo U('App/Vip/index');?>"><li><img src="/Public/App/images/personage.png" /><p>我的</p></li></a>
+            </ul>
+        </footer>-->
+
 		<div class="ui-nav">
 			<ul class="ui-navul ovflw">
 				<li><a href="<?php echo U('App/Shop/index');?>" id="fthome"><span class="iconfont">&#xe6b8</span><p class="ui-navtt">首页</p></a></li>
-				<li><a href="<?php echo U('App/Shop/orderList',array('sid'=>0));?>" id="ftorder"><span class="iconfont">&#xe699</span><p class="ui-navtt">订单</p></a></li>
+				<!-- <li><a href="<?php echo U('App/Shop/orderList',array('sid'=>0));?>" id="ftorder"><span class="iconfont">&#xe699</span><p class="ui-navtt">订单</p></a></li> -->
+				<li><a href="<?php echo U('App/Search/index');?>" id="ftorder"><span class="iconfont">&#xe699</span><p class="ui-navtt">购车</p></a></li>
+                <li><a href="#"><div class="tgc"><img src="/Public/App/images/tgc.png" /></div></a></li>
 				<li><a href="<?php echo U('App/Shop/basket',array('sid'=>0,'lasturl'=>$footlasturl));?>" id="ftbasket"><span class="iconfont">&#xe6af</span><p class="ui-navtt">购物车</p></a></li>
 				<li><a href="<?php echo U('App/Vip/index');?>" id="ftvip"><span class="iconfont">&#xe686</span><p class="ui-navtt">个人中心</p></a></li>
 			</ul>
 		</div>
+
 		<script type="text/javascript">
 			 var actname="<?php echo ($actname); ?>";
 			 $('#'+actname).css('color','#19a5f3');

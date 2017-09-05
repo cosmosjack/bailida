@@ -67,6 +67,7 @@
                     <a href="<?php echo U('index',get_search('label',6));?>"><li><img src="/Public/App/images/jc.png" /><p>紧凑型车</p></li></a>
                     <a href="<?php echo U('index',get_search('label',7));?>"><li><img src="/Public/App/images/zx.png" /><p>中型车</p></li></a>
                     <a href="<?php echo U('index',get_search('label',8));?>"><li><img src="/Public/App/images/wxc.png" /><p>微小型车</p></li></a>
+                    <a href="<?php echo U('index',get_search('label',''));?>"><li><img src="/Public/App/images/all_car.png" /><p>全部</p></li></a>
                 </ul>
                 <a href="javascript:;" class="up_1"><img src="/Public/App/images/up.png" /></a>
             </div>

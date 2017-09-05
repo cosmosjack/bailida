@@ -47498,3 +47498,163 @@
 通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjibDfytztgR5UM3HGShm_vQ  CreateTime=>1504252099  MsgType=>event  Event=>VIEW  EventKey=>http://wx.shikexu.com/app  MenuId=>422129699  
 
 
+收到请求:2017-09-01 16:50:08
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjibDfytztgR5UM3HGShm_vQ  CreateTime=>1504255808  MsgType=>event  Event=>VIEW  EventKey=>http://wx.shikexu.com/app  MenuId=>422129699  
+
+
+收到请求:2017-09-01 16:53:41
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjibDfytztgR5UM3HGShm_vQ  CreateTime=>1504256020  MsgType=>event  Event=>VIEW  EventKey=>http://wx.shikexu.com/app  MenuId=>422129699  
+
+
+收到请求:2017-09-01 17:05:43
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjibDfytztgR5UM3HGShm_vQ  CreateTime=>1504256743  MsgType=>event  Event=>VIEW  EventKey=>http://wx.shikexu.com/app  MenuId=>422129699  
+
+
+收到请求:2017-09-01 17:07:54
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjuI6YYX3gyZbY8piFGm33UY  CreateTime=>1504256874  MsgType=>event  Event=>VIEW  EventKey=>http://hzbld.souche.com/index.htm?salerphone=13631904013&__mobile=true&no_app_type=yes&siteId=234,020&_shopId=003272&shareId=4cc3AnXBB8&shopId=003272&sharechannel=wxpy&from=singlemessage&isappinstalled=1&ttts=1496989803072  MenuId=>422129699  
+
+
+收到请求:2017-09-01 17:07:56
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjuI6YYX3gyZbY8piFGm33UY  CreateTime=>1504256876  MsgType=>event  Event=>VIEW  EventKey=>http://wx.shikexu.com/app  MenuId=>422129699  
+
+
+收到请求:2017-09-01 17:08:18
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjibDfytztgR5UM3HGShm_vQ  CreateTime=>1504256898  MsgType=>event  Event=>VIEW  EventKey=>http://wx.shikexu.com/app  MenuId=>422129699  
+
+
+收到请求:2017-09-01 17:08:45
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjuI6YYX3gyZbY8piFGm33UY  CreateTime=>1504256925  MsgType=>event  Event=>VIEW  EventKey=>http://wx.shikexu.com/app  MenuId=>422129699  
+
+
+收到请求:2017-09-01 17:16:48
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjq-LMr_sj3cVjTXzcJaDOBA  CreateTime=>1504257408  MsgType=>event  Event=>VIEW  EventKey=>http://wx.shikexu.com/app  MenuId=>422129699  
+
+
+收到请求:2017-09-01 17:18:11
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjibDfytztgR5UM3HGShm_vQ  CreateTime=>1504257491  MsgType=>event  Event=>VIEW  EventKey=>http://hzbld.souche.com/index.htm?salerphone=13631904013&__mobile=true&no_app_type=yes&siteId=234,020&_shopId=003272&shareId=4cc3AnXBB8&shopId=003272&sharechannel=wxpy&from=singlemessage&isappinstalled=1&ttts=1496989803072  MenuId=>422129699  
+
+
+收到请求:2017-09-01 17:18:15
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjibDfytztgR5UM3HGShm_vQ  CreateTime=>1504257495  MsgType=>event  Event=>VIEW  EventKey=>http://wx.shikexu.com/app  MenuId=>422129699  
+
+
+收到请求:2017-09-01 17:20:57
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjuI6YYX3gyZbY8piFGm33UY  CreateTime=>1504257657  MsgType=>event  Event=>VIEW  EventKey=>http://wx.shikexu.com/app  MenuId=>422129699  
+
+
+收到请求:2017-09-02 01:13:47
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjuNyi8fznP6N7DgXtUJqXrI  CreateTime=>1504286027  MsgType=>event  Event=>VIEW  EventKey=>http://hzbld.souche.com/index.htm?salerphone=13631904013&__mobile=true&no_app_type=yes&siteId=234,020&_shopId=003272&shareId=4cc3AnXBB8&shopId=003272&sharechannel=wxpy&from=singlemessage&isappinstalled=1&ttts=1496989803072  MenuId=>422129699  
+
+
+收到请求:2017-09-02 07:35:32
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjjt5Cy0B4iwGHQ9FNrq629g  CreateTime=>1504308932  MsgType=>event  Event=>VIEW  EventKey=>http://hzbld.souche.com/index.htm?salerphone=13631904013&__mobile=true&no_app_type=yes&siteId=234,020&_shopId=003272&shareId=4cc3AnXBB8&shopId=003272&sharechannel=wxpy&from=singlemessage&isappinstalled=1&ttts=1496989803072  MenuId=>422129699  
+
+
+收到请求:2017-09-02 12:38:46
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjthxg9URrjEASZteTckdC30  CreateTime=>1504327126  MsgType=>event  Event=>VIEW  EventKey=>http://hzbld.souche.com/index.htm?salerphone=13631904013&__mobile=true&no_app_type=yes&siteId=234,020&_shopId=003272&shareId=4cc3AnXBB8&shopId=003272&sharechannel=wxpy&from=singlemessage&isappinstalled=1&ttts=1496989803072  MenuId=>422129699  
+
+
+收到请求:2017-09-02 12:39:12
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjthxg9URrjEASZteTckdC30  CreateTime=>1504327152  MsgType=>event  Event=>VIEW  EventKey=>http://hzbld.souche.com/index.htm?salerphone=13631904013&__mobile=true&no_app_type=yes&siteId=234,020&_shopId=003272&shareId=4cc3AnXBB8&shopId=003272&sharechannel=wxpy&from=singlemessage&isappinstalled=1&ttts=1496989803072  MenuId=>422129699  
+
+
+收到请求:2017-09-03 12:07:45
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjtbx-hUPzfYt2nSonyPfCCc  CreateTime=>1504411665  MsgType=>event  Event=>VIEW  EventKey=>http://hzbld.souche.com/index.htm?salerphone=13631904013&__mobile=true&no_app_type=yes&siteId=234,020&_shopId=003272&shareId=4cc3AnXBB8&shopId=003272&sharechannel=wxpy&from=singlemessage&isappinstalled=1&ttts=1496989803072  MenuId=>422129699  
+
+
+收到请求:2017-09-03 15:52:25
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjl-TjOphbcr4l6Ia-UJNDpE  CreateTime=>1504425145  MsgType=>event  Event=>VIEW  EventKey=>http://hzbld.souche.com/index.htm?salerphone=13631904013&__mobile=true&no_app_type=yes&siteId=234,020&_shopId=003272&shareId=4cc3AnXBB8&shopId=003272&sharechannel=wxpy&from=singlemessage&isappinstalled=1&ttts=1496989803072  MenuId=>422129699  
+
+
+收到请求:2017-09-04 00:47:42
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjtqZaCf0nrFQjALFC90OOHw  CreateTime=>1504457262  MsgType=>event  Event=>unsubscribe  EventKey=>  
+
+
+收到请求:2017-09-04 09:54:45
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjmMk7M3cMPdwX_QS9Wwgg9Y  CreateTime=>1504490085  MsgType=>event  Event=>subscribe  EventKey=>  
+
+
+收到请求:2017-09-04 10:03:31
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjmMk7M3cMPdwX_QS9Wwgg9Y  CreateTime=>1504490611  MsgType=>event  Event=>VIEW  EventKey=>http://mp.weixin.qq.com/s/j-ClmrKKRE0zbF7qUSBUkg  MenuId=>422129699  
+
+
+收到请求:2017-09-04 10:28:04
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjmMk7M3cMPdwX_QS9Wwgg9Y  CreateTime=>1504492084  MsgType=>event  Event=>VIEW  EventKey=>http://mp.weixin.qq.com/s/VLo2S-sdTt1orzYYW40PgA  MenuId=>422129699  
+
+
+收到请求:2017-09-04 10:28:38
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjuxrsTMzsR6du1XIQbVG65g  CreateTime=>1504492118  MsgType=>event  Event=>VIEW  EventKey=>http://wx.shikexu.com/app  MenuId=>422129699  
+
+
+收到请求:2017-09-04 11:19:12
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjibDfytztgR5UM3HGShm_vQ  CreateTime=>1504495152  MsgType=>event  Event=>VIEW  EventKey=>http://wx.shikexu.com/app  MenuId=>422129699  
+
+
+收到请求:2017-09-04 11:19:40
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjibDfytztgR5UM3HGShm_vQ  CreateTime=>1504495180  MsgType=>event  Event=>VIEW  EventKey=>http://wx.shikexu.com/app  MenuId=>422129699  
+
+
+收到请求:2017-09-04 13:52:46
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjmMk7M3cMPdwX_QS9Wwgg9Y  CreateTime=>1504504366  MsgType=>event  Event=>unsubscribe  EventKey=>  
+
+
+收到请求:2017-09-04 16:42:46
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjibDfytztgR5UM3HGShm_vQ  CreateTime=>1504514566  MsgType=>event  Event=>VIEW  EventKey=>http://wx.shikexu.com/app  MenuId=>422129699  
+
+
+收到请求:2017-09-04 22:27:02
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjnczntmkHREydNi9K3xZ8II  CreateTime=>1504535222  MsgType=>event  Event=>subscribe  EventKey=>  
+
+
+收到请求:2017-09-04 22:27:23
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjnczntmkHREydNi9K3xZ8II  CreateTime=>1504535243  MsgType=>event  Event=>VIEW  EventKey=>http://hzbld.souche.com/index.htm?salerphone=13631904013&__mobile=true&no_app_type=yes&siteId=234,020&_shopId=003272&shareId=4cc3AnXBB8&shopId=003272&sharechannel=wxpy&from=singlemessage&isappinstalled=1&ttts=1496989803072  MenuId=>422129699  
+
+
+收到请求:2017-09-04 23:07:31
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjnczntmkHREydNi9K3xZ8II  CreateTime=>1504537651  MsgType=>event  Event=>VIEW  EventKey=>http://hzbld.souche.com/index.htm?salerphone=13631904013&__mobile=true&no_app_type=yes&siteId=234,020&_shopId=003272&shareId=4cc3AnXBB8&shopId=003272&sharechannel=wxpy&from=singlemessage&isappinstalled=1&ttts=1496989803072  MenuId=>422129699  
+
+
+收到请求:2017-09-04 23:30:19
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjnczntmkHREydNi9K3xZ8II  CreateTime=>1504539019  MsgType=>event  Event=>VIEW  EventKey=>http://hzbld.souche.com/index.htm?salerphone=13631904013&__mobile=true&no_app_type=yes&siteId=234,020&_shopId=003272&shareId=4cc3AnXBB8&shopId=003272&sharechannel=wxpy&from=singlemessage&isappinstalled=1&ttts=1496989803072  MenuId=>422129699  
+
+
+收到请求:2017-09-05 09:35:12
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjibDfytztgR5UM3HGShm_vQ  CreateTime=>1504575312  MsgType=>event  Event=>VIEW  EventKey=>http://wx.shikexu.com/app  MenuId=>422129699  
+
+
+收到请求:2017-09-05 09:37:35
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjibDfytztgR5UM3HGShm_vQ  CreateTime=>1504575455  MsgType=>event  Event=>CLICK  EventKey=>帮卖车  
+
+
+收到请求:2017-09-05 09:38:09
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjibDfytztgR5UM3HGShm_vQ  CreateTime=>1504575489  MsgType=>text  Content=>员工二维码  MsgId=>6462102520040478965  
+
+
+收到请求:2017-09-05 09:42:40
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjibDfytztgR5UM3HGShm_vQ  CreateTime=>1504575759  MsgType=>text  Content=>员工二维码  MsgId=>6462103679681648933  
+
+
+收到请求:2017-09-05 09:47:18
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjl-TjOphbcr4l6Ia-UJNDpE  CreateTime=>1504576038  MsgType=>event  Event=>VIEW  EventKey=>http://hzbld.souche.com/index.htm?salerphone=13631904013&__mobile=true&no_app_type=yes&siteId=234,020&_shopId=003272&shareId=4cc3AnXBB8&shopId=003272&sharechannel=wxpy&from=singlemessage&isappinstalled=1&ttts=1496989803072  MenuId=>422129699  
+
+
+收到请求:2017-09-05 09:47:41
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjibDfytztgR5UM3HGShm_vQ  CreateTime=>1504576061  MsgType=>event  Event=>VIEW  EventKey=>http://wx.shikexu.com/app  MenuId=>422129699  
+
+
+收到请求:2017-09-05 09:53:55
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjq-LMr_sj3cVjTXzcJaDOBA  CreateTime=>1504576435  MsgType=>event  Event=>VIEW  EventKey=>http://wx.shikexu.com/app  MenuId=>422129699  
+
+
+收到请求:2017-09-05 09:56:45
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjibDfytztgR5UM3HGShm_vQ  CreateTime=>1504576605  MsgType=>event  Event=>VIEW  EventKey=>http://hzbld.souche.com/index.htm?salerphone=13631904013&__mobile=true&no_app_type=yes&siteId=234,020&_shopId=003272&shareId=4cc3AnXBB8&shopId=003272&sharechannel=wxpy&from=singlemessage&isappinstalled=1&ttts=1496989803072  MenuId=>422129699  
+
+
+收到请求:2017-09-05 09:56:49
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjibDfytztgR5UM3HGShm_vQ  CreateTime=>1504576608  MsgType=>event  Event=>VIEW  EventKey=>http://wx.shikexu.com/app  MenuId=>422129699  
+
+
+收到请求:2017-09-05 10:09:23
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjibDfytztgR5UM3HGShm_vQ  CreateTime=>1504577363  MsgType=>event  Event=>VIEW  EventKey=>http://wx.shikexu.com/app  MenuId=>422129699  
+
+
