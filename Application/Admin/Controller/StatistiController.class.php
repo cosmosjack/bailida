@@ -23,4 +23,12 @@ class StatistiController extends BaseController
 //        echo '统计的首页';
         $this->display();
     }
+    public function agent_list(){
+        $db_vip = M("vip");
+        $data_vip = $db_vip->where(array("id"=>array("GT"=>600)))->select();
+        $this->ajaxReturn($data_vip,"JSON");
+    }
+
+
+
 }

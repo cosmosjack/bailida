@@ -1,1 +1,0 @@
-<?php if (!defined('THINK_PATH')) exit();?><h1>这是商城的首页预览</h1>
