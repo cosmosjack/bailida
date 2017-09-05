@@ -21,6 +21,6 @@ class StatistiController extends BaseController
     public function index()
     {
         echo '统计的首页';
-        $this->display();
+//        $this->display();
     }
 }
