@@ -9,7 +9,7 @@ $(document).ready(function(){
         type:"GET",
         data:{},
         success:function(msg){
-            console.log(msg);
+            //console.log(msg);
             //return false;
             /* template.config("escape",false);
              var js_data = document.getElementById('js_data').innerHTML;
