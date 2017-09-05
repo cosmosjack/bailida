@@ -10,7 +10,7 @@
 namespace Admin\Controller;
 
 
-class StatisController extends BaseController
+class StatiscController extends BaseController
 {
 
     public function __construct()
