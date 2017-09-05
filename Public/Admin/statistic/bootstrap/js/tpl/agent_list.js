@@ -31,7 +31,7 @@ $(document).ready(function(){
                     { data:null,render:function(e){
                         return "<span  value='' class='show_span'><em style='width:"+ e.exp+";' class='show_em' ></em></span>";
                     }},
-                    { data: 'store_user_phone' },//电话
+                    { data: 'mobile' },//电话
                     { data: null,
                         "defaultContent":"<a  onclick='goods_edit(this)'><i class='fa fa-edit'></i>查看详情</a>",
                         render:function(){}
