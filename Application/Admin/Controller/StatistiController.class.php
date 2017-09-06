@@ -32,6 +32,12 @@ class StatistiController extends BaseController
     public function calc_order(){
         // 如果用户支付了 定金且 已经确认了订单 但又 不要了 则需要修改订单状态为 取消状态
 
+        /* 统计自己的下线 start  */
+        $db_vip = M("vip");
+        $data_junior = $db_vip->where(array("pid"=>$_GET['agent_id']))->select();
+        p($data_junior);
+        /* 统计自己的下线 end  */
+
     }
     /* 统计自己和自己下线的订单 每月15号统计上个月的 没有支付的将自动销毁 没有确认的也将自动确认 end */
 
