@@ -640,7 +640,8 @@ class ShopController extends BaseController
                 $real_price += $data_goods_sku['real_price']*$goods_list[$i]['num'];
                 $cost_price += $data_goods_sku['cost_price']*$goods_list[$i]['num'];
             }
-
+            p($real_price);
+            p($cost_price);
             die;
 
             $data['ispay'] = 0;
