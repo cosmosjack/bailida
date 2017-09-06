@@ -63,8 +63,6 @@
                             <th data-hide="all">成本价</th> <!--order_cost_price-->
                             <th data-hide="all">销售价</th> <!--order_real_price-->
                             <th>操作</th>
-
-                            <th>操作</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -79,13 +77,11 @@
                                 <td>{$vo.order_cost_price}</td>
                                 <td>{$vo.order_real_price}</td>
                                 <td><a href="#"><i class="fa fa-check text-navy"></i> 确认尾款已收</a></td>
-
-                                <td>223232323
-                                    <?php var_dump($vo);die;  ?>
-                                    <volist name="vo.goods_attr" id="cc">
-                                        asdasd
+                                <div id="goods_{$vo.id}" class="goods_details" style="display: none;position: fixed;top: 50px;left: 200px;">
+                                    <volist name="vo['goods_arr']" id="goods_arr" key="goods_k">
+                                        dddd
                                     </volist>
-                                </td>
+                                </div>
                             </tr>
                         </volist>
 
