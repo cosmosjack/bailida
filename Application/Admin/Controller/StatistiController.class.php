@@ -44,6 +44,7 @@ class StatistiController extends BaseController
         P($agent_arr);
         /* 统计自己的下线 end  */
 
+
     }
     /* 统计自己和自己下线的订单 每月15号统计上个月的 没有支付的将自动销毁 没有确认的也将自动确认 end */
 

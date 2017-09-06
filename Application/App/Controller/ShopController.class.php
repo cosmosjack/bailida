@@ -627,6 +627,8 @@ class ShopController extends BaseController
         if (IS_POST) {
             $morder = M('Shop_order');
             $data = I('post.');
+            p($data);
+            die;
             $data['items'] = stripslashes(htmlspecialchars_decode($data['items']));
             $data['ispay'] = 0;
             $data['status'] = 1;//订单成功，未付款
