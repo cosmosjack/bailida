@@ -629,8 +629,10 @@ class ShopController extends BaseController
             $data = I('post.');
             p($data);
             p(unserialize($data['items']));
-            die;
             $data['items'] = stripslashes(htmlspecialchars_decode($data['items']));
+            p($data['items']);
+            die;
+
             $data['ispay'] = 0;
             $data['status'] = 1;//订单成功，未付款
             $data['ctime'] = time();
