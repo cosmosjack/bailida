@@ -24,7 +24,7 @@ class OrderController extends BaseController{
         for($i=0;$i<count($list);$i++){
             $list[$i]['goods_arr'] = unserialize(stripcslashes(htmlspecialchars_decode($list[$i]['items'])));
         }
-//        p($list);
+        p($list);
 //        p($show);
 //        die;
         $this->display(); // 输出模板
