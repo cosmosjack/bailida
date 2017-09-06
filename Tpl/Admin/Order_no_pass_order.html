@@ -30,10 +30,10 @@
         <div class="col-sm-12">
             <div class="ibox float-e-margins">
                 <div class="ibox-title">
-                    <h5>FooTable行切换，排序，分页演示</h5>
+                    <h5>请尽快审核近期订单</h5>
 
                     <div class="ibox-tools">
-                        <a class="collapse-link">
+                        <!--<a class="collapse-link">
                             <i class="fa fa-chevron-up"></i>
                         </a>
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
@@ -47,7 +47,7 @@
                         </ul>
                         <a class="close-link">
                             <i class="fa fa-times"></i>
-                        </a>
+                        </a>-->
                     </div>
                 </div>
                 <div class="ibox-content">
@@ -55,28 +55,32 @@
                     <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="8">
                         <thead>
                         <tr>
-
-                            <th data-toggle="true">产品</th>
-                            <th>名字</th>
-                            <th>电话</th>
-                            <th data-hide="all">公司</th>
-                            <th data-hide="all">参数</th>
-                            <th data-hide="all">采购数量</th>
-                            <th data-hide="all">日期</th>
+                            <th data-toggle="true">订单号</th> <!--oid-->
+                            <th>下单人</th>  <!--vipname-->
+                            <th>电话</th> <!--vipmobile-->
+                            <th data-hide="all">订单时间</th> <!--ctime-->
+                            <th data-hide="all">已支付定金</th>  <!--payprice-->
+                            <th data-hide="all">成本价</th> <!--order_cost_price-->
+                            <th data-hide="all">销售价</th> <!--order_real_price-->
                             <th>操作</th>
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td>2015韩国童装韩版牛仔童短裤</td>
-                            <td>袁岳</td>
-                            <td>0800 051213</td>
-                            <td>深圳市有大福实业有限公司</td>
-                            <td><span class="pie">0.52/1.561</span></td>
-                            <td>200</td>
-                            <td>2015.09.10</td>
-                            <td><a href="#"><i class="fa fa-check text-navy"></i> 通过</a></td>
-                        </tr>
+
+                        <volist name="list" id="vo">
+                            <tr>
+                                <td>{$vo.oid}</td>
+                                <td>{$vo.vipname}</td>
+                                <td>{$vo.vipmobile}</td>
+                                <td>{$vo.ctime}</td>
+                                <td><span class="pie">{$vo.payprice}</span></td>
+                                <td>{$vo.order_cost_price}</td>
+                                <td>{$vo.order_real_price}</td>
+                                <td><a href="#"><i class="fa fa-check text-navy"></i> 确认尾款已收</a></td>
+                            </tr>
+                        </volist>
+
+
                         <tr>
                             <td>300米速进口日本原丝耐磨</td>
                             <td>付守永</td>
