@@ -630,7 +630,7 @@ class ShopController extends BaseController
             p($data);
             p(unserialize($data['items']));
             $data['items'] = stripslashes(htmlspecialchars_decode($data['items']));
-            p($data['items']);
+            p(unserialize($data['items']));
             die;
 
             $data['ispay'] = 0;
