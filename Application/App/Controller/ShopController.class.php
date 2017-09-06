@@ -628,9 +628,19 @@ class ShopController extends BaseController
             $morder = M('Shop_order');
             $data = I('post.');
             p($data);
-            p(unserialize($data['items']));
+
             $data['items'] = stripslashes(htmlspecialchars_decode($data['items']));
             p(unserialize($data['items']));
+            $goods_list = unserialize($data['items']);
+            $db_goods_sku = M("shop_goods_sku");
+            $real_price = '';
+            $cost_price = '';
+            for($i=0;$i<count($goods_list);$i++){
+                $data_goods_sku = $db_goods_sku->where(array('id'=>$goods_list[$i]['skuid']))->find();
+                $real_price += $data_goods_sku['real_price']*$goods_list[$i]['num'];
+                $cost_price += $data_goods_sku['cost_price']*$goods_list[$i]['num'];
+            }
+
             die;
 
             $data['ispay'] = 0;
