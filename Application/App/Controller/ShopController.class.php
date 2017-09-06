@@ -627,10 +627,10 @@ class ShopController extends BaseController
         if (IS_POST) {
             $morder = M('Shop_order');
             $data = I('post.');
-            p($data);
+//            p($data);
 
             $data['items'] = stripslashes(htmlspecialchars_decode($data['items']));
-            p(unserialize($data['items']));
+//            p(unserialize($data['items']));
             $goods_list = unserialize($data['items']);
             $db_goods_sku = M("shop_goods_sku");
             $real_price = '';
@@ -640,10 +640,10 @@ class ShopController extends BaseController
                 $real_price += $data_goods_sku['real_price']*$goods_list[$i]['num'];
                 $cost_price += $data_goods_sku['cost_price']*$goods_list[$i]['num'];
             }
-            p($real_price);
-            p($cost_price);
-            die;
-
+//            p($real_price);
+//            p($cost_price);
+            $data['order_real_price'] = $real_price;
+            $data['order_cost_price'] = $cost_price;
             $data['ispay'] = 0;
             $data['status'] = 1;//订单成功，未付款
             $data['ctime'] = time();
