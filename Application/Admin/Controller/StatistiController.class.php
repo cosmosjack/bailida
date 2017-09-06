@@ -35,7 +35,13 @@ class StatistiController extends BaseController
         /* 统计自己的下线 start  */
         $db_vip = M("vip");
         $data_junior = $db_vip->where(array("pid"=>$_GET['agent_id']))->select();
-        p($data_junior);
+        p($data_junior); // 下线列表
+        $agent_arr = array();
+        for($i=0;$i<count($data_junior);$i++){
+            $agent_arr[$i] = $data_junior[$i]['id'];
+        }
+        array_push($agent_arr,$_GET['agent_id']);
+        P($agent_arr);
         /* 统计自己的下线 end  */
 
     }
