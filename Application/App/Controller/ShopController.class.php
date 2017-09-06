@@ -628,6 +628,7 @@ class ShopController extends BaseController
             $morder = M('Shop_order');
             $data = I('post.');
             p($data);
+            p(unserialize($data['items']));
             die;
             $data['items'] = stripslashes(htmlspecialchars_decode($data['items']));
             $data['ispay'] = 0;
