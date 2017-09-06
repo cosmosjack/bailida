@@ -757,6 +757,8 @@ class ShopController extends BaseController
                                 $cache[$k]['price'] = $sku['price'];
                                 $cache[$k]['total'] = $v['num'] * $sku['price'];
                                 $cache[$k]['pic'] = $pic['imgurl'];
+                                $cache[$k]['cost_price'] = $goods['cost_price'];
+                                $cache[$k]['real_price'] = $goods['real_price'];
                                 $totalnum = $totalnum + $cache[$k]['num'];
                                 $totalprice = $totalprice + $cache[$k]['price'] * $cache[$k]['num'];
                             } else {
@@ -788,6 +790,8 @@ class ShopController extends BaseController
                             $cache[$k]['price'] = $goods['price'];
                             $cache[$k]['total'] = $v['num'] * $goods['price'];
                             $cache[$k]['pic'] = $pic['imgurl'];
+                            $cache[$k]['cost_price'] = $goods['cost_price'];
+                            $cache[$k]['real_price'] = $goods['real_price'];
                             $totalnum = $totalnum + $cache[$k]['num'];
                             $totalprice = $totalprice + $cache[$k]['price'] * $cache[$k]['num'];
                         } else {
