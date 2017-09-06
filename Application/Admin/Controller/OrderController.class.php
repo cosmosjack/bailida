@@ -23,7 +23,7 @@ class OrderController extends BaseController{
         $this->assign('page',$show);// 赋值分页输出
         p($list);
         p($show);
-        die;
+//        die;
         $this->display(); // 输出模板
 
     }
