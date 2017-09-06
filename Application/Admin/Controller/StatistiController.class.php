@@ -20,7 +20,7 @@ class StatistiController extends BaseController
 
     public function index()
     {
-//        echo '统计的首页';
+
         $this->display();
     }
     public function agent_list(){
@@ -28,6 +28,12 @@ class StatistiController extends BaseController
         $data_vip = $db_vip->where(array("id"=>array("GT",600)))->select();
         $this->ajaxReturn($data_vip,"JSON");
     }
+    /* 统计自己和自己下线的订单 每月15号统计上个月的 没有支付的将自动销毁 没有确认的也将自动确认 如果有存在用户已经确认订单但没有填写真正订单金额的 将跳出统计并提醒 start */
+    public function calc_order(){
+        // 如果用户支付了 定金且 已经确认了订单 但又 不要了 则需要修改订单状态为 取消状态
+
+    }
+    /* 统计自己和自己下线的订单 每月15号统计上个月的 没有支付的将自动销毁 没有确认的也将自动确认 end */
 
 
 

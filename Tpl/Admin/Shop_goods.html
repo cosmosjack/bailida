@@ -50,10 +50,11 @@
                             <th>SPU</th>
                             <th>分类名称</th>
                             <th>商品名称</th>
-                            <th>商品单位</th>
+                            <!--<th>商品单位</th>-->
+                            <th>销售价格</th>
                             <th>商品库存</th>
-                            <th>商品单价</th>
-                            <th>商品原价</th>
+                            <th>商品押金</th>
+                            <th>市场价格</th>
                             <th>商品点击</th>
                             <th>商品销量</th>
                             <th>商品排序</th>
@@ -77,7 +78,8 @@
                                 <td class=" ">{$vo.spu}</td>
                                 <td class=" ">{$vo.cid}</td>
                                 <td class=" ">{$vo.name}</td>
-                                <td class=" ">{$vo.unit}</td>
+                                <!--<td class=" ">{$vo.unit}</td>-->
+                                <td class="">{$vo.real_price}</td>
                                 <td class=" ">{$vo.num}</td>
                                 <td class=" ">{$vo.price}</td>
                                 <td class=" ">{$vo.oprice}</td>
