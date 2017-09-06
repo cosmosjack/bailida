@@ -134,6 +134,12 @@ class ShopController extends BaseController
         if (IS_POST) {
             //die('aa');
             $data = I('post.');
+            if (round($data['oprice'],2) <= 0 || round($data['price'],2)<= 0 || round($data['real_price'],2) <= 0 || round($data['cost_price'],2) <=0) {
+                $this->ajaxReturn(array('status'=>0,'msg'=>'设置失败：商品金额不能小于等于0元'));
+            }
+            if (empty($data['name'])) {
+                $this->ajaxReturn(array('status'=>0,'msg'=>'设置失败：商品名称不能为空！'));
+            }
             $data['content'] = trimUE($data['content']);
             if ($id) {
                 $re = $m->save($data);

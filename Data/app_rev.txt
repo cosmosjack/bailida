@@ -47658,3 +47658,43 @@
 通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjibDfytztgR5UM3HGShm_vQ  CreateTime=>1504577363  MsgType=>event  Event=>VIEW  EventKey=>http://wx.shikexu.com/app  MenuId=>422129699  
 
 
+收到请求:2017-09-05 15:58:55
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjibDfytztgR5UM3HGShm_vQ  CreateTime=>1504598335  MsgType=>event  Event=>VIEW  EventKey=>http://wx.shikexu.com/app  MenuId=>422129699  
+
+
+收到请求:2017-09-05 16:21:13
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjtbx-hUPzfYt2nSonyPfCCc  CreateTime=>1504599672  MsgType=>event  Event=>VIEW  EventKey=>https://mp.weixin.qq.com/s/jcfrLXEMJOU1RDn-EOzxgg  MenuId=>422129699  
+
+
+收到请求:2017-09-05 17:25:47
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjjt5Cy0B4iwGHQ9FNrq629g  CreateTime=>1504603547  MsgType=>event  Event=>VIEW  EventKey=>http://hzbld.souche.com/index.htm?salerphone=13631904013&__mobile=true&no_app_type=yes&siteId=234,020&_shopId=003272&shareId=4cc3AnXBB8&shopId=003272&sharechannel=wxpy&from=singlemessage&isappinstalled=1&ttts=1496989803072  MenuId=>422129699  
+
+
+收到请求:2017-09-05 22:13:19
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjnczntmkHREydNi9K3xZ8II  CreateTime=>1504620799  MsgType=>event  Event=>VIEW  EventKey=>http://mp.weixin.qq.com/s/DXnstyY0269l4qqO9TEMqA  MenuId=>422129699  
+
+
+收到请求:2017-09-06 08:43:30
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjoNz7lOeZavAGZcWBCXS0D8  CreateTime=>1504658610  MsgType=>event  Event=>subscribe  EventKey=>  
+
+
+收到请求:2017-09-06 08:43:39
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjoNz7lOeZavAGZcWBCXS0D8  CreateTime=>1504658619  MsgType=>event  Event=>unsubscribe  EventKey=>  
+
+
+收到请求:2017-09-06 08:51:14
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjibDfytztgR5UM3HGShm_vQ  CreateTime=>1504659074  MsgType=>event  Event=>VIEW  EventKey=>http://wx.shikexu.com/app  MenuId=>422129699  
+
+
+收到请求:2017-09-06 09:36:46
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjibDfytztgR5UM3HGShm_vQ  CreateTime=>1504661806  MsgType=>event  Event=>VIEW  EventKey=>http://wx.shikexu.com/app  MenuId=>422129699  
+
+
+收到请求:2017-09-06 09:38:02
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjibDfytztgR5UM3HGShm_vQ  CreateTime=>1504661882  MsgType=>event  Event=>VIEW  EventKey=>http://wx.shikexu.com/app  MenuId=>422129699  
+
+
+收到请求:2017-09-06 09:57:00
+通知信息:ToUserName=>gh_b5d8d1d6f528  FromUserName=>oCHmqjibDfytztgR5UM3HGShm_vQ  CreateTime=>1504663020  MsgType=>event  Event=>VIEW  EventKey=>http://wx.shikexu.com/app  MenuId=>422129699  
+
+
