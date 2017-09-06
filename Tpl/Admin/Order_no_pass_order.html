@@ -78,7 +78,7 @@
                                 <td>{$vo.order_real_price}</td>
                                 <td><a href="#"><i class="fa fa-check text-navy"></i> 确认尾款已收</a></td>
                                 <div id="goods_{$vo.id}" class="goods_details" style="display: none;position: fixed;top: 50px;left: 200px;">
-                                    <?php vardump('ddd'.$vo['goods_arr']);?>
+                                    <?php var_dump('ddd'.$vo['goods_arr']);?>
                                     <volist name="vo['goods_arr']" id="goods_arr" key="goods_k">
                                         <tr>
                                             <td>商品ID:{$goods_arr.id}</td>
