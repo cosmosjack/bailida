@@ -38,7 +38,7 @@
 
     function mod_order_show(order_id,order_real_price){
         $("#mod_order_body").empty();
-        $("#mod_order_body").text(order_real_price);
+        $("#mod_order_body").val(order_real_price);
         $("input[name='order_id']").val(order_id);
     }
     function order_review(order_id){
@@ -187,7 +187,7 @@
                 <small>这里可以显示副标题。</small>
             </div>
             <div  class="modal-body">
-                <p id="mod_order_body"></p>
+                <input id="mod_order_body" type="text" value="" name="">
             </div>
             <div class="modal-footer">
                 <input type="hidden" name="order_id" value="">
