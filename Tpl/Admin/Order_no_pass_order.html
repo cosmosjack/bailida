@@ -87,18 +87,13 @@
                                     </button>
                                     <a onclick="show_order('{$vo.id}');"><i class="fa fa-sticky-note"></i>详情</a>
                                 </td>
-                                <div id="goods_{$vo.id}" class="goods_details" style="display: none;position: fixed;top: 50px;left: 200px;">
+                               <!-- <div id="goods_{$vo.id}" class="goods_details" style="display: none;position: fixed;top: 50px;left: 200px;">
                                     <volist name="vo['goods_arr']" id="goods_arr" key="goods_k">
                                         <ul>
                                             <li>商品ID:{$goods_arr['id']} {$goods_arr['name']} 商品成本价:{$goods_arr['cost_price']} 商品销售价:{$goods_arr['real_price']}</li>
                                         </ul>
                                     </volist>
-                                </div>
-
-
-
-
-
+                                </div>-->
                             </tr>
 
                             <div class="modal inmodal" id="myModal_{$vo.id}" tabindex="-1" role="dialog" aria-hidden="true">
