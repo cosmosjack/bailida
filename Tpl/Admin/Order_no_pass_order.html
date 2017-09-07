@@ -35,6 +35,12 @@
         $("#myModal_body").empty();
         $("#myModal_body").append(body_html);
     }
+
+    function mod_order_show(order_id,order_real_price){
+        $("#mod_order_body").empty();
+        $("#mod_order_body").text(order_real_price);
+        $("input[name='order_id']").val(order_id);
+    }
     function order_review(order_id){
         var msg = "请确认您已经审核好了";
         if(confirm(msg)){
@@ -121,6 +127,9 @@
                                     <button onclick="order_review('{$vo.id}');" class="btn btn-danger-inverse">
                                         <i class="fa fa-key">审核通过</i>
                                     </button>
+                                    <button onclick="mod_order_show('{$vo.id}','{$vo.order_real_price}')" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal4">
+                                        修改
+                                    </button>
                                 </td>
                                 <div id="goods_{$vo.id}" class="goods_details" style="display: none;">
                                     <volist name="vo['goods_arr']" id="goods_arr" key="goods_k">
@@ -163,6 +172,27 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
                 <button type="button" class="btn btn-primary">保存s</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal inmodal" id="myModal4" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content animated fadeIn">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <i class="fa fa-clock-o modal-icon"></i>
+                <h4 class="modal-title">窗口标题</h4>
+                <small>这里可以显示副标题。</small>
+            </div>
+            <div  class="modal-body">
+                <p id="mod_order_body"></p>
+            </div>
+            <div class="modal-footer">
+                <input type="hidden" name="order_id" value="">
+                <button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary">保存</button>
             </div>
         </div>
     </div>
