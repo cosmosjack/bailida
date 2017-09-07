@@ -35,6 +35,14 @@
         $("#myModal_body").empty();
         $("#myModal_body").append(body_html);
     }
+    function order_review(order_id){
+        var msg = "请确认您已经审核好了";
+        if(confirm(msg)){
+            console.log(order_id);
+        }else{
+            return false;
+        }
+    }
 </script>
 </head>
 
@@ -93,9 +101,11 @@
                                 <td>{$vo.order_real_price}</td>
                                 <td>
                                     <button onclick="show_order('{$vo.id}')" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
-                                        详情
+                                       <i class="fa fa-file-text"></i>详情
                                     </button>
-                                    <a onclick="alert(111);"><i class="fa fa-sticky-note"></i>审核通过</a>
+                                    <button onclick="order_review('{$vo.id}');" class="btn btn-danger-inverse">
+                                        <i class="fa fa-key">审核通过</i>
+                                    </button>
                                 </td>
                                 <div id="goods_{$vo.id}" class="goods_details" style="display: none;">
                                     <volist name="vo['goods_arr']" id="goods_arr" key="goods_k">
