@@ -39,6 +39,17 @@
         var msg = "请确认您已经审核好了";
         if(confirm(msg)){
             console.log(order_id);
+            $.ajax({
+                url:AdminUrl+"/Order/order_review/order_id/"+order_id,
+                type:"GET",
+                data:{},
+                success:function(msg){
+                    console.log(msg);
+                },
+                error:function(){
+                    console.log("http error");
+                }
+            });
         }else{
             return false;
         }

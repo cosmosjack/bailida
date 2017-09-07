@@ -12,6 +12,7 @@ class OrderController extends BaseController{
     public function __construct(){
         parent::__construct();
     }
+    /* 没有审核的订单的列表 */
     public function no_pass_order(){
         $where = array('admin_ispass'=>array('eq',0),'ispay'=>1);
         $db_order = M('shop_order'); // 实例化User对象
@@ -29,6 +30,21 @@ class OrderController extends BaseController{
 //        p($show);
 //        die;
         $this->display(); // 输出模板
+
+    }
+    /* 订单审核 */
+    public function order_review(){
+        $db_order =M("shop_order");
+        $update['admin_ispass'] = 1;
+        $result = $db_order->where(array("id"=>$_GET['order_id']))->update($update);
+        if($result){
+            $this->ajaxReturn(array('control'=>'order_review','code'=>200,'msg'=>'修改成功'),"JSON");
+        }else{
+            $this->ajaxReturn(array('control'=>'order_review','code'=>0,'msg'=>'没有修改成功','data'=>$_GET),"JSON");
+        }
+    }
+    /* 修改成本价与实际销售价 */
+    public function order_mod(){
 
     }
 }
