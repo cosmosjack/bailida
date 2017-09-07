@@ -36,7 +36,7 @@ class OrderController extends BaseController{
     public function order_review(){
         $db_order =M("shop_order");
         $update['admin_ispass'] = 1;
-        $result = $db_order->where(array("id"=>$_GET['order_id']))->update($update);
+        $result = $db_order->where(array("id"=>$_GET['order_id']))->save($update);
         if($result){
             $this->ajaxReturn(array('control'=>'order_review','code'=>200,'msg'=>'修改成功'),"JSON");
         }else{
