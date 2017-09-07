@@ -45,6 +45,10 @@
                 data:{},
                 success:function(msg){
                     console.log(msg);
+                    if(msg.code == 200){
+                        alert('审核成功');
+                        location.reload();
+                    }
                 },
                 error:function(){
                     console.log("http error");
