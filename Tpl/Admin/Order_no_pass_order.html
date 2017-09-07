@@ -29,9 +29,10 @@
 
 <script>
     function show_order(order_id){
-        console.log(order_id);
+//        console.log(order_id);
         var body_html = $("#goods_"+order_id).html();
-        console.log(body_html);
+//        console.log(body_html);
+        $("#myModal_body").empty();
         $("#myModal_body").append(body_html);
     }
 </script>
