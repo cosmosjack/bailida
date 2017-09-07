@@ -45,6 +45,13 @@ class OrderController extends BaseController{
     }
     /* 修改成本价与实际销售价 */
     public function order_mod(){
-
+        $db_order = M('shop_order');
+        $update['real_price'] = $_POST['real_price'];
+        $result = $db_order->where(array("id"=>$_POST['order_id']))->save($update);
+        if($result){
+            $this->ajaxReturn(array('control'=>'order_mod','code'=>200,'msg'=>'修改成功'),"JSON");
+        }else{
+            $this->ajaxReturn(array('control'=>'order_mod','code'=>0,'msg'=>'没有修改成功','data'=>$_GET),"JSON");
+        }
     }
 }

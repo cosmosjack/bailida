@@ -28,6 +28,7 @@
 <script src="__PUBLIC__/Admin/statistic/bootstrap/js/plugins/footable/footable.all.min.js"></script>
 
 <script>
+    //展示订单详情
     function show_order(order_id){
 //        console.log(order_id);
         var body_html = $("#goods_"+order_id).html();
@@ -35,11 +36,27 @@
         $("#myModal_body").empty();
         $("#myModal_body").append(body_html);
     }
-
+//修改订单时 的展示
     function mod_order_show(order_id,order_real_price){
         $("#mod_order_body").empty();
         $("#mod_order_body").val(order_real_price);
         $("input[name='order_id']").val(order_id);
+    }
+    //修改订单
+    function mod_order(){
+        var order_id = $("input[name='order_id']").val();
+        var real_price = $("#mod_order_body").val();
+        $.ajax({
+            url:AdminUrl+"/Order/order_mod",
+            type:"POST",
+            data:{"order_id":order_id,"real_price":real_price},
+            success:function(msg){
+                console.log(msg);
+            },
+            error:function(){
+                console.log('http error');
+            }
+        });
     }
     function order_review(order_id){
         var msg = "请确认您已经审核好了";
@@ -192,7 +209,7 @@
             <div class="modal-footer">
                 <input type="hidden" name="order_id" value="">
                 <button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
-                <button type="button" class="btn btn-primary">保存</button>
+                <button onclick="mod_order();" type="button" class="btn btn-primary">保存修改</button>
             </div>
         </div>
     </div>
