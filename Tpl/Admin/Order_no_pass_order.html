@@ -82,7 +82,7 @@
                                 <td>{$vo.order_cost_price}</td>
                                 <td>{$vo.order_real_price}</td>
                                 <td>
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal_{$vo.id}">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
                                         沿X轴转动
                                     </button>
                                     <a onclick="show_order('{$vo.id}');"><i class="fa fa-sticky-note"></i>详情</a>
@@ -96,7 +96,7 @@
                                 </div>-->
                             </tr>
 
-                            <div class="modal inmodal" id="myModal_{$vo.id}" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal inmodal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content animated flipInY">
                                         <div class="modal-header">
