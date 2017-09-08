@@ -35,7 +35,7 @@ class StatistiController extends BaseController
         /* 统计自己的下线 start  */
         $db_vip = M("vip");
         $data_junior = $db_vip->where(array("pid"=>$_GET['agent_id']))->select();
-        p($data_junior); // 下线列表
+//        p($data_junior); // 下线列表
         $agent_arr = array();
         for($i=0;$i<count($data_junior);$i++){
             $agent_arr[$i] = $data_junior[$i]['id'];
@@ -43,6 +43,32 @@ class StatistiController extends BaseController
         array_push($agent_arr,$_GET['agent_id']);
         P($agent_arr);
         /* 统计自己的下线 end  */
+
+        /* 算出所有的订单按月分开 然后再通过级别的不同来分成 start */
+        $now_d = date("d",time());
+        $now_m = date("m",time());
+        // 查看之前是否有统计过
+        $db_order_calc = M("order_calc");
+        $data_order_calc = $db_order_calc->where(array('agent_id'=>$_GET['agent_id']))->order("add_time desc")->find();
+        if($data_order_calc){
+            $already_calc_date = $data_order_calc['calc_date'];
+            $already_calc_time = $data_order_calc['calc_time'];
+        }else{
+            $already_calc_date = '0';
+            $already_calc_time = '0';
+        }
+        p($already_calc_time);
+        p($already_calc_date);
+        die;
+        if($now_d > 15){
+            //算出上个月的提成统计
+            //判断有没有统计过 没有就跳初始 统计
+        }else{
+            // 截止日期到 上上个月
+            //判断有没有统计过 没有就跳初始统计
+
+        }
+        /* 算出所有的订单按月分开 然后再通过级别的不同来分成 end */
 
 
     }
