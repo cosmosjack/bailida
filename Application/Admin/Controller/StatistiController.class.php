@@ -70,7 +70,7 @@ class StatistiController extends BaseController
             $already_calc_m = $temp_date[1];
         }
 
-        die;
+//        die;
         if($now_d > 15){
             //截止日期大于等于上个月 月末时 不用统计 否则 就统计到上月月末结束
 
