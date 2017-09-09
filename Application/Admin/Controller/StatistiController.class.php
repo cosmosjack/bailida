@@ -71,16 +71,24 @@ class StatistiController extends BaseController
         }
 
 //        die;
+        $begin_time = $already_calc_time;
         if($now_d > 15){
             //截止日期大于等于上个月 月末时 不用统计 否则 就统计到上月月末结束
-
+            $end_time = mktime(23,59,59,($now_m-1),cal_days_in_month(CAL_GREGORIAN, $now_m-2, date("Y")),date("Y"));
+            p($end_time);
         }else{
             // 截止日期到 上上个月 同上
             $end_time = mktime(23,59,59,($now_m-2),cal_days_in_month(CAL_GREGORIAN, $now_m-2, date("Y")),date("Y"));
             p($end_time);
-            p($already_calc_time);
-
         }
+        $where = array(
+            "ispay"=>1,
+            "vipid"=>array("in",$agent_arr)
+        );
+        $db_order = M('shop_order');
+        $data_order = $db_order->where($where)->select();
+        p($data_order);
+
         /* 算出所有的订单按月分开 然后再通过级别的不同来分成 end */
 
 
