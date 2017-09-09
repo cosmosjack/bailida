@@ -89,6 +89,13 @@ class StatistiController extends BaseController
         $data_order = $db_order->where($where)->select();
         p($data_order);
 
+        $total_order = count($data_order);
+        if($total_order<=0){
+            echo '暂无需要统计的订单';
+        }
+        for($i=0;$i<$total_order;$i++){
+
+        }
         /* 算出所有的订单按月分开 然后再通过级别的不同来分成 end */
 
 
