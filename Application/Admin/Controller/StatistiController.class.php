@@ -57,15 +57,28 @@ class StatistiController extends BaseController
             $already_calc_date = '0';
             $already_calc_time = '0';
         }
+
         p($already_calc_time);
         p($already_calc_date);
+        if($already_calc_time){
+            $temp_time = explode("|",$already_calc_time);
+            $already_calc_time = $temp_time[1];
+        }
+        $already_calc_m = '0';
+        if($already_calc_date){
+            $temp_date = explode("-",$already_calc_date);
+            $already_calc_m = $temp_date[1];
+        }
+
         die;
         if($now_d > 15){
-            //算出上个月的提成统计
-            //判断有没有统计过 没有就跳初始 统计
+            //截止日期大于等于上个月 月末时 不用统计 否则 就统计到上月月末结束
+
         }else{
-            // 截止日期到 上上个月
-            //判断有没有统计过 没有就跳初始统计
+            // 截止日期到 上上个月 同上
+            $end_time = mktime(23,59,59,($now_m-2),cal_days_in_month(CAL_GREGORIAN, $now_m-2, date("Y")),date("Y"));
+            p($end_time);
+            p($already_calc_time);
 
         }
         /* 算出所有的订单按月分开 然后再通过级别的不同来分成 end */
