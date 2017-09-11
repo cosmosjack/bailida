@@ -91,7 +91,6 @@ class StatistiController extends BaseController
         $db_order = M('shop_order');
         $data_order = $db_order
             ->field("sum('totalprice') as 'total',sum('order_real_price') as 'real_price',sum('order_cost_price) as 'cost_price'")
-            ->where($where)
             ->find();
         p($data_order);
         die;
