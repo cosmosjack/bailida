@@ -220,7 +220,8 @@ class StatistiController extends BaseController
         }
         $float_data = "[".rtrim($float_data,",")."]";
         $amount_data = "[".rtrim($amount_data,",")."]";
-
+        p($float_data);
+        p($amount_data);
         $this->assign("float_data",$float_data);
         $this->assign("amount_data",$amount_data);
         $this->display();
