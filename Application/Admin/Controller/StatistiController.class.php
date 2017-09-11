@@ -161,7 +161,7 @@ class StatistiController extends BaseController
 
         doForDetail:
         echo '已经有订单统计了,开始按日期铺数据';
-        die;
+//        die;
 
         /* 统计完成订单后的页面展示 start  */
 
