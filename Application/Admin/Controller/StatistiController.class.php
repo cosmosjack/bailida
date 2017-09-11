@@ -113,7 +113,7 @@ class StatistiController extends BaseController
         /* 检查是否有 没有通过管理员审核的订单 有的话直接跳到审核界面 start */
             $result_check = $db_order->where($where_check)->find();
         if($result_check){
-            $this->error('存在没有审核的订单','/Order/no_pass_order',2);
+            $this->error('存在没有审核的订单','/Order/no_pass_order',3);
             exit;
         }
         /* 检查是否有 没有通过管理员审核的订单 end */
