@@ -183,7 +183,7 @@ class StatistiController extends BaseController
         p($search_end_time);
         $map['ctime'] = array('between',"$search_begin_time,$search_end_time");
         $data_order = $db_order
-            ->where($map)
+//            ->where($map)
             ->select();
         $month_day_num = cal_days_in_month(CAL_GREGORIAN, $search_month, $search_year);
         if($data_order){
