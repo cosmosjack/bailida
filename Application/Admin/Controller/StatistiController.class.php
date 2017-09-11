@@ -30,6 +30,9 @@ class StatistiController extends BaseController
     }
     /* 统计自己和自己下线的订单 每月15号统计上个月的 没有支付的将自动销毁 没有确认的也将自动确认 如果有存在用户已经确认订单但没有填写真正订单金额的 将跳出统计并提醒 start */
     public function calc_order(){
+        if(!isset($_GET['agent_id']) && empty($_GET['agent_id'])){
+            header('location:'.getenv("HTTP_REFERER"));
+        }
         // 如果用户支付了 定金且 已经确认了订单 但又 不要了 则需要修改订单状态为 取消状态
 
         /* 统计自己的下线 start  */
@@ -132,7 +135,7 @@ class StatistiController extends BaseController
 
         $result_money = $db_vip->where(array("id"=>$_GET['agent_id']))->setInc("money",$agent_get_money);
         if($result_money){
-            echo '记录日志';
+//            echo '记录日志';
             $data_agent_info = $db_vip->where(array('id'=>$_GET['agent_id']))->find();
             /* 整理日志数据 start  */
             $insert_vip_log['ip'] = $_SERVER['REMOTE_ADDR'];
@@ -173,6 +176,51 @@ class StatistiController extends BaseController
         p($search_month);
         p($search_year);
         p($order_total_num);
+        // 查出 需要展示的订单数据
+        $search_begin_time = mktime(0,0,0,$search_month,1,$search_year);
+        $search_end_time = mktime(23,59,59,$search_month,cal_days_in_month(CAL_GREGORIAN, $search_month, $search_year),$search_year);
+        $map['ctime'] = array(array('gt',$search_begin_time),array('lt',$search_end_time));
+        $data_order = $db_order
+            ->where($map)
+            ->select();
+        $month_day_num = cal_days_in_month(CAL_GREGORIAN, $search_month, $search_year);
+        if($data_order){
+            // 声明 前端需要的 线形图 数据
+            $float_data = '';
+            $amount_data = '';
+            for($i=1;$i<($month_day_num+1);$i++){
+                $day_start = mktime(0,0,0,$search_month,$i,$search_year);
+                $day_end = mktime(23,59,59,$search_month,$i,$search_year);
+                $day_amount[$i] = 0; // 每天收入的押金
+                for($j=0;$j<count($data_order);$j++){
+                    if($data_order[$j]['ctime'] >= $day_start && $data_order[$j]['ctime'] <= $day_end){
+                        $day_amount[$i] = $day_amount[$i] + $data_order[$i]['payprice'];
+                        $day_data[$i][] = $data_order[$j];
+                    }
+                }
+                if(!isset($day_data[$i])){
+                    $day_data[$i] = array('code'=>1,'msg'=>"没有订单");
+
+                    $float_data .= "[gd(".$search_year.",".$search_month.",".$i."),0],"; //  [gd(2012,1,31),25]
+                    $amount_data .= "[gd(".$search_year.",".$search_month.",".$i."),0],"; // 金额数据
+
+                }else{
+                    $float_data .= "[gd(".$search_year.",".$search_month.",".$i."),".count($day_data[$i])."],";
+                    /* 金额数据 start */
+                    $amount_data .= "[gd(".$search_year.",".$search_month.",".$i."),".$day_amount[$i]."],";
+                    /* 金额数据 end */
+
+                }
+            }
+        }else{
+            echo '没有订单数据';
+        }
+        $float_data = "[".rtrim($float_data,",")."]";
+        $amount_data = "[".rtrim($amount_data,",")."]";
+
+        $this->assign("float_data",$float_data);
+        $this->assign("amount_data",$amount_data);
+        $this->display();
         /* 统计完成订单后的页面展示 end  */
 
         /* 算出所有的订单按月分开 然后再通过级别的不同来分成 end */
