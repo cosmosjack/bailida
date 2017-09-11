@@ -123,7 +123,7 @@ class StatistiController extends BaseController
         $insert_order_calc['calc_cost'] = $cost_price;
         $insert_order_calc['calc_profits'] = $real_price-$cost_price;
         $insert_order_calc['calc_num'] = $total_num;
-//        p($insert_order_calc);
+        p($insert_order_calc);
         $row_calc = $db_order_calc->add($insert_order_calc);
 //        p($row_calc);
 
@@ -161,7 +161,7 @@ class StatistiController extends BaseController
 
         doForDetail:
         echo '已经有订单统计了,开始按日期铺数据';
-//        die;
+        die;
 
         /* 统计完成订单后的页面展示 start  */
 
