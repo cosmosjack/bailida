@@ -108,7 +108,7 @@ class StatistiController extends BaseController
             "ispay"=>1,
             "vipid"=>array("in",$agent_arr),
             "ctime"=>array("between","$begin_time,$end_time"),
-            "adminpass"=>0
+            "admin_ispass"=>0
         );
         /* 检查是否有 没有通过管理员审核的订单 有的话直接跳到审核界面 start */
             $result_check = $db_order->where($where_check)->find();
@@ -122,7 +122,8 @@ class StatistiController extends BaseController
         $where = array(
             "ispay"=>1,
             "vipid"=>array("in",$agent_arr),
-            "ctime"=>array("between","$begin_time,$end_time")
+            "ctime"=>array("between","$begin_time,$end_time"),
+            "admin_ispass"=>1
         );
         $total_price = $db_order // 押金
             ->where($where)
