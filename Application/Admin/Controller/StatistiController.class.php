@@ -243,10 +243,12 @@ class StatistiController extends BaseController
 
         /* 算出所有的订单按月分开 然后再通过级别的不同来分成 end */
 
-
     }
     /* 统计自己和自己下线的订单 每月15号统计上个月的 没有支付的将自动销毁 没有确认的也将自动确认 end */
 
+// 获取其中一天的订单详情
+public function get_one_day(){
 
+}
 
 }

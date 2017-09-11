@@ -191,7 +191,7 @@
                                             <php> echo ($real_order_price - $cost_order_price)*$point; </php>元
                                         </td>
                                         <td>
-                                            <button  value=""  type="button" class="btn btn-primary order_button" data-toggle="modal" data-target="#myModal2">
+                                            <button  value="" onclick="showOrder('{$year}-{$month}-{$key}','{$Think.get.agent_id}');"  type="button" class="btn btn-primary order_button" data-toggle="modal" data-target="#myModal2">
                                                 订单详情
                                             </button>
                                         </td>
@@ -503,6 +503,12 @@
             }
         })
     });
+    // 获取一天数据的详情
+    function showOrder(date,agent_id){
+        console.log(date);
+
+    }
+
     function getOneDayData(name,value,store_id){
         console.log(value);
         var AgentUrl = "http://"+window.location.host+"/agent";
