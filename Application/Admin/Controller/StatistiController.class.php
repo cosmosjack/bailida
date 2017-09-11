@@ -33,6 +33,8 @@ class StatistiController extends BaseController
         if(!isset($_GET['agent_id']) && empty($_GET['agent_id'])){
             header('location:'.getenv("HTTP_REFERER"));
         }
+        $db_order = M('shop_order');
+
         // 如果用户支付了 定金且 已经确认了订单 但又 不要了 则需要修改订单状态为 取消状态
 
         /* 统计自己的下线 start  */
@@ -106,7 +108,6 @@ class StatistiController extends BaseController
         );
 
 
-        $db_order = M('shop_order');
         $total_price = $db_order // 押金
             ->where($where)
             ->sum('totalprice');
@@ -183,7 +184,7 @@ class StatistiController extends BaseController
         p($search_end_time);
         $map['ctime'] = array('between',"$search_begin_time,$search_end_time");
         $data_order = $db_order
-//            ->where($map)
+            ->where($map)
             ->select();
         $month_day_num = cal_days_in_month(CAL_GREGORIAN, $search_month, $search_year);
         if($data_order){
