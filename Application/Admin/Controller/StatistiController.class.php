@@ -124,7 +124,7 @@ class StatistiController extends BaseController
         $insert_order_calc['calc_cost'] = $cost_price;
         $insert_order_calc['calc_profits'] = $real_price-$cost_price;
         $insert_order_calc['calc_num'] = $total_num;
-        p($insert_order_calc);
+//        p($insert_order_calc);
         $row_calc = $db_order_calc->add($insert_order_calc);
 //        p($row_calc);
 
@@ -174,14 +174,14 @@ class StatistiController extends BaseController
         //总的订单数量
         $order_total_num = $db_order_calc->where(array('agent_id'=>$_GET['agent_id']))->sum("calc_num");
         //要查看的月份的订单数量
-        p($search_month);
-        p($search_year);
-        p($order_total_num);
+//        p($search_month);
+//        p($search_year);
+//        p($order_total_num);
         // 查出 需要展示的订单数据
         $search_begin_time = mktime(0,0,0,$search_month,1,$search_year);
         $search_end_time = mktime(23,59,59,$search_month,cal_days_in_month(CAL_GREGORIAN, $search_month, $search_year),$search_year);
-        p($search_begin_time);
-        p($search_end_time);
+//        p($search_begin_time);
+//        p($search_end_time);
         $map['ctime'] = array('between',"$search_begin_time,$search_end_time");
         $data_order = $db_order
             ->where($map)
@@ -191,7 +191,8 @@ class StatistiController extends BaseController
         if($data_order){
             // 声明 前端需要的 线形图 数据
             $float_data = '';
-            $amount_data = '';
+            $amount_data = ''; //订单定金
+            $order_real_price = '';
             for($i=1;$i<($month_day_num+1);$i++){
                 $day_start = mktime(0,0,0,$search_month,$i,$search_year);
                 $day_end = mktime(23,59,59,$search_month,$i,$search_year);
@@ -221,8 +222,10 @@ class StatistiController extends BaseController
         }
         $float_data = "[".rtrim($float_data,",")."]";
         $amount_data = "[".rtrim($amount_data,",")."]";
-        p($float_data);
-        p($amount_data);
+//        p($float_data);
+//        p($amount_data);
+        p($day_data);
+        $this->assign("point",$agent_point);
         $this->assign("year",$search_year);
         $this->assign("month",$search_month);
         $this->assign("day_data",$day_data);
