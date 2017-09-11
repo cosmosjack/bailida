@@ -68,16 +68,28 @@ class StatistiController extends BaseController
         if($already_calc_date){
             $temp_date = explode("-",$already_calc_date);
             $already_calc_m = $temp_date[1];
+            $already_calc_y = $temp_date[0];
         }
 
 //        die;
         $begin_time = $already_calc_time;
+
         if($now_d > 15){
             //截止日期大于等于上个月 月末时 不用统计 否则 就统计到上月月末结束
+
+            // 如果上次 统计已经到了 上个月 则 不用统计了
+            if($already_calc_y >= date('Y',time()) && $already_calc_m >($now_m-1)){
+                // 不用做插入了
+                goto doForDetail;
+            }
             $end_time = mktime(23,59,59,($now_m-1),cal_days_in_month(CAL_GREGORIAN, $now_m-2, date("Y")),date("Y"));
             p($end_time);
         }else{
             // 截止日期到 上上个月 同上
+            if($already_calc_y >= date('Y',time()) && $already_calc_m >($now_m-2)){
+                // 不用做插入了
+                goto doForDetail;
+            }
             $end_time = mktime(23,59,59,($now_m-2),cal_days_in_month(CAL_GREGORIAN, $now_m-2, date("Y")),date("Y"));
             p($end_time);
         }
@@ -108,6 +120,10 @@ class StatistiController extends BaseController
         p($insert_order_calc);
         $row_calc = $db_order_calc->add($insert_order_calc);
         p($row_calc);
+//        die;
+
+        doForDetail:
+        echo '已经有啦订单统计了,开始按日期铺数据';
         die;
         /* 先做总的订单提成统计 start  */
         $total_order = count($data_order);
