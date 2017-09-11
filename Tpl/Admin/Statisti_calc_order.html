@@ -157,33 +157,50 @@
                             <php>
                                 foreach($day_data as $key=>$val){
                             </php>
-                            <tr>
-                                <td>{$year}年{$month}月{$key}日</td>
-                                <td><php>echo count($val);</php>笔订单</td>
-                                <td>
-                                    <php>
-                                        $amount_order_price = 0;
-                                        $real_order_price = 0;
-                                        for($l=0;$l<count($val);$l++){
-                                            $amount_order_price += $val[$l]['payprice'];
-                                            $real_order_price += $val[$l]['order_real_price'];
-                                            $cost_order_price += $val[$l]['order_cost_price'];
-                                        }
-                                        echo $amount_order_price;
-                                    </php>元
-                                </td>
-                                <td>{$real_order_price}元</td>
-                                <td>{$cost_order_price}元</td>
-                                <td>{($real_order_price - $cost_order_price)*$point}元</td>
-                                <td>
-                                    <button  value=""  type="button" class="btn btn-primary order_button" data-toggle="modal" data-target="#myModal2">
-                                        订单详情
-                                    </button>
-                                </td>
-                            </tr>
+                                <php>
+                                    if(isset($val['code'])){
+                                </php>
+                                    <tr>
+                                        <td>{$year}年{$month}月{$key}日</td>
+                                        <td colspan="5" align="center">
+                                            这天没有订单
+                                        </td>
+                                    </tr>
+                                <php>
+                                    }else{
+                                </php>
+                                    <tr>
+                                        <td>{$year}年{$month}月{$key}日</td>
+                                        <td><php>echo count($val);</php>笔订单</td>
+                                        <td>
+                                            <php>
+                                                $amount_order_price = 0;
+                                                $real_order_price = 0;
+                                                for($l=0;$l<count($val);$l++){
+                                                $amount_order_price += $val[$l]['payprice'];
+                                                $real_order_price += $val[$l]['order_real_price'];
+                                                $cost_order_price += $val[$l]['order_cost_price'];
+                                                }
+                                                echo $amount_order_price;
+                                            </php>元
+                                        </td>
+                                        <td>{$real_order_price}元</td>
+                                        <td>{$cost_order_price}元</td>
+                                        <php> ($real_order_price - $cost_order_price)*$point </php>元
+                                        <td>
+                                            <button  value=""  type="button" class="btn btn-primary order_button" data-toggle="modal" data-target="#myModal2">
+                                                订单详情
+                                            </button>
+                                        </td>
+                                    </tr>
+
+                                <php>
+                                    }
+                                </php>
+
+
                             <php>
-                                unset($GLOBALS['val']);
-                                unset($val);}
+                               }
                             </php>
                         <!--<tr>
                             <td>2017年8月8日</td>
