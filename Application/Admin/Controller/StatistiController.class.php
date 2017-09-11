@@ -80,6 +80,7 @@ class StatistiController extends BaseController
             // 如果上次 统计已经到了 上个月 则 不用统计了
             if($already_calc_y >= date('Y',time()) && $already_calc_m >($now_m-1)){
                 // 不用做插入了
+                echo '到了1';
                 goto doForDetail;
             }
             $end_time = mktime(23,59,59,($now_m-1),cal_days_in_month(CAL_GREGORIAN, $now_m-2, date("Y")),date("Y"));
@@ -88,6 +89,7 @@ class StatistiController extends BaseController
             // 截止日期到 上上个月 同上
             if($already_calc_y >= date('Y',time()) && $already_calc_m >($now_m-2)){
                 // 不用做插入了
+                echo '到了2';
                 goto doForDetail;
             }
             $end_time = mktime(23,59,59,($now_m-2),cal_days_in_month(CAL_GREGORIAN, $now_m-2, date("Y")),date("Y"));
