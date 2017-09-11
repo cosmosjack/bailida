@@ -106,6 +106,8 @@ class StatistiController extends BaseController
         $insert_order_calc['calc_profits'] = $real_price-$cost_price;
         $insert_order_calc['calc_num'] = $total_num;
         p($insert_order_calc);
+        $row_calc = $db_order_calc->insert($insert_order_calc);
+        p($row_calc);
         die;
         /* 先做总的订单提成统计 start  */
         $total_order = count($data_order);
