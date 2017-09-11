@@ -49,6 +49,8 @@ class StatistiController extends BaseController
         P($agent_arr);
         /* 统计自己的下线 end  */
 
+
+
         /* 算出所有的订单按月分开 然后再通过级别的不同来分成 start */
         $now_d = date("d",time());
         $now_m = date("m",time());
@@ -101,13 +103,27 @@ class StatistiController extends BaseController
             $end_time = mktime(23,59,59,($now_m-2),cal_days_in_month(CAL_GREGORIAN, $now_m-2, date("Y")),date("Y"));
 //            p($end_time);
         }
+
+        $where_check = array(
+            "ispay"=>1,
+            "vipid"=>array("in",$agent_arr),
+            "ctime"=>array("between","$begin_time,$end_time"),
+            "adminpass"=>0
+        );
+        /* 检查是否有 没有通过管理员审核的订单 有的话直接跳到审核界面 start */
+            $result_check = $db_order->where($where_check)->find();
+        if($result_check){
+            $this->error('存在没有审核的订单','/Order/no_pass_order',2);
+            exit;
+        }
+        /* 检查是否有 没有通过管理员审核的订单 end */
+
         // 还需要加入 开始时间和结束时间
         $where = array(
             "ispay"=>1,
-            "vipid"=>array("in",$agent_arr)
+            "vipid"=>array("in",$agent_arr),
+            "ctime"=>array("between","$begin_time,$end_time")
         );
-
-
         $total_price = $db_order // 押金
             ->where($where)
             ->sum('totalprice');
@@ -183,6 +199,8 @@ class StatistiController extends BaseController
 //        p($search_begin_time);
 //        p($search_end_time);
         $map['ctime'] = array('between',"$search_begin_time,$search_end_time");
+        $map['vipid'] = array("in",$agent_arr);
+
         $data_order = $db_order
             ->where($map)
             ->select();
@@ -248,7 +266,33 @@ class StatistiController extends BaseController
 
 // 获取其中一天的订单详情
 public function get_one_day(){
+    $db_order = M('shop_order');
+    $date = explode("-",$_GET['date']);
+    $begin_time = mktime(0,0,0,$date[1],$date[2],$date[0]);
+    $end_time = mktime(23,59,59,$date[1],$date[2],$date[0]);
+    /* 统计自己的下线 start  */
+    $db_vip = M("vip");
+    $data_junior = $db_vip->where(array("pid"=>$_GET['agent_id']))->select();
+//        p($data_junior); // 下线列表
+    $agent_arr = array();
+    for($i=0;$i<count($data_junior);$i++){
+        $agent_arr[$i] = $data_junior[$i]['id'];
+    }
+    array_push($agent_arr,$_GET['agent_id']);
+    P($agent_arr);
+    /* 统计自己的下线 end  */
 
+    $map['ctime'] = array('between',"$begin_time,$end_time");
+    $map['vipid'] = array("in",$agent_arr);
+    $data_order = $db_order
+        ->where($map)
+        ->select();
+    if($data_order){
+        $this->ajaxReturn(array('control'=>'get_one_day','code'=>200,'msg'=>'成功','data'=>$data_order),"JSON");
+    }else{
+        $this->ajaxReturn(array('control'=>'get_one_day','code'=>0,'msg'=>'没有订单数据','data'=>$_GET),"JSON");
+
+    }
 }
 
 }
