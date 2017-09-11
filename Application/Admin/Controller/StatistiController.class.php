@@ -90,8 +90,8 @@ class StatistiController extends BaseController
 
         $db_order = M('shop_order');
         $data_order = $db_order
-            ->field("sum('totalprice') as 'total',sum('order_real_price') as 'real_price',sum('order_cost_price) as 'cost_price'")
-            ->find();
+            ->where($where)
+            ->sum('totalprice');
         p($data_order);
         die;
         /* 先做总的订单提成统计 start  */
