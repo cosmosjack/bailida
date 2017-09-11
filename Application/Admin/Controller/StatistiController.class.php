@@ -186,7 +186,7 @@ class StatistiController extends BaseController
         $data_order = $db_order
             ->where($map)
             ->select();
-        p($data_order);
+//        p($data_order);
         $month_day_num = cal_days_in_month(CAL_GREGORIAN, $search_month, $search_year);
         if($data_order){
             // 声明 前端需要的 线形图 数据
@@ -198,7 +198,7 @@ class StatistiController extends BaseController
                 $day_amount[$i] = 0; // 每天收入的押金
                 for($j=0;$j<count($data_order);$j++){
                     if($data_order[$j]['ctime'] >= $day_start && $data_order[$j]['ctime'] <= $day_end){
-                        $day_amount[$i] = $day_amount[$i] + $data_order[$i]['payprice'];
+                        $day_amount[$i] = $day_amount[$i] + $data_order[$j]['payprice'];
                         $day_data[$i][] = $data_order[$j];
                     }
                 }
