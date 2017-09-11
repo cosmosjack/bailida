@@ -123,11 +123,43 @@ class StatistiController extends BaseController
         p($insert_order_calc);
         $row_calc = $db_order_calc->add($insert_order_calc);
         p($row_calc);
+
+        /* 成功根据合作商的级别及提成点 计算提成 并加钱 并记录日志 start  */
+        $db_agent_level = M("agent_level");
+        $data_agent_level = $db_agent_level->where(array('vip_id'=>$_GET['agent_id']))->find();
+        $agent_point = $data_agent_level['point'] ? $data_agent_level['point'] : "0.02"; // 这里 需要换成 整站参数  C('default_agent_point');
+        $agent_get_money = $insert_order_calc['calc_profits'] * $agent_point;
+
+        $result_money = $db_vip->where(array("id"=>$_GET['agent_id']))->setInc("money",$agent_get_money);
+        if($result_money){
+            echo '记录日志';
+            $data_agent_info = $db_vip->where(array('id'=>$_GET['agent_id']))->find();
+            /* 整理日志数据 start  */
+            $insert_vip_log['ip'] = $_SERVER['REMOTE_ADDR'];
+            $insert_vip_log['vipid'] = $data_agent_info['id'];
+            $insert_vip_log['openid'] = $data_agent_info['openid'];
+            $insert_vip_log['nickname'] = $data_agent_info['nickname'];
+            $insert_vip_log['mobile'] = $data_agent_info['mobile'];
+            $insert_vip_log['money'] = $data_agent_info['money'];
+            $insert_vip_log['score'] = 0;
+            $insert_vip_log['exp'] = 0;
+            $insert_vip_log['status'] = 4;
+            $insert_vip_log['ctime'] = time();
+            $insert_vip_log['event'] = "订单提成";
+            /* 整理日志数据 end  */
+            $db_vip_log = M('vip_log');
+            @$result_log = $db_vip_log->add($insert_vip_log);
+        }else{
+            echo '删除统计记录'.$row_calc;
+            @$db_order_calc->where($row_calc)->delete();
+        }
+        /* 成功根据合作商的级别及提成点 计算提成 并加钱 并记录日志 end  */
 //        die;
 
         doForDetail:
-        echo '已经有啦订单统计了,开始按日期铺数据';
+        echo '已经有订单统计了,开始按日期铺数据';
         die;
+
         /* 先做总的订单提成统计 start  */
         $total_order = count($data_order);
         if($total_order<=0){
