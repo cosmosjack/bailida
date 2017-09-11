@@ -89,10 +89,23 @@ class StatistiController extends BaseController
 
 
         $db_order = M('shop_order');
-        $data_order = $db_order
+        $total_price = $db_order // 押金
             ->where($where)
             ->sum('totalprice');
-        p($data_order);
+
+        $real_price = $db_order->where($where)->sum('order_real_price');
+        $cost_price = $db_order->where($where)->sum('order_cost_price');
+        $total_num = $db_order->where($where)->count('id');
+        // 插入数据
+        $insert_order_calc['calc_time'] = $begin_time."|".$end_time;
+        $insert_order_calc['add_time'] = time();
+        $insert_order_calc['calc_amount'] = $real_price;
+        $insert_order_calc['calc_date'] = date("Y-m",$end_time);
+        $insert_order_calc['agent_id'] = $_GET['agent_id'];
+        $insert_order_calc['calc_cost'] = $cost_price;
+        $insert_order_calc['calc_profits'] = $real_price-$cost_price;
+        $insert_order_calc['calc_num'] = $total_num;
+        p($insert_order_calc);
         die;
         /* 先做总的订单提成统计 start  */
         $total_order = count($data_order);
