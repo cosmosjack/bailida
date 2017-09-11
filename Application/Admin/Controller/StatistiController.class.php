@@ -153,7 +153,7 @@ class StatistiController extends BaseController
             $db_vip_log = M('vip_log');
             @$result_log = $db_vip_log->add($insert_vip_log);
         }else{
-//            echo '删除统计记录'.$row_calc;
+//            echo '删除统计记录'.$row_calc;$db_order_calc
             @$db_order_calc->where($row_calc)->delete();
         }
         /* 成功根据合作商的级别及提成点 计算提成 并加钱 并记录日志 end  */
@@ -179,7 +179,9 @@ class StatistiController extends BaseController
         // 查出 需要展示的订单数据
         $search_begin_time = mktime(0,0,0,$search_month,1,$search_year);
         $search_end_time = mktime(23,59,59,$search_month,cal_days_in_month(CAL_GREGORIAN, $search_month, $search_year),$search_year);
-        $map['ctime'] = array(array('gt',$search_begin_time),array('lt',$search_end_time));
+        p($search_begin_time);
+        p($search_end_time);
+        $map['ctime'] = array('between',"$search_begin_time,$search_end_time");
         $data_order = $db_order
             ->where($map)
             ->select();
