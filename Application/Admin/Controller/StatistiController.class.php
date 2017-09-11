@@ -224,7 +224,8 @@ class StatistiController extends BaseController
         $amount_data = "[".rtrim($amount_data,",")."]";
 //        p($float_data);
 //        p($amount_data);
-        p($day_data);
+//        p($day_data);
+        p($agent_point);
         $this->assign("point",$agent_point);
         $this->assign("year",$search_year);
         $this->assign("month",$search_month);
