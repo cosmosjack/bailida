@@ -58,8 +58,8 @@ class StatistiController extends BaseController
             $already_calc_time = '0';
         }
 
-        p($already_calc_time);
-        p($already_calc_date);
+//        p($already_calc_time);
+//        p($already_calc_date);
         if($already_calc_time){
             $temp_time = explode("|",$already_calc_time);
             $already_calc_time = $temp_time[1];
@@ -81,20 +81,20 @@ class StatistiController extends BaseController
             // 如果上次 统计已经到了 上个月 则 不用统计了
             if($already_calc_y >= $now_y && $already_calc_m >=($now_m-1)){
                 // 不用做插入了
-                echo '到了1';
+//                echo '到了1';
                 goto doForDetail;
             }
             $end_time = mktime(23,59,59,($now_m-1),cal_days_in_month(CAL_GREGORIAN, $now_m-2, date("Y")),date("Y"));
-            p($end_time);
+//            p($end_time);
         }else{
             // 截止日期到 上上个月 同上
             if($already_calc_y >= $now_y && $already_calc_m >=($now_m-2)){
                 // 不用做插入了
-                echo '到了2';
+//                echo '到了2';
                 goto doForDetail;
             }
             $end_time = mktime(23,59,59,($now_m-2),cal_days_in_month(CAL_GREGORIAN, $now_m-2, date("Y")),date("Y"));
-            p($end_time);
+//            p($end_time);
         }
         // 还需要加入 开始时间和结束时间
         $where = array(
@@ -120,9 +120,9 @@ class StatistiController extends BaseController
         $insert_order_calc['calc_cost'] = $cost_price;
         $insert_order_calc['calc_profits'] = $real_price-$cost_price;
         $insert_order_calc['calc_num'] = $total_num;
-        p($insert_order_calc);
+//        p($insert_order_calc);
         $row_calc = $db_order_calc->add($insert_order_calc);
-        p($row_calc);
+//        p($row_calc);
 
         /* 成功根据合作商的级别及提成点 计算提成 并加钱 并记录日志 start  */
         $db_agent_level = M("agent_level");
@@ -150,7 +150,7 @@ class StatistiController extends BaseController
             $db_vip_log = M('vip_log');
             @$result_log = $db_vip_log->add($insert_vip_log);
         }else{
-            echo '删除统计记录'.$row_calc;
+//            echo '删除统计记录'.$row_calc;
             @$db_order_calc->where($row_calc)->delete();
         }
         /* 成功根据合作商的级别及提成点 计算提成 并加钱 并记录日志 end  */
@@ -158,17 +158,22 @@ class StatistiController extends BaseController
 
         doForDetail:
         echo '已经有订单统计了,开始按日期铺数据';
-        die;
+//        die;
 
-        /* 先做总的订单提成统计 start  */
-        $total_order = count($data_order);
-        if($total_order<=0){
-            echo '暂无需要统计的订单';
-        }
-        for($i=0;$i<$total_order;$i++){
+        /* 统计完成订单后的页面展示 start  */
 
-        }
-        /* 先做总的订单提成统计 end  */
+        /* 算出要展示的开始和结束时间 start */
+        $search_month = $_GET['month'] ? intval($_GET['month']) : (intval(date("d",time()))>15) ? intval(date("m"),time())-1 : intval(date("m",time()))-2;
+        $search_year = $_GET['year'] ? intval($_GET['year']) : intval(date("Y",time()));
+        /* 算出要展示的开始和结束时间 end */
+
+        //总的订单数量
+        $order_total_num = $db_order_calc->where(array('agent_id'=>$_GET['agent_id']))->sum("calc_num");
+        //要查看的月份的订单数量
+        p($search_month);
+        p($search_year);
+        p($order_total_num);
+        /* 统计完成订单后的页面展示 end  */
 
         /* 算出所有的订单按月分开 然后再通过级别的不同来分成 end */
 
