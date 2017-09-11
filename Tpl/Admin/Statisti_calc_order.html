@@ -186,7 +186,9 @@
                                         </td>
                                         <td>{$real_order_price}元</td>
                                         <td>{$cost_order_price}元</td>
-                                        <php> ($real_order_price - $cost_order_price)*$point </php>元
+                                        <td>
+                                            <php> echo ($real_order_price - $cost_order_price)*$point </php>元
+                                        </td>
                                         <td>
                                             <button  value=""  type="button" class="btn btn-primary order_button" data-toggle="modal" data-target="#myModal2">
                                                 订单详情
