@@ -152,26 +152,36 @@
                         </thead>
 
                         <tbody>
+
+                            <php>
+                                foreach($day_data as $key=>$val){
+                            </php>
+                            <tr>
+                                <td>2017年8月8日</td>
+                                <td>6笔订单</td>
+                                <td>
+                                    30元
+                                </td>
+                                <td>60元</td>
+                                <td>50元</td>
+                                <td>
+                                    <button  value=""  type="button" class="btn btn-primary order_button" data-toggle="modal" data-target="#myModal2">
+                                        订单详情
+                                    </button>
+                                </td>
+                            </tr>
+                            <php>
+                                }
+                            </php>
                         <!--<tr>
                             <td>2017年8月8日</td>
                             <td colspan="5" align="center">
                                 这天没有订单
                             </td>
                         </tr>-->
-                        <tr>
-                            <td>2017年8月8日</td>
-                            <td>6笔订单</td>
-                            <td>
-                                30元
-                            </td>
-                            <td>60元</td>
-                            <td>50元</td>
-                            <td>
-                                <button  value=""  type="button" class="btn btn-primary order_button" data-toggle="modal" data-target="#myModal2">
-                                订单详情
-                                </button>
-                            </td>
-                        </tr>
+
+
+
                         </tbody>
                         <tfoot>
                         <tr>

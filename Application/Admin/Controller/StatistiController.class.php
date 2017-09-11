@@ -223,6 +223,7 @@ class StatistiController extends BaseController
         $amount_data = "[".rtrim($amount_data,",")."]";
         p($float_data);
         p($amount_data);
+        $this->assign("day_data",$day_data);
         $this->assign("float_data",$float_data);
         $this->assign("amount_data",$amount_data);
         $this->display();
