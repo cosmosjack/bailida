@@ -81,14 +81,21 @@ class StatistiController extends BaseController
             $end_time = mktime(23,59,59,($now_m-2),cal_days_in_month(CAL_GREGORIAN, $now_m-2, date("Y")),date("Y"));
             p($end_time);
         }
+        // 还需要加入 开始时间和结束时间
         $where = array(
             "ispay"=>1,
             "vipid"=>array("in",$agent_arr)
         );
-        $db_order = M('shop_order');
-        $data_order = $db_order->where($where)->select();
-        p($data_order);
 
+
+        $db_order = M('shop_order');
+        $data_order = $db_order
+            ->field("sum('totalprice') as total,sum('order_real_price') as real_price,sum('order_cost_price) as cost_price")
+            ->where($where)
+            ->find();
+        p($data_order);
+        die;
+        /* 先做总的订单提成统计 start  */
         $total_order = count($data_order);
         if($total_order<=0){
             echo '暂无需要统计的订单';
@@ -96,6 +103,8 @@ class StatistiController extends BaseController
         for($i=0;$i<$total_order;$i++){
 
         }
+        /* 先做总的订单提成统计 end  */
+
         /* 算出所有的订单按月分开 然后再通过级别的不同来分成 end */
 
 
