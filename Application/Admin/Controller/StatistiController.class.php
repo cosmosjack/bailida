@@ -225,7 +225,13 @@ class StatistiController extends BaseController
 //        p($float_data);
 //        p($amount_data);
 //        p($day_data);
-        p($agent_point);
+        /* 合作商 提成点 start */
+        $db_agent_level = M("agent_level");
+        $data_agent_level = $db_agent_level->where(array('vip_id'=>$_GET['agent_id']))->find();
+        $agent_point = $data_agent_level['point'] ? $data_agent_level['point'] : "0.02"; // 这里 需要换成 整站参数  C('default_agent_point');
+        /* 合作商 提成点 end */
+
+//        p($agent_point);
         $this->assign("point",$agent_point);
         $this->assign("year",$search_year);
         $this->assign("month",$search_month);
