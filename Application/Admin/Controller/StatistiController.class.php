@@ -82,7 +82,7 @@ class StatistiController extends BaseController
             //截止日期大于等于上个月 月末时 不用统计 否则 就统计到上月月末结束
 
             // 如果上次 统计已经到了 上个月 则 不用统计了
-            if($already_calc_y >= $now_y && $already_calc_m >=($now_m-1)){
+            if($already_calc_y >= $now_y && intval($already_calc_m) >=($now_m-1)){
                 // 不用做插入了
 //                echo '到了1';
                 goto doForDetail;
@@ -91,7 +91,7 @@ class StatistiController extends BaseController
 //            p($end_time);
         }else{
             // 截止日期到 上上个月 同上
-            if($already_calc_y >= $now_y && $already_calc_m >=($now_m-2)){
+            if($already_calc_y >= $now_y && intval($already_calc_m) >=($now_m-2)){
                 // 不用做插入了
 //                echo '到了2';
                 goto doForDetail;
