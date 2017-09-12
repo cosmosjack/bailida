@@ -200,9 +200,9 @@ class StatistiController extends BaseController
         $order_total_num = $db_order_calc->where(array('agent_id'=>$_GET['agent_id']))->sum("calc_num"); // 已成交所有订单数量
         $this->assign("order_total_num",$order_total_num);
         //要查看的月份的订单数量
-        p($search_month);
-        p($search_year);
-        p($order_total_num);
+//        p($search_month);
+//        p($search_year);
+//        p($order_total_num);
         // 查出 需要展示的订单数据
         $search_begin_time = mktime(0,0,0,$search_month,1,$search_year);
         $search_end_time = mktime(23,59,59,$search_month,cal_days_in_month(CAL_GREGORIAN, $search_month, $search_year),$search_year);
