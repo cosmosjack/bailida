@@ -196,7 +196,8 @@ class StatistiController extends BaseController
         /* 算出要展示的开始和结束时间 end */
 
         //总的订单数量
-        $order_total_num = $db_order_calc->where(array('agent_id'=>$_GET['agent_id']))->sum("calc_num");
+        $order_total_num = $db_order_calc->where(array('agent_id'=>$_GET['agent_id']))->sum("calc_num"); // 已成交所有订单数量
+        $this->assign("order_total_num",$order_total_num);
         //要查看的月份的订单数量
 //        p($search_month);
 //        p($search_year);
@@ -213,6 +214,10 @@ class StatistiController extends BaseController
             ->where($map)
             ->select();
 //        p($data_order);
+        $month_order_num = count($data_order);// 当月订单数量
+        $month_order_price = $db_order->where($map)->sum("order_real_price");
+        $this->assign("month_order_num",$month_order_num);
+        $this->assign("month_order_price",$month_order_price);
         $month_day_num = cal_days_in_month(CAL_GREGORIAN, $search_month, $search_year);
         if($data_order){
             // 声明 前端需要的 线形图 数据
