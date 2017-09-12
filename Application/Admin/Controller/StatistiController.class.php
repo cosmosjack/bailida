@@ -243,7 +243,7 @@ class StatistiController extends BaseController
         $amount_data = "[".rtrim($amount_data,",")."]";
 //        p($float_data);
 //        p($amount_data);
-        p($day_data);
+//        p($day_data);
         /* 合作商 提成点 start */
         $db_agent_level = M("agent_level");
         $data_agent_level = $db_agent_level->where(array('vip_id'=>$_GET['agent_id']))->find();
