@@ -515,6 +515,7 @@
             success:function(msg){
                 console.log(msg);
                 $(".order_detail_tr").remove();
+                $("#order_date").text(date)
                 if(msg.code == 200){
 //                    alert("有数据");
                     for(var i=0;i<msg.data.length;i++){
