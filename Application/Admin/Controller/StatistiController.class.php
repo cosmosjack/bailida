@@ -280,7 +280,7 @@ public function get_one_day(){
         $agent_arr[$i] = $data_junior[$i]['id'];
     }
     array_push($agent_arr,$_GET['agent_id']);
-    P($agent_arr);
+//    P($agent_arr);
     /* 统计自己的下线 end  */
 
     $map['ctime'] = array('between',"$begin_time,$end_time");
