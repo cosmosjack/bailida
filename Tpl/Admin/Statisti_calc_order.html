@@ -520,11 +520,11 @@
 //                    alert("有数据");
                     for(var i=0;i<msg.data.length;i++){
                         if(msg.data[i]['ispay'] == 1){
-                            var pay_state = "已支付";
+                            var pay_state = '<span class=\"btn btn-info\">已付款</span>'; // 深蓝色
                         }else{
-                            var pay_state = "未支付";
+                            var pay_state = '<span class=\"btn btn-warning\">未付款</span>';     //黄色
                         }
-                        $("#order_detail_body2").after("<tr class='order_detail_tr'><td>"+msg.data[i]['oid']+i+"</td><td>"+msg.data[i]['vipname']+"</td><td>"+msg.data[i]['vipmobile']+"</td><td>"+msg.data[i]['payprice']+"</td><td>"+msg.data[i]['order_real_price']+"</td><td>"+pay_state+"</td></tr>");
+                        $("#order_detail_body2").after("<tr class='order_detail_tr'><td>"+msg.data[i]['id']+i+"</td><td>"+msg.data[i]['vipname']+"</td><td>"+msg.data[i]['vipmobile']+"</td><td>"+msg.data[i]['payprice']+"</td><td>"+msg.data[i]['order_real_price']+"</td><td>"+pay_state+"</td></tr>");
                     }
                 }else{
                     alert(msg.msg);
