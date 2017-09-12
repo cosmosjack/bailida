@@ -214,11 +214,9 @@ abstract class Driver {
             }
         }
         $this->bind =   array();
-        @$result =   $this->PDOStatement->execute();
-        p($result);
+        $result =   $this->PDOStatement->execute();
         $this->debug(false);
         if ( false === $result) {
-
             $this->error();
             return false;
         } else {
@@ -337,12 +335,10 @@ abstract class Driver {
         }
         // 记录错误日志
         trace($this->error,'','ERR');
-        if($this->config['debug']) {// 开启数据库调试模式 不要调式模式
-//            E($this->error);
-            return false;
+        if($this->config['debug']) {// 开启数据库调试模式
+            E($this->error);
         }else{
-            return false;
-//            return $this->error;
+            return $this->error;
         }
     }
 
