@@ -281,7 +281,9 @@
                             <tr id="order_detail_body2">
                                 <td>订单号</td>
                                 <td>购买者</td>
-                                <td>订单金额</td>
+                                <td>电话</td>
+                                <td>押金</td>
+                                <td>总金额</td>
                                 <td>是否付款</td>
                             </tr>
                             </tbody>
@@ -513,7 +515,20 @@
             data:{"agent_id":agent_id,"date":date},
             success:function(msg){
                 console.log(msg);
-//                $("#order_detail_body2")
+                $(".order_detail_tr").remove();
+                if(msg.code == 200){
+//                    alert("有数据");
+                    for(var i=0;i<msg.data.length;i++){
+                        if(msg.data[i]['ispay'] == 1){
+                            var pay_state = "已支付";
+                        }else{
+                            var pay_state = "未支付";
+                        }
+                        $("#order_detail_body2").after("<tr class='order_detail_tr'><td>"+msg.data[i]['oid']+i+"</td><td>"+msg.data[i]['vipname']+"</td><td>"+msg.data[i]['vipmobile']+"</td><td>"+msg.data[i]['payprice']+"</td><td>"+msg.data[i]['order_real_price']+"</td><td>"+pay_state+"</td></tr>");
+                    }
+                }else{
+                    alert(msg.msg);
+                }
 
             },
             error:function(){
