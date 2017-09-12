@@ -191,7 +191,8 @@ class StatistiController extends BaseController
         /* 统计完成订单后的页面展示 start  */
 
         /* 算出要展示的开始和结束时间 start */
-        $search_month = $_GET['month'] ? intval($_GET['month']) : (intval(date("d",time()))>15) ? intval(date("m"),time())-1 : intval(date("m",time()))-2;
+        $default_month = (intval(date("d",time()))>15) ? intval(date("m"),time())-1 : intval(date("m",time()))-2;
+        $search_month = $_GET['month'] ? intval($_GET['month']) : $default_month;
         $search_year = $_GET['year'] ? intval($_GET['year']) : intval(date("Y",time()));
         /* 算出要展示的开始和结束时间 end */
 
