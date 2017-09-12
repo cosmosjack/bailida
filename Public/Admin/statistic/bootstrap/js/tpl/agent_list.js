@@ -38,7 +38,7 @@ $(document).ready(function(){
                     }},
                     { data: 'mobile' },//电话
                     { data: null,
-                        "defaultContent":"<a target='_self'  onclick='agent_detail(this)'><i class='fa fa-edit'></i>查看详情</a>",
+                        "defaultContent":"<a target='_self' href='http://www.baidu.com'  <!--onclick='agent_detail(this)'--> ><i class='fa fa-edit'></i>查看详情</a>",
                         render:function(){}
                     },//所属经理
                 ]
