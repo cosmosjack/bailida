@@ -143,7 +143,8 @@ class StatistiController extends BaseController
         $insert_order_calc['calc_cost'] = $cost_price;
         $insert_order_calc['calc_profits'] = $real_price-$cost_price;
         $insert_order_calc['calc_num'] = $total_num;
-//        p($insert_order_calc);
+        p($insert_order_calc);
+        die;
         $row_calc = $db_order_calc->add($insert_order_calc);
 //        p($row_calc);
         if($row_calc){
