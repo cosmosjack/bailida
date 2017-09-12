@@ -506,6 +506,19 @@
     // 获取一天数据的详情
     function showOrder(date,agent_id){
         console.log(date);
+        $.ajax({
+            url:AdminUrl+"Statisti/get_one_day/",
+            type:"GET",
+            data:{"agent_id":agent_id,"date":date},
+            success:function(msg){
+                console.log(msg);
+//                $("#order_detail_body2")
+
+            },
+            error:function(){
+                console.log("http error");
+            }
+        });
 
     }
 
