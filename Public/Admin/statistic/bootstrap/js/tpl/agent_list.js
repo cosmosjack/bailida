@@ -4,7 +4,7 @@
 function agent_detail(e){
     var table_data = $(".dataTables-example").DataTable();
     var data = table_data.row($(e).parent().parent('tr')).data(); // 获取列表
-    window.location.open(AdminUrl+"/statisti/calc_order/agent_id/"+data['id']);
+    window.open(AdminUrl+"/statisti/calc_order/agent_id/"+data['id']);
 }
 
 $(document).ready(function(){
