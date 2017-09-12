@@ -33,7 +33,7 @@
 
 
 </head>
-<h2 align="center">按月份的流水信息</h2>
+<h2 align="center">{$Think.get.year}年{$Think.get.month}月的订单统计信息</h2>
 <body class="gray-bg">
 <div class="wrapper wrapper-content">
     <!-- 条形图 start -->
@@ -72,7 +72,7 @@
                                 </li>
                                 <li>
                                     <h2 class="no-margins ">{$month_order_num}</h2>
-                                    <small>查询月份的订单总数</small>
+                                    <small>{$Think.get.month}月份的订单总数</small>
                                     <div class="stat-percent">{$month_order_num}% <i class="fa fa-level-down text-navy"></i>
                                     </div>
                                     <div class="progress progress-mini">
@@ -129,8 +129,7 @@
         <div class="col-sm-12">
             <div class="ibox float-e-margins">
                 <div class="ibox-title">
-                    <p  style="font-size: 16px;text-align: center;font-weight: bolder;width: 90%;float: left;">8月份详细数据每天的详细数据</p>
-
+                    <p  style="font-size: 16px;text-align: center;font-weight: bolder;width: 90%;float: left;">{$Think.get.month}月份详细数据-每天的详细数据</p>
                     <div class="ibox-tools" style="width: 8%;float: right;">
                         <a class="collapse-link">
                             <i class="fa fa-chevron-up pull-right"></i>
@@ -593,8 +592,7 @@
         var new_year = parseInt(date_arr[0]);
         var new_month = parseInt(date_arr[1]);
         console.log(new_month);
-
-        window.location.href = "<?php echo AGENT_SITE_URL.DS.'index.php?act=store&op=show&store_id='.$_GET['store_id'].'&month=';?>"+new_month+"&year="+new_year;
+        window.location.href = AdminUrl+"statisti/calc_order/agent_id/{$Think.get.agent_id}/year/"+new_year+"/month/"+new_month;
 
     }
 </script>

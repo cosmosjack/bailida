@@ -203,6 +203,8 @@ class StatistiController extends BaseController
 //        p($search_month);
 //        p($search_year);
 //        p($order_total_num);
+        $_GET['month'] = $search_month;
+        $_GET['year'] = $search_year;
         // 查出 需要展示的订单数据
         $search_begin_time = mktime(0,0,0,$search_month,1,$search_year);
         $search_end_time = mktime(23,59,59,$search_month,cal_days_in_month(CAL_GREGORIAN, $search_month, $search_year),$search_year);
