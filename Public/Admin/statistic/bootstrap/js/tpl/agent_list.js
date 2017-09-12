@@ -4,8 +4,7 @@
 function agent_detail(e){
     var table_data = $(".dataTables-example").DataTable();
     var data = table_data.row($(e).parent().parent('tr')).data(); // 获取列表
-
-    window.location.href = AdminUrl+"/statisti/calc_order/agent_id/"+data['id'];
+    location.href = AdminUrl+"/statisti/calc_order/agent_id/"+data['id'];
 }
 
 $(document).ready(function(){
@@ -39,7 +38,7 @@ $(document).ready(function(){
                     }},
                     { data: 'mobile' },//电话
                     { data: null,
-                        "defaultContent":"<a  onclick='agent_detail(this)'><i class='fa fa-edit'></i>查看详情</a>",
+                        "defaultContent":"<a target='_self'  onclick='agent_detail(this)'><i class='fa fa-edit'></i>查看详情</a>",
                         render:function(){}
                     },//所属经理
                 ]
