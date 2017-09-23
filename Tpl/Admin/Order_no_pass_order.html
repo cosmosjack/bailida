@@ -47,7 +47,7 @@
     function mod_order(){
         var order_id = $("input[name='order_id']").val();
         var real_price = $("#mod_order_body").val();
-        var cost_price = $("#order_cost_price");
+        var cost_price = $("#order_cost_price").val();
         console.log(order_id);
         console.log(real_price);
         $.ajax({
