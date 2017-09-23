@@ -47,6 +47,7 @@ class OrderController extends BaseController{
     public function order_mod(){
         $db_order = M('shop_order');
         $update['order_real_price'] = $_POST['real_price'];
+        $update['order_cost_price'] = $_POST['cost_price'];
         $result = $db_order->where(array("id"=>$_POST['order_id']))->save($update);
         if($result){
             $this->ajaxReturn(array('control'=>'order_mod','code'=>200,'msg'=>'修改成功'),"JSON");

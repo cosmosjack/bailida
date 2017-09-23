@@ -37,21 +37,23 @@
         $("#myModal_body").append(body_html);
     }
 //修改订单时 的展示
-    function mod_order_show(order_id,order_real_price){
+    function mod_order_show(order_id,order_real_price,order_cost_price){
         $("#mod_order_body").empty();
         $("#mod_order_body").val(order_real_price);
+        $("#order_cost_price").val(order_cost_price);
         $("input[name='order_id']").val(order_id);
     }
     //修改订单
     function mod_order(){
         var order_id = $("input[name='order_id']").val();
         var real_price = $("#mod_order_body").val();
+        var cost_price = $("#order_cost_price");
         console.log(order_id);
         console.log(real_price);
         $.ajax({
             url:AdminUrl+"/Order/order_mod",
             type:"POST",
-            data:{"order_id":order_id,"real_price":real_price},
+            data:{"order_id":order_id,"real_price":real_price,"cost_price":cost_price},
             success:function(msg){
                 console.log(msg);
                 if(msg.code == 200){
@@ -154,7 +156,7 @@
                                     <button onclick="order_review('{$vo.id}');" class="btn btn-danger">
                                         <i class="fa fa-key">审核通过</i>
                                     </button>
-                                    <button onclick="mod_order_show('{$vo.id}','{$vo.order_real_price}')" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal4">
+                                    <button onclick="mod_order_show('{$vo.id}','{$vo.order_real_price}','{$vo.order_cost_price}')" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal4">
                                         修改
                                     </button>
                                 </td>
@@ -212,7 +214,8 @@
                 <small class="text-danger">适当改变订单销售价格根据商品销售价</small>
             </div>
             <div  class="modal-body">
-                <span>订单实际销售价</span><input id="mod_order_body" type="text" value="" name="">
+                <span>订单实际销售价</span><input id="mod_order_body" type="text" value="" name="order_real_price">
+                <span>订单成本价</span><input id="order_cost_price" type="text" value="" name="order_cost_price">
             </div>
             <div class="modal-footer">
                 <input type="hidden" name="order_id" value="">
