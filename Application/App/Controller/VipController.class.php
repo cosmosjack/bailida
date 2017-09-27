@@ -893,8 +893,8 @@ class VipController extends BaseController
         $url = "http://www.baidu.com";
         $QR = new \Util\QRcode();
         $QR::png($url);
-        imagepng($QR,'lll.png');
-        echo '<img src=lll.png>';
+        imagepng($QR);
+
         $this->display();
     }
 
