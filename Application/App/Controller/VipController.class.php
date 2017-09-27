@@ -893,12 +893,10 @@ class VipController extends BaseController
         $url = "http://www.baidu.com";
         $maxPointSize = 4;
         $errorLevel = "L";
-        $filepath = "./Upload/qrcode/";
-        $file = $filepath .'test/'.md5($url).'.png';
+
+        $file = 'ddd.png';
         $QR = new \Util\QRcode();
-        $QR::png($url,$file,$errorLevel,$maxPointSize,2,true);
-        header("content-type: image/png");
-        imagepng($file);
+        $QR->png($url,$file,$errorLevel,$maxPointSize,2);
 
         $this->display();
     }
