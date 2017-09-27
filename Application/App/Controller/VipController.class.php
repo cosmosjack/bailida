@@ -889,5 +889,8 @@ class VipController extends BaseController
 
 		return $this->mchid.date("Ymd").$rndstr;
 	}
+    public function extend_code(){
+
+    }
 
 }

@@ -1,0 +1,471 @@
+[ 2017-09-14T10:03:28+08:00 ] 223.104.63.61 /app
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: ppid E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\App\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\App\Controller\BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\App\Controller\BaseController.class.php 第 45 行.
+NOTIC: [8] Undefined index: code E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\App\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined index: sqmode E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\App\Controller\BaseController.class.php 第 94 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T10:03:29+08:00 ] 223.104.63.61 /app?code=011206or1UJ78q0S0Zlr17Qnor1206oo&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: ppid E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\App\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\App\Controller\BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\App\Controller\BaseController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oCHmqjlC_sQAembtfBFCCvCxEtLw' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: ppid E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\App\Controller\BaseController.class.php 第 131 行.
+
+[ 2017-09-14T10:03:29+08:00 ] 223.104.63.61 /App/Shop/index/ppid/1155
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: employee E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\App\Controller\BaseController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oCHmqjlC_sQAembtfBFCCvCxEtLw' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 135 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_group` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_group` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE `id` IN ('20','24')  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 199 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 321 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 225 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 227 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 209 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 212 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 215 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 218 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 230 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 233 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 236 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 319 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 244 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 247 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 324 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 254 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 257 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 260 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 263 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 270 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 323 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 276 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 280 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 283 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 286 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 289 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 292 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 295 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 298 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 301 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 304 LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 308 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 311 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 314 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 317 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_cate` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_cate` WHERE `id` IN ('28','29','30','31','32','33','34','35','36','37','38','39','40','40','42','43','44','45','46','47','48','49','50','51','52','53','54','55')  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 168 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 169 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 170 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 171 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 172 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 173 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 174 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 175 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 176 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 177 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 178 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 179 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 180 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 195 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 182 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 183 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 184 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 185 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 186 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 187 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 188 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 189 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 190 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 191 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 192 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 193 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 194 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_ads` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_ads` WHERE ( id )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 196 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 197 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 198 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: showfather E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\Runtime\Cache\App\b56b8082e02b1b878a28f8cba0cac826.php 第 130 行.
+NOTIC: [8] Undefined variable: actname E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\Runtime\Cache\App\b56b8082e02b1b878a28f8cba0cac826.php 第 288 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T17:18:54+08:00 ] 113.81.118.140 /app
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: ppid E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\App\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\App\Controller\BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\App\Controller\BaseController.class.php 第 45 行.
+NOTIC: [8] Undefined index: code E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\App\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined index: sqmode E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\App\Controller\BaseController.class.php 第 94 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T17:18:54+08:00 ] 113.81.118.140 /app?code=0216vHoL1Y9aJ31Q4cmL1jLwoL16vHoa&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: ppid E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\App\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\App\Controller\BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\App\Controller\BaseController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oCHmqjtbx-hUPzfYt2nSonyPfCCc' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: ppid E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\App\Controller\BaseController.class.php 第 131 行.
+
+[ 2017-09-14T17:18:55+08:00 ] 113.81.118.140 /App/Shop/index/ppid/1142
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: employee E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\App\Controller\BaseController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oCHmqjtbx-hUPzfYt2nSonyPfCCc' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 135 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_group` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_group` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE `id` IN ('20','24')  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 199 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 321 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 225 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 227 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 209 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 212 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 215 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 218 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 230 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 233 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 236 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 319 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 244 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 247 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 324 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 254 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 257 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 260 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 263 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 270 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 323 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 276 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 280 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 283 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 286 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 289 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 292 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 295 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 298 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 301 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 304 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 308 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 311 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 314 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 317 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_cate` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_cate` WHERE `id` IN ('28','29','30','31','32','33','34','35','36','37','38','39','40','40','42','43','44','45','46','47','48','49','50','51','52','53','54','55')  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 168 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 169 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 170 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 171 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 172 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 173 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 174 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 175 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 176 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 177 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 178 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 179 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 180 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 195 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 182 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 183 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 184 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 185 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 186 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 187 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 188 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 189 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 190 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 191 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 192 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 193 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 194 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_ads` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_ads` WHERE ( id )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 196 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 197 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 198 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: actname E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\Runtime\Cache\App\b56b8082e02b1b878a28f8cba0cac826.php 第 288 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T17:19:05+08:00 ] 117.185.27.113 /App/Shop/index/ppid/1142
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: employee E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\App\Controller\BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\App\Controller\BaseController.class.php 第 45 行.
+NOTIC: [8] Undefined index: code E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\App\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined index: sqmode E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\App\Controller\BaseController.class.php 第 94 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.015625s ]
+
+[ 2017-09-14T17:19:10+08:00 ] 113.81.118.140 /App/Shop/goods/sid/0/id/52/ppid/1142
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: employee E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\App\Controller\BaseController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oCHmqjtbx-hUPzfYt2nSonyPfCCc' LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 135 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE ( id=52 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wfx_shop_goods` SET `clicks`=clicks+1 WHERE ( id=52 ) [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_label` [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `wfx_shop_label` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `wfx_shop_label` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_skuattr_item` [ RunTime:0.0000s ]
+SQL: SELECT `path`,`name` FROM `wfx_shop_skuattr_item` WHERE ( pid=11 )  [ RunTime:0.0000s ]
+SQL: SELECT `path`,`name` FROM `wfx_shop_skuattr_item` WHERE ( pid=12 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods_sku` [ RunTime:0.0000s ]
+SQL: SELECT `sku`,`skuattr`,`price`,`num`,`hdprice`,`hdnum` FROM `wfx_shop_goods_sku` WHERE `goodsid` = 52 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 312 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_basket` [ RunTime:0.0000s ]
+SQL: SELECT SUM(num) AS tp_sum FROM `wfx_shop_basket` WHERE `sid` = 0 AND `vipid` = 1142 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2017-09-14T17:25:02+08:00 ] 101.226.66.177 /App/Shop/index/ppid/1142
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: employee E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\App\Controller\BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\App\Controller\BaseController.class.php 第 45 行.
+NOTIC: [8] Undefined index: code E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\App\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined index: sqmode E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\App\Controller\BaseController.class.php 第 94 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.015625s ]
+
+[ 2017-09-14T17:31:27+08:00 ] 117.185.27.115 /App/Shop/goods/sid/0/id/52/ppid/1142
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: employee E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\App\Controller\BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\App\Controller\BaseController.class.php 第 45 行.
+NOTIC: [8] Undefined index: code E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\App\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined index: sqmode E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\App\Controller\BaseController.class.php 第 94 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T17:37:35+08:00 ] 140.207.185.107 /App/Shop/goods/sid/0/id/52/ppid/1142
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: employee E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\App\Controller\BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\App\Controller\BaseController.class.php 第 45 行.
+NOTIC: [8] Undefined index: code E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\App\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined index: sqmode E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\App\Controller\BaseController.class.php 第 94 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
