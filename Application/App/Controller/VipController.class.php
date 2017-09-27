@@ -891,6 +891,7 @@ class VipController extends BaseController
 	}
     public function extend_code(){
 
+        $this->display();
     }
 
 }
