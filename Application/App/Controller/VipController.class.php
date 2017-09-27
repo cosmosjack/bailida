@@ -890,13 +890,18 @@ class VipController extends BaseController
 		return $this->mchid.date("Ymd").$rndstr;
 	}
     public function extend_code(){
-        $url = "http://www.baidu.com";
+
+        p($_SESSION);
+
+        /* 生成二维码 start  */
+        /*$url = "http://www.baidu.com";
         $maxPointSize = 4;
         $errorLevel = "L";
 
         $file = 'ddd.png';
         $QR = new \Util\QRcode();
-        $QR->png($url,$file,$errorLevel,$maxPointSize,2);
+        $QR->png($url,$file,$errorLevel,$maxPointSize,2);*/
+        /* 生成二维码 end  */
 
         $this->display();
     }
