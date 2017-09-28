@@ -904,13 +904,13 @@ class VipController extends BaseController
         p($_SERVER['DOCUMENT_ROOT']);
         p($_SERVER['SERVER_NAME']);
         /* 生成二维码 start  */
-        /*$url = "http://www.baidu.com"; // http://wx.shikexu.com/App/Shop/index/ppid/1137
+        $url = "http://".$_SERVER['SERVER_NAME']."/App/Shop/index/ppid/".$vip_id; // http://wx.shikexu.com/App/Shop/index/ppid/1137
         $maxPointSize = 4;
         $errorLevel = "L";
 
-        $file = 'ddd.png';
+        $file = $_SERVER['DOCUMENT_ROOT'].DIRECTORY_SEPARATOR."Upload".DIRECTORY_SEPARATOR.'extend_code'.DIRECTORY_SEPARATOR.$vip_id.'.png';
         $QR = new \Util\QRcode();
-        $QR->png($url,$file,$errorLevel,$maxPointSize,2);*/
+        $QR->png($url,$file,$errorLevel,$maxPointSize,2);
         /* 生成二维码 end  */
 
         $this->display();
