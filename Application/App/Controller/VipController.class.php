@@ -903,9 +903,7 @@ class VipController extends BaseController
         }
         $file = $_SERVER['DOCUMENT_ROOT'].DIRECTORY_SEPARATOR."Upload".DIRECTORY_SEPARATOR.'extend_code'.DIRECTORY_SEPARATOR.$vip_id.'.png';
 
-        if(is_file($file)){
-            echo '有二维码,直接输出';
-        }else{
+        if(!is_file($file)){
             echo '没有二维码';
             echo '<hr>';
             p($_SERVER['DOCUMENT_ROOT']);
@@ -953,14 +951,14 @@ class VipController extends BaseController
 
             $result = imagecopyresampled($source_qr,$source_logo,$from_width,$from_width,0,0,$logo_qr_width,$logo_qr_height,$logo_width,$logo_height);
 
-            imagejpeg($source_qr,"aa.jpg",60);
+            imagepng($source_qr,$file,60);
             imagedestroy($source_qr);
             imagedestroy($source_logo);
-
-            die;
-            var_dump($result);
+//            die;
+//            var_dump($result);
             /* 添加logo end */
         }
+
         $this->display();
 
     }
