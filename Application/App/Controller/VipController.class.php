@@ -891,10 +891,20 @@ class VipController extends BaseController
 	}
     public function extend_code(){
 
-        p($_SESSION);
-
+//        p($_SESSION);
+        $vip_id = $_SESSION['WAP']['vipid'];
+        $header_pic = $_SESSION['WAP']['vip']['headimgurl'];
+        echo $vip_id;
+        echo '<hr>';
+        echo $header_pic;
+        if(!$vip_id){
+            echo '您暂时还没有推广权限';
+        }
+        echo '<hr>';
+        p($_SERVER['DOCUMENT_ROOT']);
+        p($_SERVER['SERVER_NAME']);
         /* 生成二维码 start  */
-        /*$url = "http://www.baidu.com";
+        /*$url = "http://www.baidu.com"; // http://wx.shikexu.com/App/Shop/index/ppid/1137
         $maxPointSize = 4;
         $errorLevel = "L";
 
