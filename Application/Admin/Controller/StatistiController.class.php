@@ -54,7 +54,7 @@ class StatistiController extends BaseController
         /* 算出所有的订单按月分开 然后再通过级别的不同来分成 start */
         $now_d = intval(date("d",time()));
         $now_m = intval(date("m",time()));
-        p($now_m);
+//        p($now_m);
         // 查看之前是否有统计过
         $db_order_calc = M("order_calc");
         $data_order_calc = $db_order_calc->where(array('agent_id'=>$_GET['agent_id']))->order("add_time desc")->find();
@@ -192,7 +192,7 @@ class StatistiController extends BaseController
         /* 统计完成订单后的页面展示 start  */
 
         /* 算出要展示的开始和结束时间 start */
-        $default_month = (intval(date("d",time()))>15) ? intval(date("m"),time())-1 : intval(date("m",time()))-2;
+        $default_month = (intval(date("d",time()))>15) ? intval(date("m",time()))-1 : intval(date("m",time()))-2;
         $search_month = $_GET['month'] ? intval($_GET['month']) : $default_month;
         $search_year = $_GET['year'] ? intval($_GET['year']) : intval(date("Y",time()));
         /* 算出要展示的开始和结束时间 end */
