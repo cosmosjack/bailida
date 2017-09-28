@@ -950,9 +950,9 @@ class VipController extends BaseController
             echo '<hr>';
 
             $result = imagecopyresampled($source_qr,$source_logo,$from_width,$from_width,0,0,$logo_qr_width,$logo_qr_height,$logo_width,$logo_height);
-            $extend_logo = $_SERVER['DOCUMENT_ROOT'].DIRECTORY_SEPARATOR."Upload".DIRECTORY_SEPARATOR.'extend_code'.DIRECTORY_SEPARATOR.'666.jpg';
+            $extend_logo = $_SERVER['DOCUMENT_ROOT'].DIRECTORY_SEPARATOR."Upload".DIRECTORY_SEPARATOR.'extend_code'.DIRECTORY_SEPARATOR.'666.png';
 
-            imagejpeg($source_qr,$extend_logo,60);
+            imagepng($source_qr,$extend_logo,60);
             imagedestroy($source_qr);
             imagedestroy($source_logo);
 //            die;
