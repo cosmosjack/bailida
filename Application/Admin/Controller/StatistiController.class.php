@@ -54,6 +54,7 @@ class StatistiController extends BaseController
         /* 算出所有的订单按月分开 然后再通过级别的不同来分成 start */
         $now_d = date("d",time());
         $now_m = date("m",time());
+        p($now_m);
         // 查看之前是否有统计过
         $db_order_calc = M("order_calc");
         $data_order_calc = $db_order_calc->where(array('agent_id'=>$_GET['agent_id']))->order("add_time desc")->find();
