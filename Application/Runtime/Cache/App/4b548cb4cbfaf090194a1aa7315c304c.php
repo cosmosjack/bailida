@@ -78,11 +78,11 @@
 					<span class="home-tt color6"><?php echo ($_SESSION['SHOP']['set']['fx2name']); ?>用户</span>
 					<span class="iconfont fr icon-r">&#xe6a3</span>
 				</a>
-				<a href="<?php echo U('App/Fx/myuser/type/3');?>"  class="ovflw home-li">
+				<!-- <a href="<?php echo U('App/Fx/myuser/type/3');?>"  class="ovflw home-li">
 					<span class="iconfont fl icon text-c icon-bc4">&#xe6cc;</span>
 					<span class="home-tt color6 fl"><?php echo ($_SESSION['SHOP']['set']['fx3name']); ?>用户&nbsp;&nbsp;</span>
 					<span class="iconfont fr icon-r">&#xe6a3</span>
-				</a>
+				</a> -->
 			</div>
 			<?php if(($data["isfxgd"]) == "1"): ?><div class="home-lst2 border-b1 border-t1 back2 ovflw">
 					<a href="#" class="ovflw home-li">

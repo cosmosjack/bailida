@@ -1,0 +1,92 @@
+[ 2017-09-22T02:14:32+08:00 ] 140.207.54.76 /Home/Wx/index/token/cosmos?signature=70c3af3beca7af7ec561fb29f0424c13a01732ee&timestamp=1506017672&nonce=1075531547&openid=oCHmqjtSLx1jQeKdyMj3wEz85x-U
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\WxController::__construct(), called in E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\ThinkPHP\Common\functions.php on line 710 and defined E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\Home\Controller\WxController.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_message` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_log_sub` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_employee` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-22T11:27:12+08:00 ] 140.207.54.76 /Home/Wx/index/token/cosmos?signature=01e024ca569b3aff03d56b299a77f54bbd8bf546&timestamp=1506050832&nonce=47220854&openid=oCHmqjtbx-hUPzfYt2nSonyPfCCc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\WxController::__construct(), called in E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\ThinkPHP\Common\functions.php on line 710 and defined E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\Home\Controller\WxController.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_message` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_log_sub` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_employee` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-22T19:01:23+08:00 ] 140.207.54.75 /Home/Wx/index/token/cosmos?signature=9f9da606df2a87a5649ff034401a99685a88d720&timestamp=1506078082&nonce=2004828633&openid=oCHmqjn_6VBaGkniw4omoMErsemU
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\WxController::__construct(), called in E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\ThinkPHP\Common\functions.php on line 710 and defined E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\Home\Controller\WxController.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_message` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_log_sub` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_employee` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oCHmqjn_6VBaGkniw4omoMErsemU' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wfx_vip` SET `subscribe`='0' WHERE `openid` = 'oCHmqjn_6VBaGkniw4omoMErsemU' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: ppid E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\Home\Controller\WxController.class.php 第 615 行.
+SQL: INSERT INTO `wfx_vip_log_sub` (`ppid`,`from`,`fromname`,`to`,`toname`,`issub`,`ctime`) VALUES ('0','1183','Kk','0','百利达车行','0','1506078082') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2017-09-22T19:59:48+08:00 ] 140.207.54.80 /Home/Wx/index/token/cosmos?signature=c4e209064815aec5b4da015b03fdbf1b5228225c&timestamp=1506081587&nonce=97266462&openid=oCHmqjo6VTPJn_9oSpUjip8_rFAk
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\WxController::__construct(), called in E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\ThinkPHP\Common\functions.php on line 710 and defined E:\UPUPW\UPUPW_AP5.5_64\vhosts\wx.shikexu.com\Application\Home\Controller\WxController.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_message` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_log_sub` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_employee` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

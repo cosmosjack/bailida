@@ -582,16 +582,35 @@
                             </ul>
                         </li><?php endif; ?>
 
+                    <?php if(in_array(($score), is_array($useroath)?$useroath:explode(',',$useroath))): ?><li>
+                            <a href="#" class="menu-dropdown">
+                                <i class="menu-icon fa fa-bar-chart-o"></i>
+                                <span class="menu-text"> 报表统计 </span>
+                                <i class="menu-expand"></i>
+                            </a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="<?php echo U('Admin/Statisti/index');?>" data-loader="App-loader" data-loadername="统计报表">
+
+                                        <span class="menu-text">合作商流水</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo U('Admin/Agent/set');?>" data-loader="App-loader" data-loadername="提成点设置">
+                                        <span class="menu-text">提成点设置</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo U('Admin/Order/no_pass_order');?>" data-loader="App-loader" data-loadername="添加/修改积分商品">
+                                        <span class="menu-text">未审核订单列表</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li><?php endif; ?>
                     <?php if(!in_array(($employee), is_array($useroath)?$useroath:explode(',',$useroath))): ?><li>
                             <a href="<?php echo U('Admin/Index/help');?>" data-loader="App-loader" data-loadername="帮助中心">
                                 <i class="menu-icon glyphicon glyphicon-book"></i>
                                 <span class="menu-text">帮助中心</span>
-                            </a>
-                        </li><?php endif; ?>
-                    <?php if(!in_array(($employee), is_array($useroath)?$useroath:explode(',',$useroath))): ?><li>
-                            <a href="<?php echo U('Admin/Statisti/index');?>" data-loader="App-loader" data-loadername="统计报表">
-                                <i class="menu-icon glyphicon glyphicon-book"></i>
-                                <span class="menu-text">报表统计</span>
                             </a>
                         </li><?php endif; ?>
 
