@@ -22,6 +22,8 @@ class MoneyController extends BaseController{
     }
     public function history(){
 //        p($_SESSION);
+        $data = array('dd'=>"dd");
+        $this->assign("cache",$data);
         $this->display();
     }
 }
