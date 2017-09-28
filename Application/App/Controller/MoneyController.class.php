@@ -21,6 +21,7 @@ class MoneyController extends BaseController{
         echo 'this is the index page';
     }
     public function history(){
+        p($_SESSION);
         $this->display();
     }
 }
