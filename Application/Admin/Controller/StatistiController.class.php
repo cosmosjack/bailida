@@ -20,7 +20,6 @@ class StatistiController extends BaseController
 
     public function index()
     {
-
         $this->display();
     }
     public function agent_list(){
