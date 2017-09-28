@@ -912,8 +912,8 @@ class VipController extends BaseController
             p($_SERVER['SERVER_NAME']);
             /* 生成二维码 start  */
             $url = "http://".$_SERVER['SERVER_NAME']."/App/Shop/index/ppid/".$vip_id; // http://wx.shikexu.com/App/Shop/index/ppid/1137
-            $maxPointSize = 6;
-            $errorLevel = "L";
+            $maxPointSize = 8;
+            $errorLevel = "Q";
 
             $QR = new \Util\QRcode();
             $result = $QR->png($url,$file,$errorLevel,$maxPointSize,2);
