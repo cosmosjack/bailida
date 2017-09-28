@@ -904,10 +904,10 @@ class VipController extends BaseController
         $file = $_SERVER['DOCUMENT_ROOT'].DIRECTORY_SEPARATOR."Upload".DIRECTORY_SEPARATOR.'extend_code'.DIRECTORY_SEPARATOR.$vip_id.'.png';
 
         if(!is_file($file)){
-            echo '没有二维码';
-            echo '<hr>';
-            p($_SERVER['DOCUMENT_ROOT']);
-            p($_SERVER['SERVER_NAME']);
+//            echo '没有二维码';
+//            echo '<hr>';
+//            p($_SERVER['DOCUMENT_ROOT']);
+//            p($_SERVER['SERVER_NAME']);
             /* 生成二维码 start  */
             $url = "http://".$_SERVER['SERVER_NAME']."/App/Shop/index/ppid/".$vip_id; // http://wx.shikexu.com/App/Shop/index/ppid/1137
             $maxPointSize = 8;
@@ -916,38 +916,38 @@ class VipController extends BaseController
             $QR = new \Util\QRcode();
             $result = $QR->png($url,$file,$errorLevel,$maxPointSize,2);
             /* 生成二维码 end  */
-            p($result);
+//            p($result);
             if(!is_file($file)){
                 echo '没有生成二维码,退出';
             }
 
             /* 添加logo start */
             $source_qr = imagecreatefrompng($file);
-            var_dump("source1".$source_qr);
-            echo '<hr>';
+//            var_dump("source1".$source_qr);
+//            echo '<hr>';
             $source_logo = imagecreatefromjpeg($header_pic);
-            var_dump("source2".$source_logo);
-            echo '<hr>';
+//            var_dump("source2".$source_logo);
+//            echo '<hr>';
             $qr_width = imagesx($source_qr); // 二维码宽度
-            echo $qr_width."<br>";
+//            echo $qr_width."<br>";
             $qr_height = imagesy($source_qr); //二维码高度
-            echo $qr_height."<br>";
+//            echo $qr_height."<br>";
 //die;
             $logo_width = imagesx($source_logo);//logo宽度
-            echo $logo_width."<br>";
+//            echo $logo_width."<br>";
             $logo_height = imagesy($source_logo);//logo高度
-            echo $logo_height."<br>";
+//            echo $logo_height."<br>";
 
             $logo_qr_width = $qr_width / 5; // 二维码缩小5倍
-            echo $logo_qr_width."<br>";
+//            echo $logo_qr_width."<br>";
             $scale = $logo_width/$logo_qr_width; // logo 除以 5倍小的二维码
-            echo $scale."<br>";
+//            echo $scale."<br>";
             $logo_qr_height = $logo_height/$scale;
-            echo $logo_qr_height;
-            echo '<hr>';
+//            echo $logo_qr_height;
+//            echo '<hr>';
             $from_width = ($qr_width-$logo_qr_width)/2; // 二维码宽度减去自己小5倍的宽度 再除以2
-            echo $from_width;
-            echo '<hr>';
+//            echo $from_width;
+//            echo '<hr>';
 
             $result = imagecopyresampled($source_qr,$source_logo,$from_width,$from_width,0,0,$logo_qr_width,$logo_qr_height,$logo_width,$logo_height);
             $extend_logo = $_SERVER['DOCUMENT_ROOT'].DIRECTORY_SEPARATOR."Upload".DIRECTORY_SEPARATOR.'extend_code'.DIRECTORY_SEPARATOR.$vip_id.'.jpg';
@@ -959,7 +959,9 @@ class VipController extends BaseController
 //            var_dump($result);
             /* 添加logo end */
         }
-
+        $site_url = "http://".$_SERVER['SERVER_NAME'];
+        $code_url = $site_url."/Upload/extend_code/".$vip_id.".jpg";
+        $this->assign("code_url",$site_url);
         $this->display();
 
     }
