@@ -891,6 +891,7 @@ class VipController extends BaseController
 	}
     public function extend_code(){
 
+
 //        p($_SESSION);
         $vip_id = $_SESSION['WAP']['vipid'];
         $header_pic = $_SESSION['WAP']['vip']['headimgurl'];
@@ -900,20 +901,58 @@ class VipController extends BaseController
         if(!$vip_id){
             echo '您暂时还没有推广权限';
         }
-        echo '<hr>';
-        p($_SERVER['DOCUMENT_ROOT']);
-        p($_SERVER['SERVER_NAME']);
-        /* 生成二维码 start  */
-        $url = "http://".$_SERVER['SERVER_NAME']."/App/Shop/index/ppid/".$vip_id; // http://wx.shikexu.com/App/Shop/index/ppid/1137
-        $maxPointSize = 4;
-        $errorLevel = "L";
-
         $file = $_SERVER['DOCUMENT_ROOT'].DIRECTORY_SEPARATOR."Upload".DIRECTORY_SEPARATOR.'extend_code'.DIRECTORY_SEPARATOR.$vip_id.'.png';
-        $QR = new \Util\QRcode();
-        $QR->png($url,$file,$errorLevel,$maxPointSize,2);
-        /* 生成二维码 end  */
 
+        if(is_file($file)){
+            echo '有二维码,直接输出';
+        }else{
+            echo '没有二维码';
+            echo '<hr>';
+            p($_SERVER['DOCUMENT_ROOT']);
+            p($_SERVER['SERVER_NAME']);
+            /* 生成二维码 start  */
+            $url = "http://".$_SERVER['SERVER_NAME']."/App/Shop/index/ppid/".$vip_id; // http://wx.shikexu.com/App/Shop/index/ppid/1137
+            $maxPointSize = 4;
+            $errorLevel = "L";
+
+            $QR = new \Util\QRcode();
+            $result = $QR->png($url,$file,$errorLevel,$maxPointSize,2);
+            /* 生成二维码 end  */
+            p($result);
+            if(!is_file($file)){
+                echo '没有生成二维码,退出';
+            }
+            /* 添加logo start */
+                $source_qr = imagecreatefromstring(file_get_contents($file));
+                $source_logo = imagecreatefromstring(file_get_contents($header_pic));
+                $source_qr_width = imagesx($source_qr); // 二维码宽度
+                $source_qr_height = imagesx($source_qr); //二维码高度
+                $source_log_width = imagesx($source_logo);//logo宽度
+                $source_log_height = imagesx($source_logo);//logo高度
+                $logo_qr_width = $source_qr_width / 5; // 二维码缩小5倍
+                $scale = $source_log_width/$logo_qr_width; // logo 除以 5倍小的二维码
+                $logo_qr_height = $source_log_height/$scale;
+                $from_width = ($source_qr_width-$logo_qr_width)/2; // 二维码宽度减去自己小5倍的宽度 再除以2
+
+                imagecopyresampled($file,$header_pic,$from_width,$from_width,0,0,$logo_qr_width,$logo_qr_height,$source_log_width,$source_log_width);
+            /* 添加logo end */
+        }
         $this->display();
+
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
