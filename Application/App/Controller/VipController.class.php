@@ -895,9 +895,9 @@ class VipController extends BaseController
 //        p($_SESSION);
         $vip_id = $_SESSION['WAP']['vipid'];
         $header_pic = $_SESSION['WAP']['vip']['headimgurl'];
-        echo $vip_id;
-        echo '<hr>';
-        echo $header_pic;
+//        echo $vip_id;
+//        echo '<hr>';
+//        echo $header_pic;
         if(!$vip_id){
             echo '您暂时还没有推广权限';
         }
@@ -961,7 +961,7 @@ class VipController extends BaseController
         }
         $site_url = "http://".$_SERVER['SERVER_NAME'];
         $code_url = $site_url."/Upload/extend_code/".$vip_id.".jpg";
-        $this->assign("code_url",$site_url);
+        $this->assign("code_url",$code_url);
         $this->display();
 
     }
