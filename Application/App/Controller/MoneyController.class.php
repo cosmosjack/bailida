@@ -20,4 +20,7 @@ class MoneyController extends BaseController{
     public function index(){
         echo 'this is the index page';
     }
+    public function history(){
+        $this->display();
+    }
 }

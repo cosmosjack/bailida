@@ -45,7 +45,7 @@ class StatistiController extends BaseController
         for($i=0;$i<count($data_junior);$i++){
             $agent_arr[$i] = $data_junior[$i]['id'];
         }
-        array_push($agent_arr,$_GET['agent_id']);
+//        array_push($agent_arr,$_GET['agent_id']); // TODO 开启或关闭自己买购买也有提成  去掉注释就会开启
 //        P($agent_arr);
         /* 统计自己的下线 end  */
 
