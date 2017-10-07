@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>WeMall分销管理</title>
+    <title>百利达后台</title>
     <meta name="description" content="blank page" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -56,7 +56,7 @@
                     <a href="javascript:void(0)" class="navbar-brand">
                         <small>
                         <!--{$_SESSION.CMS.set.name}-->
-                        WeMall分销管理
+                        百利达分销管理
                         </small>
                     </a>
                 </div>
@@ -359,14 +359,14 @@
                             <ul class="submenu">
                                 <li>
                                     <a href="{:U('Admin/Vip/vipRebornList')}" data-loader="App-loader" data-loadername="可调配会员">
-                                        <span class="menu-text">可调配会员中心</span>
+                                        <span class="menu-text">调配会员的上级</span>
                                     </a>
                                 </li>
-                                <li>
+                               <!-- <li>
                                     <a href="{:U('Admin/Vip/vipAllocList')}" data-loader="App-loader" data-loadername="未分配员工 一级会员列表">
-                                        <span class="menu-text">会员分配中心</span>
+                                        <span class="menu-text">分配一个客户给</span>
                                     </a>
-                                </li>
+                                </li>-->
                                 <li>
                                     <a href="{:U('Admin/Vip/vipList')}" data-loader="App-loader" data-loadername="会员列表">
                                         <span class="menu-text">会员列表</span>
@@ -381,7 +381,7 @@
                             </a>
                         </li>
                     </in>
-                    <in name="withdraw" value="$useroath">
+                    <!--<in name="withdraw" value="$useroath">
                         <li>
                             <a href="#" class="menu-dropdown">
                                 <i class="menu-icon glyphicon glyphicon-check"></i>
@@ -415,7 +415,7 @@
                                 </li>
                             </ul>
                         </li>
-                    </in>
+                    </in>-->
                     <in name="order" value="$useroath">
                         <li>
                             <a href="#" class="menu-dropdown">
