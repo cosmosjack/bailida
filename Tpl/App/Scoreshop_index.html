@@ -35,19 +35,19 @@
                         <div class="col-sm-4">
                             <div class="text-center">
                                 <img alt="image" class="img-circle m-t-xs img-responsive" src="__ROOT__/Upload/{$val.savepath}{$val.savename}">
-                                <!--<div class="m-t-xs font-bold">CTO</div>-->
+                                <div class="m-t-xs font-bold">积分商品</div>
                             </div>
                         </div>
                         <div class="col-sm-8">
                             <h3><strong>{$val.name}</strong></h3>
                             <p><i class="fa fa-map-marker"></i> 广东·惠州</p>
                             <address>
-                                <strong>积分： {$val.score}</strong><br>
+                                <strong>需要积分: {$val.score}</strong><br>
                                 商品状态:可兑换<br>
                                 发布时间:{$val.time}<br>
                                 <abbr title="Phone">是否推荐:</abbr> <if condition="$val.recommend eq 1 ">是<else /> 否</if>
                             </address>
-                            <a class="button button-primary button-rounded button-small pull-right">兑换</a>
+                            <a class="button button-primary button-rounded pull-right">兑换</a>
                         </div>
                         <div class="clearfix"></div>
                     </a>
