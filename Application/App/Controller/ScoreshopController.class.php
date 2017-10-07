@@ -24,7 +24,7 @@ class ScoreshopController extends BaseController
 
     public function index()
     {
-        $this->dispaly();
+        $this->display();
     }
 
     public function get_goods_list(){
