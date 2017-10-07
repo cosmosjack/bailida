@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <include file="./Public/Admin/statistic/header.html" />
-<!--<script type="text/javascript" src="__PUBLIC__/Admin/statistic/bootstrap/js/jquery-1.8.3.min.js"> </script>-->
+<script type="text/javascript" src="__PUBLIC__/Admin/statistic/bootstrap/js/config.js"> </script>
 
     <title>积分商品</title>
     <meta charset="utf-8" />
@@ -28,6 +28,33 @@
 <body class="gray-bg">
 <div class="wrapper wrapper-content animated fadeInRight">
     <div class="row">
+        <foreach name="data_score_goods" item="val" key="k" >
+            <div class="col-sm-4">
+                <div class="contact-box">
+                    <a href="profile.html">
+                        <div class="col-sm-4">
+                            <div class="text-center">
+                                <img alt="image" class="img-circle m-t-xs img-responsive" src="__ROOT__/Upload/{$val.savepath}{$val.savename}">
+                                <div class="m-t-xs font-bold">CTO</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <h3><strong>{$val.name}</strong></h3>
+                            <p><i class="fa fa-map-marker"></i> 甘肃·兰州</p>
+                            <address>
+                                <strong>Baidu, Inc.</strong><br>
+                                E-mail:xxx@baidu.com<br>
+                                Weibo:<a href="">http://weibo.com/xxx</a><br>
+                                <abbr title="Phone">Tel:</abbr> (123) 456-7890
+                            </address>
+                        </div>
+                        <div class="clearfix"></div>
+                    </a>
+                </div>
+            </div>
+        </foreach>
+
+
         <div class="col-sm-4">
             <div class="contact-box">
                 <a href="profile.html">
@@ -51,6 +78,7 @@
                 </a>
             </div>
         </div>
+
         <div class="col-sm-4">
             <div class="contact-box">
                 <a href="profile.html">
