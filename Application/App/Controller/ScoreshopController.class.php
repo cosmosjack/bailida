@@ -2,6 +2,8 @@
 // 本类由系统自动生成，仅供测试用途
 namespace App\Controller;
 
+use Think\Model;
+
 class ScoreshopController extends BaseController
 {
 
@@ -24,10 +26,9 @@ class ScoreshopController extends BaseController
 /* 一般的列表 */
     public function index()
     {
-        $db_score_goods = M("score");
-        $where['status'] = 1;
-        $data_score_goods = $db_score_goods->where($where)->select();
-        p($data_score_goods);
+        $db_score_goods = new Model();
+        $data_score_goods = $db_score_goods->query("select wfx_score.*,wfx_upload_img.name as img_name,wfx_upload_img.savename,wfx_upload_img.savepath from wfx_score INNER JOIN wfx_upload_img ON wfx_score.pic = wfx_upload_img.id WHERE wfx_score.status = 1");
+
         if($data_score_goods){
             $this->assign("data_score_goods",$data_score_goods);
         }else{
