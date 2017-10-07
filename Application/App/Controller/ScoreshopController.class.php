@@ -21,12 +21,21 @@ class ScoreshopController extends BaseController
             $this->diemsg(0, '您还没有进行商城配置！');
         }
     }
-
+/* 一般的列表 */
     public function index()
     {
+        $db_score_goods = M("score");
+        $where['status'] = 1;
+        $data_score_goods = $db_score_goods->where($where)->select();
+        p($data_score_goods);
+        if($data_score_goods){
+            $this->assign("data_score_goods",$data_score_goods);
+        }else{
+            echo '暂无积分商品';
+        }
         $this->display();
     }
-
+/* 瀑布流 */
     public function get_goods_list(){
 
     }
