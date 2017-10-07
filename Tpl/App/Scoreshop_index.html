@@ -45,7 +45,7 @@
                                 <abbr title="Phone">是否推荐:</abbr> <if condition="$val.recommend eq 1 ">是<else /> 否</if>
                             </address>
                             <!--<a class="btn btn-primary pull-right">兑换</a>-->
-                            <button class="btn btn-danger pull-right">兑换</button>
+                            <button onclick="exchange('{$val.id}');" class="btn btn-danger pull-right">兑换</button>
                         </div>
                         <div class="clearfix"></div>
                     </a>
@@ -386,6 +386,9 @@
 <script src="__PUBLIC__/Admin/statistic/bootstrap/js/bootstrap.min.js?v=3.3.5"></script>
 <script src="__PUBLIC__/Admin/statistic/bootstrap/js/content.min.js?v=1.0.0"></script>
 <script>
+    function exchange(id){
+        alert(id);
+    }
     $(document).ready(function(){$(".contact-box").each(function(){animationHover(this,"pulse")})});
 </script>
 <div class="dtl-ft ovflw">
