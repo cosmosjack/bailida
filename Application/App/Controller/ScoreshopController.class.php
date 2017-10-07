@@ -28,7 +28,7 @@ class ScoreshopController extends BaseController
     {
         $db_score_goods = new Model();
         $data_score_goods = $db_score_goods->query("select wfx_score.*,wfx_upload_img.name as img_name,wfx_upload_img.savename,wfx_upload_img.savepath from wfx_score INNER JOIN wfx_upload_img ON wfx_score.pic = wfx_upload_img.id WHERE wfx_score.status = 1");
-        p($data_score_goods);
+//        p($data_score_goods);
         if($data_score_goods){
             $this->assign("data_score_goods",$data_score_goods);
         }else{
