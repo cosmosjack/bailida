@@ -35,18 +35,19 @@
                         <div class="col-sm-4">
                             <div class="text-center">
                                 <img alt="image" class="img-circle m-t-xs img-responsive" src="__ROOT__/Upload/{$val.savepath}{$val.savename}">
-                                <div class="m-t-xs font-bold">CTO</div>
+                                <!--<div class="m-t-xs font-bold">CTO</div>-->
                             </div>
                         </div>
                         <div class="col-sm-8">
                             <h3><strong>{$val.name}</strong></h3>
-                            <p><i class="fa fa-map-marker"></i> 甘肃·兰州</p>
+                            <p><i class="fa fa-map-marker"></i> 广东·惠州</p>
                             <address>
-                                <strong>Baidu, Inc.</strong><br>
-                                E-mail:xxx@baidu.com<br>
-                                Weibo:<a href="">http://weibo.com/xxx</a><br>
-                                <abbr title="Phone">Tel:</abbr> (123) 456-7890
+                                <strong>积分： {$val.score}</strong><br>
+                                商品状态:可兑换<br>
+                                发布时间:{$val.time}<br>
+                                <abbr title="Phone">是否推荐:</abbr> <if condition="$val.recommend eq 1 ">是<else /> 否</if>
                             </address>
+                            <a class="button button-primary button-rounded button-small pull-right">兑换</a>
                         </div>
                         <div class="clearfix"></div>
                     </a>
@@ -61,11 +62,11 @@
                     <div class="col-sm-4">
                         <div class="text-center">
                             <img alt="image" class="img-circle m-t-xs img-responsive" src="__PUBLIC__/Admin/statistic/bootstrap/img/a2.jpg">
-                            <div class="m-t-xs font-bold">CTO</div>
+                            <!--<div class="m-t-xs font-bold">CTO</div>-->
                         </div>
                     </div>
                     <div class="col-sm-8">
-                        <h3><strong>奔波儿灞</strong></h3>
+                        <h3><strong>已经没有积分商品了</strong></h3>
                         <p><i class="fa fa-map-marker"></i> 甘肃·兰州</p>
                         <address>
                             <strong>Baidu, Inc.</strong><br>
