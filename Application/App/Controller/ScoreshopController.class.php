@@ -38,7 +38,7 @@ class ScoreshopController extends BaseController
     }
 /* 瀑布流 */
     public function get_goods_list(){
-        p($_SESSION);
+        p($_SESSION["WAP"]['vip']['score']);
     }
     /* 积分下订单 */
     public function add_order(){
@@ -63,10 +63,18 @@ class ScoreshopController extends BaseController
         $insert['address_id'] = $data_vip_address['id'] ? $data_vip_address['id'] : 0;
         $insert['time'] = time();
         $db_score_order = M("score_order");
-
+        /* 查出会员的剩余积分 */
+        $_SESSION["WAP"]['vip']['score'] ; // 会员的剩余积分
+        $surplus_score = intval($_SESSION["WAP"]['vip']['score']);
+        if($surplus_score < $insert['totalscore']){
+            $this->ajaxReturn(array('control'=>'add_order','code'=>0,'msg'=>'您的积分不足'),"JSON");
+            die();
+        }
         $result = $db_score_order->add($insert);
         if(!$result){
-            /*  */
+            /* 扣除积分 更新当前session */
+            $db_vip = M("vip");
+            $db_vip->where(array("id"=>$_SESSION['WAP']['vipid']))->setDec('score',$insert['totalscore']); // 用户的积分减5
             $this->ajaxReturn(array('control'=>'add_order','code'=>0,'msg'=>'参数不全无法生成订单','data'=>$_GET),"JSON");
             die();
         }
