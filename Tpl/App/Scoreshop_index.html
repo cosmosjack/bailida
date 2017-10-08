@@ -387,13 +387,19 @@
 <script src="__PUBLIC__/Admin/statistic/bootstrap/js/content.min.js?v=1.0.0"></script>
 <script>
     function exchange(id){
-        alert(id);
+//        alert(id);
         $.ajax({
             url:AppUrl+"/Scoreshop/add_order",
             type:"GET",
             data:{"score_id":id},
             success:function(msg){
                 console.log(msg);
+                if(msg.code == 200){
+                    alert("兑换成功");
+                    location.href = AppUrl+"/Scoreshop/order_list";
+                }else{
+                    alert(msg.msg);
+                }
             },
             error:function(){
                 console.log("http error");

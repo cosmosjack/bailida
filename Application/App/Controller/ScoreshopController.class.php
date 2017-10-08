@@ -70,6 +70,10 @@ class ScoreshopController extends BaseController
         }
         $this->ajaxReturn(array('control'=>'add_order','code'=>200,'msg'=>'成功'),"JSON");
     }
+    /* 订单列表 */
+    public function order_list(){
+        $this->display();
+    }
 
 
 }

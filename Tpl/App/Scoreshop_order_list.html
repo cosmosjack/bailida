@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<include file="./Public/Admin/statistic/header.html" />
+<script type="text/javascript" src="__PUBLIC__/Admin/statistic/bootstrap/js/config.js"> </script>
+
+<title>积分订单列表</title>
+<meta charset="utf-8" />
+<!--页面优化-->
+<meta name="MobileOptimized" content="320">
+<!--默认宽度320-->
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<!--viewport 等比 不缩放-->
+<meta http-equiv="cleartype" content="on">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--删除苹果菜单-->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!--默认颜色-->
+<meta name="apple-mobile-web-app-title" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<!--加载全部后 显示-->
+<meta content="telephone=no" name="format-detection" />
+<!--不识别电话-->
+<meta content="email=no" name="format-detection" />
+</head>
+<body class="gray-bg">
+
+<div class="wrapper wrapper-content animated fadeInUp">
+    <div class="row">
+        <div class="col-sm-12">
+
+            <div class="ibox">
+                <div class="ibox-title">
+                    <h5>所有项目</h5>
+                    <div class="ibox-tools">
+                        <a href="" class="btn btn-primary btn-xs">创建新项目</a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div class="row m-b-sm m-t-sm">
+                        <div class="col-md-1">
+                            <button type="button" id="loading-example-btn" class="btn btn-white btn-sm"><i class="fa fa-refresh"></i> 刷新</button>
+                        </div>
+                        <div class="col-md-11">
+                            <div class="input-group">
+                                <input type="text" placeholder="请输入项目名称" class="input-sm form-control"> <span class="input-group-btn">
+                                        <button type="button" class="btn btn-sm btn-primary"> 搜索</button> </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-list">
+
+                        <table class="table table-hover">
+                            <tbody>
+                            <tr>
+                                <td class="project-status">
+                                            <span class="label label-primary">进行中</span>
+                                </td>
+                                <td class="project-title">
+                                    <a href="project_detail.html">LIKE－一款能够让用户快速获得认同感的兴趣社交应用</a>
+                                    <br/>
+                                    <small>创建于 2014.08.15</small>
+                                </td>
+
+                                <td class="project-actions">
+                                    <a href="#" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> 查看 </a>
+                                    <a href="#" class="btn btn-white btn-sm"><i class="fa fa-pencil"></i> 编辑 </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="project-status">
+                                            <span class="label label-primary">进行中</span>
+                                </td>
+                                <td class="project-title">
+                                    <a href="project_detail.html">米莫说｜MiMO Show</a>
+                                    <br/>
+                                    <small>创建于 2014.08.15</small>
+                                </td>
+                                <td class="project-actions">
+                                    <a href="#" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> 查看 </a>
+                                    <a href="#" class="btn btn-white btn-sm"><i class="fa fa-pencil"></i> 编辑 </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="project-status">
+                                            <span class="label label-default">已取消</span>
+                                </td>
+                                <td class="project-title">
+                                    <a href="project_detail.html">商家与购物用户的交互试衣应用</a>
+                                    <br/>
+                                    <small>创建于 2014.08.15</small>
+                                </td>
+                                <td class="project-actions">
+                                    <a href="#" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> 查看 </a>
+                                    <a href="#" class="btn btn-white btn-sm"><i class="fa fa-pencil"></i> 编辑 </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="project-status">
+                                    <span class="label label-default">已取消</span>
+                                </td>
+                                <td class="project-title">
+                                    <a href="project_detail.html">商家与购物用户的交互试衣应用</a>
+                                    <br/>
+                                    <small>创建于 2014.08.15</small>
+                                </td>
+                                <td class="project-actions">
+                                    <a href="#" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> 查看 </a>
+                                    <a href="#" class="btn btn-white btn-sm"><i class="fa fa-pencil"></i> 编辑 </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="project-status">
+                                    <span class="label label-default">已取消</span>
+                                </td>
+                                <td class="project-title">
+                                    <a href="project_detail.html">商家与购物用户的交互试衣应用</a>
+                                    <br/>
+                                    <small>创建于 2014.08.15</small>
+                                </td>
+                                <td class="project-actions">
+                                    <a href="#" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> 查看 </a>
+                                    <a href="#" class="btn btn-white btn-sm"><i class="fa fa-pencil"></i> 编辑 </a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="__PUBLIC__/Admin/statistic/bootstrap/js/jquery.min.js?v=2.1.4"></script>
+<script src="__PUBLIC__/Admin/statistic/bootstrap/js/bootstrap.min.js?v=3.3.5"></script>
+<script src="__PUBLIC__/Admin/statistic/bootstrap/js/content.min.js?v=1.0.0"></script>
+<script>
+
+</script>
+<div class="dtl-ft ovflw">
+    <div class=" fl dtl-icon dtl-bck ovflw">
+        <a href="javascript:history.back();">
+            <i class="iconfont">&#xe679</i>
+        </a>
+    </div>
+</div>
+<!--通用分享-->
+<include file="./Tpl/App/Shop_share.html" />
+</body>
+</html>
