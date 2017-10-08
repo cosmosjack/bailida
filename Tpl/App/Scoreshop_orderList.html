@@ -93,63 +93,6 @@
                                     </td>
                                 </tr>
                             </foreach>
-
-                            <tr>
-                                <td class="project-status">
-                                            <span class="label label-primary">进行中</span>
-                                </td>
-                                <td class="project-title">
-                                    <a href="project_detail.html">米莫说｜MiMO Show</a>
-                                    <br/>
-                                    <small>创建于 2014.08.15</small>
-                                </td>
-                                <td class="project-actions">
-                                    <a href="#" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> 查看 </a>
-                                    <a href="#" class="btn btn-white btn-sm"><i class="fa fa-pencil"></i> 编辑 </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="project-status">
-                                            <span class="label label-default">已取消</span>
-                                </td>
-                                <td class="project-title">
-                                    <a href="project_detail.html">商家与购物用户的交互试衣应用</a>
-                                    <br/>
-                                    <small>创建于 2014.08.15</small>
-                                </td>
-                                <td class="project-actions">
-                                    <a href="#" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> 查看 </a>
-                                    <a href="#" class="btn btn-white btn-sm"><i class="fa fa-pencil"></i> 编辑 </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="project-status">
-                                    <span class="label label-default">已取消</span>
-                                </td>
-                                <td class="project-title">
-                                    <a href="project_detail.html">商家与购物用户的交互试衣应用</a>
-                                    <br/>
-                                    <small>创建于 2014.08.15</small>
-                                </td>
-                                <td class="project-actions">
-                                    <a href="#" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> 查看 </a>
-                                    <a href="#" class="btn btn-white btn-sm"><i class="fa fa-pencil"></i> 编辑 </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="project-status">
-                                    <span class="label label-default">已取消</span>
-                                </td>
-                                <td class="project-title">
-                                    <a href="project_detail.html">商家与购物用户的交互试衣应用</a>
-                                    <br/>
-                                    <small>创建于 2014.08.15</small>
-                                </td>
-                                <td class="project-actions">
-                                    <a href="#" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> 查看 </a>
-                                    <a href="#" class="btn btn-white btn-sm"><i class="fa fa-pencil"></i> 编辑 </a>
-                                </td>
-                            </tr>
                             </tbody>
                         </table>
                     </div>
@@ -166,6 +109,8 @@
 <script>
     function order_list(e){
         console.log($(e).val());
+        var id = $(e).val();
+        location.href = AppUrl+"/Scoreshop/orderList/type/"+id;
     }
     function show_detail(id){
         console.log(id);
