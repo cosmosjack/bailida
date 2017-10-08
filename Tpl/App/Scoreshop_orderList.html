@@ -49,10 +49,10 @@
             <div class="ibox">
                 <div class="ibox-title">
                     <div class="ibox-tools">
-                        <select onchange="order_list(this);" class="label">
+                        <select id="order_list_select" onchange="order_list(this);" class="label">
                             <option value="1">待领取</option>
                             <option value="2" >已领取</option>
-                            <option value="3" >所有</option>
+                            <option value="3">所有</option>
                         </select>
                     </div>
                 </div>
@@ -61,18 +61,18 @@
                         <div class="col-md-1">
                             <button type="button" id="loading-example-btn" class="btn btn-white btn-sm"><i class="fa fa-refresh"></i> 刷新</button>
                         </div>
-                        <div class="col-md-11">
+                        <!--<div class="col-md-11">
                             <div class="input-group">
                                 <input type="text" placeholder="请输入礼品名称" class="input-sm form-control"> <span class="input-group-btn">
                                         <button type="button" class="btn btn-sm btn-primary"> 搜索</button> </span>
                             </div>
-                        </div>
+                        </div>-->
                     </div>
 
                     <div class="project-list">
 
                         <table class="table table-hover">
-                            <tbody>
+                            <tbody id="order_list_body">
 
                             <tr>
                                 <td class="project-status">
@@ -159,6 +159,9 @@
 <script src="__PUBLIC__/Admin/statistic/bootstrap/js/bootstrap.min.js?v=3.3.5"></script>
 <script src="__PUBLIC__/Admin/statistic/bootstrap/js/content.min.js?v=1.0.0"></script>
 <script>
+    $(function(){
+        $("#order_list_select").find("option[value='{$order_type}']").attr("selected",true);
+    });
     function order_list(e){
         console.log($(e).val());
     }
