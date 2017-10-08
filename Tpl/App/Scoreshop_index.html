@@ -391,7 +391,7 @@
         $.ajax({
             url:AppUrl+"/Scoreshop/add_order",
             type:"GET",
-            data:{},
+            data:{"score_id":id},
             success:function(msg){
                 console.log(msg);
             },
