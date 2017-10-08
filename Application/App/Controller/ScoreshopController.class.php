@@ -38,7 +38,7 @@ class ScoreshopController extends BaseController
     }
 /* 瀑布流 */
     public function get_goods_list(){
-
+        p($_SESSION);
     }
     /* 积分下订单 */
     public function add_order(){
@@ -63,8 +63,10 @@ class ScoreshopController extends BaseController
         $insert['address_id'] = $data_vip_address['id'] ? $data_vip_address['id'] : 0;
         $insert['time'] = time();
         $db_score_order = M("score_order");
+
         $result = $db_score_order->add($insert);
         if(!$result){
+            /*  */
             $this->ajaxReturn(array('control'=>'add_order','code'=>0,'msg'=>'参数不全无法生成订单','data'=>$_GET),"JSON");
             die();
         }
