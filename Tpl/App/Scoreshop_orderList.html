@@ -62,10 +62,6 @@
                         <div class="col-md-1">
                             <button type="button" id="loading-example-btn" class="btn btn-white btn-sm"><i class="fa fa-refresh"></i> 刷新</button>
                         </div>
-                        <div class="col-sm-6 h-100 p-lg">
-                            <p>成功提示 </p>
-                            <button class="btn btn-success btn-sm demo2">打开示例</button>
-                        </div>
                         <!--<div class="col-md-11">
                             <div class="input-group">
                                 <input type="text" placeholder="请输入礼品名称" class="input-sm form-control"> <span class="input-group-btn">
@@ -173,7 +169,8 @@
     }
     function show_detail(id){
         console.log(id);
-        swal({title:"太帅了",text:"小手一抖就打开了一个框",type:"success"});
+        var score_code = $("#order_"+id).val();
+        swal({title:"太帅了",text:"兑换码:"+score_code,type:"success"});
 
     }
     $(document).ready(function(){
