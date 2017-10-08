@@ -72,13 +72,13 @@ class ScoreshopController extends BaseController
         }
         $result = $db_score_order->add($insert);
         if(!$result){
-            /* 扣除积分 更新当前session */
-            $db_vip = M("vip");
-            $db_vip->where(array("id"=>$_SESSION['WAP']['vipid']))->setDec('score',$insert['totalscore']); // 用户的积分减5
-            $_SESSION["WAP"]['vip']['score'] = $_SESSION["WAP"]['vip']['score']-$insert['totalscore'];
             $this->ajaxReturn(array('control'=>'add_order','code'=>0,'msg'=>'参数不全无法生成订单','data'=>$_GET),"JSON");
             die();
         }
+        /* 扣除积分 更新当前session */
+        $db_vip = M("vip");
+        $db_vip->where(array("id"=>$_SESSION['WAP']['vipid']))->setDec('score',$insert['totalscore']); // 用户的积分减5
+        $_SESSION["WAP"]['vip']['score'] = $_SESSION["WAP"]['vip']['score']-$insert['totalscore'];
         $this->ajaxReturn(array('control'=>'add_order','code'=>200,'msg'=>'成功'),"JSON");
     }
     /* 订单列表 */
