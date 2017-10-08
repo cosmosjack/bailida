@@ -28,7 +28,7 @@
         <foreach name="data_score_goods" item="val" key="k" >
             <div class="col-sm-4">
                 <div class="contact-box">
-                    <a href="profile.html">
+                    <a>
                         <div class="col-sm-4">
                             <div class="text-center">
                                 <img alt="image" class="img-circle m-t-xs img-responsive" src="__ROOT__/Upload/{$val.savepath}{$val.savename}">
@@ -388,6 +388,17 @@
 <script>
     function exchange(id){
         alert(id);
+        $.ajax({
+            url:AppUrl+"/Scoreshop/add_order",
+            type:"GET",
+            data:{},
+            success:function(msg){
+                console.log(msg);
+            },
+            error:function(){
+                console.log("http error");
+            }
+        });
     }
     $(document).ready(function(){$(".contact-box").each(function(){animationHover(this,"pulse")})});
 </script>

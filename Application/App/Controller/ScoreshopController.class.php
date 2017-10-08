@@ -40,6 +40,10 @@ class ScoreshopController extends BaseController
     public function get_goods_list(){
 
     }
+    /* 积分下订单 */
+    public function add_order(){
+        $this->ajaxReturn($_SESSION,"JSON");
+    }
 
 
 }

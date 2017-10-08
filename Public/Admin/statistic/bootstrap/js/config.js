@@ -3,5 +3,5 @@
  */
 var UploadUrl = "http://"+window.location.host+"/Upload";
 var AgentUrl = "http://"+window.location.host+"/agent";
-var ApiUrl = "http://"+window.location.host+"/mobile";//"http://v3.33hao.com/mobile";
+var AppUrl = "http://"+window.location.host+"/App";//"http://v3.33hao.com/mobile";
 var AdminUrl = "http://"+window.location.host+"/Admin/";
