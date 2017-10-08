@@ -61,7 +61,7 @@ class ScoreshopController extends BaseController
         $insert['totalscore'] = $data_score['score'];
         $insert['status'] = 1;
         $insert['address_id'] = $data_vip_address['id'] ? $data_vip_address['id'] : 0;
-        $insert['time'] = time();
+//        $insert['time'] = time();
         $db_score_order = M("score_order");
         /* 查出会员的剩余积分 */
         $_SESSION["WAP"]['vip']['score'] ; // 会员的剩余积分
