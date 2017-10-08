@@ -21,6 +21,24 @@
 <meta content="telephone=no" name="format-detection" />
 <!--不识别电话-->
 <meta content="email=no" name="format-detection" />
+<style>
+    .dtl-ft {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+
+        margin: 0 auto;
+        border-top: 1px solid #eeeeee;
+        background: -webkit-linear-gradient(#f8f8f8, #ececec);
+        background: -moz-linear-gradient(#f8f8f8, #ececec);
+        background: -o-linear-gradient(#f8f8f8, #ececec);
+        background: -webkit-gradient(linear, 0 0, 0 100%, from(#f8f8f8), to(#ececec));
+        background: linear-gradient(#f8f8f8, #ececec);
+        opacity: 0.95;
+        z-index: 100;
+        padding: 5px 0;
+    }
+</style>
 </head>
 <body class="gray-bg">
 
@@ -141,10 +159,33 @@
 <script>
 
 </script>
+
+<style>
+    .ovflw {
+        overflow: hidden;
+    }
+    .fl {
+        float: left;
+        display: inline-block;
+    }
+    .dtl-icon {
+        width: 12%;
+        /*background: #fbfbfb;*/
+    }
+
+    .dtl-bck {
+        margin-left: 2%;
+        margin-right: 6%;
+    }
+    .ovflw {
+        overflow: hidden;
+    }
+
+</style>
 <div class="dtl-ft ovflw">
     <div class=" fl dtl-icon dtl-bck ovflw">
         <a href="javascript:history.back();">
-            <i class="fa fa-angle-left">&#xe679</i>
+            <i class="fa fa-angle-left"></i>
         </a>
     </div>
 </div>
