@@ -91,7 +91,7 @@ class ScoreshopController extends BaseController
                     break;
             }
         $order_type = $_GET['type'] ? $_GET['type'] : 3;
-        $data_score_order = $db_score_order->join('wfx_score on wfx_score_order.score_id = wfx_score.id')->where($where)->select();
+        $data_score_order = $db_score_order->field('wfx_score_order.*,wfx_score.name as score_name')->join('wfx_score on wfx_score_order.score_id = wfx_score.id')->where($where)->select();
         p($data_score_order);
             $this->assign("order_type",$order_type);
             $this->assign("data_score_order",$data_score_order);
