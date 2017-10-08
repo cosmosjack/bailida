@@ -77,7 +77,7 @@
                             <foreach name="data_score_order" item="val" key="k" >
                                 <tr>
                                     <td class="project-status">
-                                        <span class="label label-primary"><if condition="$val eq 1 ">待领取    <else /> 已领取</if></span>
+                                        <span class="label label-primary"><if condition="$val.status eq 1 ">待领取    <else /> 已领取</if></span>
                                     </td>
                                     <td class="project-title">
                                         <a href="project_detail.html">{$val.score_name}</a>
