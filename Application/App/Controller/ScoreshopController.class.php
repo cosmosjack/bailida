@@ -75,24 +75,24 @@ class ScoreshopController extends BaseController
     /* 订单列表 */
     public function orderList(){
         $db_score_order = M("score_order");
-        $where['user_id'] = $_SESSION['WAP']['vipid'];
+        $where['wfx_score_order.user_id'] = $_SESSION['WAP']['vipid'];
             switch ($_GET['type']){
                 case 1:
-                    $where['status'] = 1;
+                    $where['wfx_score_order.status'] = 1;
                     break;
                 case 2:
-                    $where['status'] = 2;
+                    $where['wfx_score_order.status'] = 2;
                     break;
                 case 3:
-                    $where['status'] = array("in",array(1,2));
+                    $where['wfx_score_order.status'] = array("in",array(1,2));
                     break;
                 default:
-                    $where['status'] = array("in",array(1,2));
+                    $where['wfx_score_order.status'] = array("in",array(1,2));
                     break;
             }
         $order_type = $_GET['type'] ? $_GET['type'] : 3;
-//        $data_score_order = $db_score_order->field('wfx_score_order.*,wfx_score.name as score_name')->join('wfx_score ON wfx_score_order.score_id = wfx_score.id')->where($where)->select();
-        $data_score_order = $db_score_order->field('wfx_score_order.*,wfx_score.name as score_name')->join('wfx_score ON wfx_score_order.score_id = wfx_score.id')->select();
+        $data_score_order = $db_score_order->field('wfx_score_order.*,wfx_score.name as score_name')->join('wfx_score ON wfx_score_order.score_id = wfx_score.id')->where($where)->select();
+//        $data_score_order = $db_score_order->field('wfx_score_order.*,wfx_score.name as score_name')->join('wfx_score ON wfx_score_order.score_id = wfx_score.id')->select();
         p($data_score_order);
             $this->assign("order_type",$order_type);
             $this->assign("data_score_order",$data_score_order);
