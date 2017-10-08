@@ -42,7 +42,33 @@ class ScoreshopController extends BaseController
     }
     /* 积分下订单 */
     public function add_order(){
-        $this->ajaxReturn($_SESSION,"JSON");
+        if(empty($_SESSION['WAP']['vipid'])){
+            $this->ajaxReturn(array('control'=>'add_order','code'=>0,'msg'=>'您属于非法用户'),"JSON");
+            die();
+        }
+        $db_score = M("score");
+
+        $data_score = $db_score->where(array("id"=>$_GET['score_id'],"status"=>1))->find();
+        if(!$data_score){
+            $this->ajaxReturn(array('control'=>'add_order','code'=>0,'msg'=>'此礼品库存已不足'),"JSON");
+            die();
+        }
+        $db_vip_address = M("vip_address");
+        $data_vip_address = $db_vip_address->where(array("vipid"=>$_SESSION['WAP']['vipid'],"xqid"=>1))->find();
+        $insert['user_id'] = $_SESSION['WAP']['vipid'];
+        $insert['orderid'] = date("ymd",time()).mt_rand(100000,999999);
+        $insert['score_id'] = $_GET['score_id'];
+        $insert['totalscore'] = $data_score['score'];
+        $insert['status'] = 0;
+        $insert['address_id'] = $data_vip_address['id'] ? $data_vip_address['id'] : 0;
+        $insert['time'] = time();
+        $db_score_order = M("score_order");
+        $result = $db_score_order->add($insert);
+        if(!$result){
+            $this->ajaxReturn(array('control'=>'add_order','code'=>0,'msg'=>'参数不全无法生成订单','data'=>$_GET),"JSON");
+            die();
+        }
+        $this->ajaxReturn(array('control'=>'add_order','code'=>200,'msg'=>'成功'),"JSON");
     }
 
 
