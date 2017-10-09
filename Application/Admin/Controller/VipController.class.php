@@ -366,6 +366,8 @@ class VipController extends BaseController
     {
         $id = I('id');
         $m = M('Vip');
+        $db_agent_level = M("agent_level");
+
         //dump($m);
         //设置面包导航，主加载器请配置
         $bread = array(
@@ -404,7 +406,6 @@ class VipController extends BaseController
                 /* 改变级别 start */
                 $db_level_set = M("level_set");
                 $data_level_set = $db_level_set->where(array('id'=>$data['agent_level']))->find();
-                $db_agent_level = M("agent_level");
                 $data_agent_level = $db_agent_level->where(array("vip_id"=>$data['id']))->find();
                 if($data_agent_level){
 //                            $update['vip_id'] = $data['id'];
