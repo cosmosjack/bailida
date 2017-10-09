@@ -13,7 +13,10 @@ class AgentController extends BaseController{
         parent::__construct();
     }
     public function set(){
-
+        $db_level_set = M("level_set");
+        $data_level_set = $db_level_set->select();
+        $this->assign("data_level_set",$data_level_set);
+        p($data_level_set);
         $this->display();
     }
 }
