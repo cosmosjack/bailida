@@ -54,6 +54,9 @@ class IndexController extends InitController
 
         $record = M("WheelRecord")->where(array("user_id" => session("userId")))->order("id desc")->find();
         $this->assign("record", $record);
+        p(session("openid"));
+        p(session("userId"));
+
         $this->display();
     }
 
@@ -63,6 +66,8 @@ class IndexController extends InitController
     function lotteryJson()
     {
         p(session("userId"));
+        p(session("openid"));
+        p($_SESSION);
         die();
         $today = date("Y-m-d");
         $where["time"] = array("like", $today . "%");
