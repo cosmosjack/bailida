@@ -30,6 +30,7 @@ class IndexController extends InitController
     public function index()
     {
         R("App/Common/oauthDebug");
+        echo 'ddd';
         p(session("sqopenid"));
         if (!session("sqopenid")) {
             $weObj = $this->init();
