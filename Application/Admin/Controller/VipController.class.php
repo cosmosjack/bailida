@@ -409,7 +409,7 @@ class VipController extends BaseController
                 $data_agent_level = $db_agent_level->where(array("vip_id"=>$data['id']))->find();
                 if($data_agent_level){
 //                            $update['vip_id'] = $data['id'];
-                    $update['agent_level'] = 1;
+                    $update['agent_level'] = $data['id'];
                     $update['level_desc'] = $data_level_set['level_name'];
                     $update['point'] = $data_level_set['first_point'];
                     $update['second_point'] = $data_level_set['second_point'];
