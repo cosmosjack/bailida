@@ -27,7 +27,7 @@
 
                     <foreach name="data_level_set" item="val" key="key">
                         <div class="form-group">
-                            <label style="color: #19ba44;background-color: #000f22;text-align: center;" class="col-lg-2 control-label">{$val.level_name}</label>
+                            <label  class="col-lg-2 control-label">{$val.level_name}</label>
                             <div class="input-group input-group-sm col-lg-2 left15">
                                 <span class="input-group-addon">押金</span>
                                 <input type="text" class="form-control" name="money_{$val.id}" value="{$val.money}">
@@ -120,6 +120,7 @@
 
                     <div class="form-group">
                         <div class="col-lg-offset-2 col-lg-4">
+                            <input type="hidden" name="sub" value="ok">
                             <button class="btn btn-primary btn-lg submit" type="submit" disabled="disabled">保存</button>&nbsp;&nbsp;&nbsp;&nbsp;
                             <button class="btn btn-palegreen btn-lg" type="reset">重填</button>
                         </div>

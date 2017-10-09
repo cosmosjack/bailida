@@ -14,9 +14,15 @@ class AgentController extends BaseController{
     }
     public function set(){
         $db_level_set = M("level_set");
-        $data_level_set = $db_level_set->select();
-        $this->assign("data_level_set",$data_level_set);
-        p($data_level_set);
-        $this->display();
+
+        if(isset($_POST['sub']) && $_POST['sub'] == 'ok'){
+            p($_POST);
+        }else{
+            $data_level_set = $db_level_set->select();
+            $this->assign("data_level_set",$data_level_set);
+            p($data_level_set);
+            $this->display();
+        }
+
     }
 }
