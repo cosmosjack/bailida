@@ -25,23 +25,25 @@
             <div class="widget-body">
                 <form id="AppForm" action="" method="post" class="form-horizontal" data-bv-message="" data-bv-feedbackicons-valid="glyphicon glyphicon-ok" data-bv-feedbackicons-invalid="glyphicon glyphicon-remove" data-bv-feedbackicons-validating="glyphicon glyphicon-refresh">
 
+                    <foreach name="data_level_set" item="val" key="key">
+                        <div class="form-group">
+                            <label style="color: #19ba44;background-color: #000f22;text-align: center;" class="col-lg-2 control-label">{$val.level_name}</label>
+                            <div class="input-group input-group-sm col-lg-2 left15">
+                                <span class="input-group-addon">押金</span>
+                                <input type="text" class="form-control" name="money_{$val.id}" value="{$val.money}">
+                            </div>
+                            <div class="input-group input-group-sm col-lg-2 left15">
+                                <span class="input-group-addon">提成点</span>
+                                <input type="text" class="form-control" name="first_{$val.id}" value="{$val.first_point}">
+                            </div>
+                            <div class="input-group input-group-sm col-lg-2 left15">
+                                <span class="input-group-addon">下级提成点</span>
+                                <input type="text" class="form-control" name="second_{$val.id}" value="{$val.second_poiont}">
+                            </div>
+                            <label class="col-lg-0 control-label darkorange">&nbsp;&nbsp;固定提成点,尽量不要多次修改。</label>
+                        </div>
+                    </foreach>
 
-                    <div class="form-group">
-                        <label style="color: #19ba44;background-color: #000f22;text-align: center;" class="col-lg-2 control-label">白银代理</label>
-                        <div class="input-group input-group-sm col-lg-2 left15">
-                            <span class="input-group-addon">押金</span>
-                            <input type="text" class="form-control" name="reg_score" value="{$data.reg_score}">
-                        </div>
-                        <div class="input-group input-group-sm col-lg-2 left15">
-                            <span class="input-group-addon">提成点</span>
-                            <input type="text" class="form-control" name="reg_exp" value="{$data.reg_exp}">
-                        </div>
-                        <div class="input-group input-group-sm col-lg-2 left15">
-                            <span class="input-group-addon">下级提成点</span>
-                            <input type="text" class="form-control" name="reg_exp" value="{$data.reg_exp}">
-                        </div>
-                        <label class="col-lg-0 control-label darkorange">&nbsp;&nbsp;固定提成点,尽量不要多次修改。</label>
-                    </div>
 
                    <!-- <div class="form-group">
                         <label style="color: #1c44ba;background-color: #000f22;text-align: center;" class="col-lg-2 control-label">黄金代理</label>
@@ -56,7 +58,7 @@
                         <label class="col-lg-0 control-label darkorange">&nbsp;&nbsp;固定提成点,尽量不要多次修改。</label>
                     </div>-->
 
-                    <div class="form-group">
+                    <!--<div class="form-group">
                         <label style="color: #ba0e0c;background-color: #000f22;text-align: center;" class="col-lg-2 control-label">铂金代理</label>
                         <div class="input-group input-group-sm col-lg-2 left15">
                             <span class="input-group-addon">押金</span>
@@ -88,7 +90,7 @@
                             <input type="text" class="form-control" name="reg_exp" value="{$data.reg_exp}">
                         </div>
                         <label class="col-lg-0 control-label darkorange">&nbsp;&nbsp;固定提成点,尽量不要多次修改。</label>
-                    </div>
+                    </div>-->
 
                    <!-- <div class="form-group">
                         <label style="color: rgba(170, 116, 10, 0.98);background-color: #000f22;text-align: center;" class="col-lg-2 control-label">王者代理</label>
