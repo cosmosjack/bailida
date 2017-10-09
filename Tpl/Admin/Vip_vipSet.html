@@ -198,7 +198,7 @@ $('#AppForm').bootstrapValidator({
         var data = $('#AppForm').serialize();
         $.App.ajax('post', tourl, data, null);
         return false;
-    },
+    }
 });
 $('#isfxbtn').on('click', function() {
     var value = $(this).prop('checked') ? 1 : 0;

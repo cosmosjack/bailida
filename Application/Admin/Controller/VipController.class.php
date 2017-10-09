@@ -439,7 +439,7 @@ class VipController extends BaseController
                 if($cache['isfx'] ==1){
                     $data_level = $db_agent_level->where(array("vip_id"=>$id))->find();
                     if($data_level){
-                        $this->assign("level",$data_level['id']);
+                        $this->assign("level",$data_level['agent_level']);
                     }else{
                         $this->assign("level",1);
                     }
