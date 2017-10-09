@@ -16,7 +16,8 @@ class AgentController extends BaseController{
         $db_level_set = M("level_set");
 
         if(isset($_POST['sub']) && $_POST['sub'] == 'ok'){
-            $this->ajaxReturn(array("status"=>"-1","msg"=>"添加成功"),"JSON");
+
+            $this->ajaxReturn(array("status"=>"0","msg"=>"添加成功",'data'=>$_POST),"JSON");
         }else{
             $data_level_set = $db_level_set->select();
             $this->assign("data_level_set",$data_level_set);
