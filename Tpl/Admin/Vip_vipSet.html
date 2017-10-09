@@ -181,6 +181,9 @@ setBread($('#tmpbread').html());
 <!--/面包屑导航封装-->
 <!--表单验证与提交封装-->
 <script type="text/javascript">
+    $(function(){
+       $("input[name='agent_level']").find("option[value='{$level}']").attr("selected",true);
+    });
 $('#AppForm').bootstrapValidator({
     submitHandler: function(validator, form, submitButton) {
         var lid = '';

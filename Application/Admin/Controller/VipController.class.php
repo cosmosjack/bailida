@@ -415,7 +415,7 @@ class VipController extends BaseController
                     @$result = $db_agent_level->where(array("vip_id"=>$data['id']))->save($update);
                 }else{
                     $insert['vip_id'] = $data['id'];
-                    $insert['agent_level'] = 1;
+                    $insert['agent_level'] = $data_level_set['id'];
                     $insert['level_desc'] = $data_level_set['level_name'];
                     $insert['point'] = $data_level_set['first_point'];
                     $insert['second_point'] = $data_level_set['second_point'];
@@ -434,11 +434,22 @@ class VipController extends BaseController
         if ($id) {
             $cache = $m->where('id=' . $id)->find();
             $this->assign('cache', $cache);
+            /* 获取合伙人的级别 start */
+                if($cache['isfx'] ==1){
+                    $data_level = $db_agent_level->where(array("vip_id"=>$id))->find();
+                    if($data_level){
+                        $this->assign("level",$data_level['id']);
+                    }else{
+                        $this->assign("level",1);
+                    }
+                }
+            /* 获取合伙人的级别 end */
         } else {
             $info['status'] = 0;
             $info['msg'] = '未获取会员ID！';
             $this->ajaxReturn($info);
         }
+
         $this->display();
     }
 
