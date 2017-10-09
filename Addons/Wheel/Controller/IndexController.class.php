@@ -30,8 +30,6 @@ class IndexController extends InitController
     public function index()
     {
         R("App/Common/oauthDebug");
-        echo 'ddd';
-        p(session("sqopenid"));
         if (!session("sqopenid")) {
             $weObj = $this->init();
             $token = $weObj->getOauthAccessToken();
@@ -47,16 +45,16 @@ class IndexController extends InitController
             }
         }
 
-        $user = M("Vip")->where(array("openid" => session("openid")))->find();
+        $user = M("Vip")->where(array("openid" => $_SESSION['WAP']['vip']['openid']))->find();
 
         $config = M("WheelConfig")->find();
         $this->assign("config", $config);
         $this->assign("user", $user);
 
-        $record = M("WheelRecord")->where(array("user_id" => session("userId")))->order("id desc")->find();
+        $record = M("WheelRecord")->where(array("user_id" => $_SESSION['WAP']['vip']['id']))->order("id desc")->find();
         $this->assign("record", $record);
-        p(session("openid"));
-        p(session("userId"));
+//        p($_SESSION['WAP']['vip']['openid']);
+//        p($_SESSION['WAP']['vip']['id']);
 
         $this->display();
     }
@@ -66,13 +64,13 @@ class IndexController extends InitController
      */
     function lotteryJson()
     {
-        p(session("userId"));
-        p(session("openid"));
-        p($_SESSION);
-        die();
+//        p($_SESSION['WAP']['vip']['openid']);
+//        p($_SESSION['WAP']['vip']['id']);
+//        p($_SESSION);
+//        die();
         $today = date("Y-m-d");
         $where["time"] = array("like", $today . "%");
-        $where["user_id"] = session("userId");
+        $where["user_id"] = $_SESSION['WAP']['vip']['id'];
         $record = D("Addons://Wheel/WheelRecord")->where($where)->find();
         if ($record) {
             $this->ajaxReturn("-1");
@@ -118,7 +116,7 @@ class IndexController extends InitController
             $rid = $this->returnRid($rid, $file, $data, $proCount, $proArr);
         }
 
-        M("WheelRecord")->add(array("user_id" => session("userId"), "level" => $rid));
+        M("WheelRecord")->add(array("user_id" => $_SESSION['WAP']['vip']['id'], "level" => $rid));
         echo $rid;
     }
 
