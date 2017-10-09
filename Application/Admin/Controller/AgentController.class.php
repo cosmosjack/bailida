@@ -13,6 +13,7 @@ class AgentController extends BaseController{
         parent::__construct();
     }
     public function set(){
+
         $this->display();
     }
 }

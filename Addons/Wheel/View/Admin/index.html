@@ -1,3 +1,145 @@
+<script src="__PUBLIC__/Admin/js/jquery-2.0.3.min.js"></script>
+<script src="__PUBLIC__/Admin/js/bootstrap.min.js"></script>
+<script src="__PUBLIC__/Admin/js/beyond.min.js"></script>
+<script src="__PUBLIC__/Admin/js/toastr/toastr.js"></script>
+<script src="__PUBLIC__/Admin/js/validation/bootstrapValidator.js"></script>
+<script src="__PUBLIC__/Admin/js/bootbox/bootbox.js"></script>
+<script type="text/javascript">
+    var RootPath = "__ROOT__";
+    var AppLoaderTitle = $('#App-loader-title');
+    var AppLoaderRefresh = $('#refresh-toggler');
+    var AppLoaderReloader = $('#App-reloader');
+    var AppSbLi = $('.sidebar-menu li');
+    //主导航高亮
+    var AppSideli = $('.submenu li');
+    //公共设置HTML内容方法
+    function setHtml(id, html) {
+        $(id).html(html);
+    }
+
+    //初始化主框架加载后的操作
+    function initFrame() {
+        var AppLoaderTitle = $('#App-loader-title');
+        var AppLoaderRefresh = $('#refresh-toggler');
+        var AppLoaderReloader = $('#App-reloader');
+        //处理Frame加载后的所有链接
+        var links = $('a');
+        $(links).on('click', function() {
+
+            //$(AppSideli).removeClass('active');
+            var loader = $(this).data('loader');
+            var tourl = $(this).attr('href');
+            var name = $(this).data('loadername');
+            $(AppLoaderReloader).attr('href', tourl).data('loader', loader).data('loadername', name);
+            if (loader) {
+                //高亮主导航
+                var li = $(this).parent('li');
+                //$(li).siblings().removeClass('active');
+                $(AppSbLi).removeClass('active');
+                $(li).addClass('active');
+                //如果是主Loader
+                if (loader == 'App-loader') {
+                    setHtml(AppLoaderTitle, name);
+                    $(AppLoaderRefresh).attr('href', tourl).data('loader', 'App-loader').data('loadername', name);
+
+                }
+                $('#' + loader).empty().load(tourl, function() {
+                    initLoader(loader);
+                });
+                return false;
+            }
+        });
+    }
+    //初始化Loader加载后的操作
+    function initLoader(loader) {
+        //加载Widget特效
+        InitiateWidgets();
+        //处理Loader加载后的所有链接
+        var loaderlinks = $('#' + loader + ' a');
+        $(loaderlinks).on('click', function() {
+            var loader = $(this).data('loader');
+            var tourl = $(this).attr('href');
+            var search = $(this).data('search');
+            var name = $(this).data('loadername');
+            //特殊按钮特效--全部阻止
+            var type = $(this).data('type');
+
+            if (type) {
+                switch (type) {
+                    case 'del':
+                        var content = $(this).data('content');
+                        if (!content) content = "确定要删除吗？";
+                        var toajax = $(this).data('ajax');
+                        var funok = function() {
+                            var callok = function() {
+                                //成功删除后刷新
+                                $(AppLoaderReloader).trigger('click');
+                                return false;
+                            };
+                            var callerr = function() {
+                                //拦截错误
+                                return false;
+                            };
+                            $.App.ajax('post', toajax, 'nodata', callok, callerr);
+                        }
+                        $.App.confirm(content, funok);
+                        return false;
+                        //
+                        break;
+                    case 'confirm':
+                        var content = $(this).data('content');
+                        if (!content) content = "确定要更改吗？";
+                        var toajax = $(this).data('ajax');
+                        var funok = function() {
+                            var callok = function() {
+                                //成功删除后刷新
+                                $(AppLoaderReloader).trigger('click');
+                                return false;
+                            };
+                            var callerr = function() {
+                                //拦截错误
+                                return false;
+                            };
+                            $.App.ajax('post', toajax, 'nodata', callok, callerr);
+                        }
+                        $.App.confirm(content, funok);
+                        return false;
+                        //
+                        break;
+                    default:
+                        $.App.alert('danger', '此Type属性系统未定义！');
+                        break;
+                }
+
+            } else {
+                //不存在特殊效果时，绑定Reloader刷新地址
+                $(AppLoaderReloader).attr('href', tourl).data('loader', loader).data('loadername', name).data('search', search);
+            }
+
+            if (loader) {
+                //如果是主Loader
+                if (loader == 'App-loader') {
+                    setHtml(AppLoaderTitle, name);
+                    $(AppLoaderRefresh).attr('href', tourl).data('loader', 'App-loader').data('loadername', name);
+                }
+                //如果有搜索条件绑定
+                if (search) {
+                    var sv = $('#' + search).serialize();
+                    if (sv) {
+                        tourl = tourl + '?' + sv;
+                    }
+                }
+                $('#' + loader).empty().load(tourl, function() {
+                    initLoader(loader);
+                });
+                return false;
+            }
+        });
+
+    }
+
+
+</script>
 <div class="row">
     <div class="col-lg-12">
         <div class="widget-container fluid-height clearfix">
