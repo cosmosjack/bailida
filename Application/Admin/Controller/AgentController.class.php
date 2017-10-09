@@ -16,15 +16,21 @@ class AgentController extends BaseController{
         $db_level_set = M("level_set");
 
         if(isset($_POST['sub']) && $_POST['sub'] == 'ok'){
-
+            $row = false;
             for($i=1;$i<4;$i++){
                     $update['first_point'] = $_POST["first_{$i}"];
                     $update['second_point'] = $_POST["second_{$i}"];
                     $update['money'] = $_POST["money_{$i}"];
                 $result[$i] = $db_level_set->where(array("id"=>$i))->save($update);
+                if($result[$i]){
+                    $row = true;
+                }
             }
-
-            $this->ajaxReturn(array("status"=>"0","msg"=>"添加成功",'data'=>$_POST),"JSON");
+            if($row){
+                $this->ajaxReturn(array("status"=>"0","msg"=>"修改成功",'data'=>$_POST),"JSON");
+            }else{
+                $this->ajaxReturn(array("status"=>"0","msg"=>"无任何修改",'data'=>$_POST),"JSON");
+            }
         }else{
             $data_level_set = $db_level_set->select();
             $this->assign("data_level_set",$data_level_set);
