@@ -400,6 +400,33 @@ class VipController extends BaseController
                 $info['status'] = 0;
                 $info['msg'] = '未获取会员ID！';
             }
+            if($data['isfx']==1 && isset($_POST['agent_level'])){
+                /* 改变级别 start */
+                $db_level_set = M("level_set");
+                $data_level_set = $db_level_set->where(array('id'=>$data['agent_level']))->find();
+                $db_agent_level = M("agent_level");
+                $data_agent_level = $db_agent_level->where(array("vip_id"=>$data['id']))->find();
+                if($data_agent_level){
+//                            $update['vip_id'] = $data['id'];
+                    $update['agent_level'] = 1;
+                    $update['level_desc'] = $data_level_set['level_name'];
+                    $update['point'] = $data_level_set['first_point'];
+                    $update['second_point'] = $data_level_set['second_point'];
+                    @$result = $db_agent_level->where(array("vip_id"=>$data['id']))->save($update);
+                }else{
+                    $insert['vip_id'] = $data['id'];
+                    $insert['agent_level'] = 1;
+                    $insert['level_desc'] = $data_level_set['level_name'];
+                    $insert['point'] = $data_level_set['first_point'];
+                    $insert['second_point'] = $data_level_set['second_point'];
+                    @$result = $db_agent_level->add($insert);
+                }
+                if($result){
+                    $info['status'] = 1;
+                    $info['msg'] = '设置成功！';
+                }
+                /* 改变级别 end */
+            }
             $this->ajaxReturn($info);
         }
 
