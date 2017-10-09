@@ -62,6 +62,8 @@ class IndexController extends InitController
      */
     function lotteryJson()
     {
+        p(session("userId"));
+        die();
         $today = date("Y-m-d");
         $where["time"] = array("like", $today . "%");
         $where["user_id"] = session("userId");
