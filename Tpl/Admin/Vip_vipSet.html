@@ -182,7 +182,7 @@ setBread($('#tmpbread').html());
 <!--表单验证与提交封装-->
 <script type="text/javascript">
     $(function(){
-       $("input[name='agent_level']").find("option[value='{$level}']").attr("selected",true);
+       $("select[name='agent_level']").find("option[value='{$level}']").attr("selected",true);
     });
 $('#AppForm').bootstrapValidator({
     submitHandler: function(validator, form, submitButton) {
