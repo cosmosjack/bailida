@@ -23,7 +23,7 @@
                 </div>
             </div>
             <div class="widget-body">
-                <form target="_self" action="{:U('Admin/Agent/set')}" method="post" class="form-horizontal">
+                <form onsubmit="return false;" id="AppForm" target="_self"  action="" method="post" class="form-horizontal">
 
                     <foreach name="data_level_set" item="val" key="key">
                         <div class="form-group">
@@ -159,11 +159,11 @@ $('#giftCheck').on('click', function() {
 });
 $('#AppForm').bootstrapValidator({
     submitHandler: function(validator, form, submitButton) {
-        var tourl = "{:U('Admin/Vip/set')}";
+        var tourl = "{:U('Admin/Agent/set')}";
         var data = $('#AppForm').serialize();
         $.App.ajax('post', tourl, data, null);
         return false;
-    },
+    }
 });
 
 $('#isqiandaobtn').on('click', function() {
