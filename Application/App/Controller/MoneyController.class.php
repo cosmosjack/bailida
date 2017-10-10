@@ -27,8 +27,8 @@ class MoneyController extends BaseController{
         p($data_order_calc);
         for($i=0;$i<count($data_order_calc);$i++){
             $temp_time = explode("|",$data_order_calc[$i]['calc_time']);
-            $data_order_calc['start_time'] = $temp_time[0];
-            $data_order_calc['end_time'] = $temp_time[1];
+            $data_order_calc[$i]['start_time'] = $temp_time[0];
+            $data_order_calc[$i]['end_time'] = $temp_time[1];
         }
         $this->assign("data_order_calc",$data_order_calc);
         $this->display();
