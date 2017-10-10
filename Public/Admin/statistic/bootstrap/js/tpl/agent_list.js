@@ -28,7 +28,7 @@ $(document).ready(function(){
                 columns: [
                     { data: 'nickname' },//店铺名字
                     { data: 'plv' }, //关系级别
-                    { data: 'city' },//代理人名字
+                    { data: 'pid' },//代理人名字
                     //{ data: 'store_user' },//联系人
                     /* { data:null,"defaultContent":"<span id='"+ this.a_id+"' value='' class='show_span'><em class='show_em'></em></span>",render:function(e){
                      console.log(e);
