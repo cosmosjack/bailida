@@ -24,7 +24,7 @@ class StatistiController extends BaseController
     }
     public function agent_list(){
         $db_vip = M("vip");
-        $data_vip = $db_vip->where(array("id"=>array("GT",600),"isfx"=>1))->select();
+        $data_vip = $db_vip->where(array("id"=>array("GT",600),"isfx"=>1),array("plv"=>2))->select();
         $this->ajaxReturn($data_vip,"JSON");
     }
     /* 统计自己和自己下线的订单 每月15号统计上个月的 没有支付的将自动销毁 没有确认的也将自动确认 如果有存在用户已经确认订单但没有填写真正订单金额的 将跳出统计并提醒 start */
