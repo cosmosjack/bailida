@@ -28,6 +28,7 @@ class IndexController extends BaseController
         foreach ($module as $k => $v) {
             $this->assign($v['name'], $v['name']);
         }
+        echo 'dddd';
         p($_SESSION['CMS']['user']['oath']);
         $this->display();
     }
