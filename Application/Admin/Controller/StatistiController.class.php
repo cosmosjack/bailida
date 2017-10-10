@@ -66,7 +66,7 @@ class StatistiController extends BaseController
             $agent_arr = array_merge($agent_arr,$temp_agent_arr[$k]);
         }
 //        array_push($agent_arr,$_GET['agent_id']); // TODO 开启或关闭自己买购买也有提成  去掉注释就会开启
-        P($agent_arr);
+//        P($agent_arr);
         /* 如果没有下线则 不用统计计算了 start */
         if(empty($agent_arr)){
             $this->error("没有下线,暂无法统计");
