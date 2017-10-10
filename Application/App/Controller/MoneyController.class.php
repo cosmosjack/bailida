@@ -22,8 +22,10 @@ class MoneyController extends BaseController{
     }
     public function history(){
 //        p($_SESSION);
-        $data = array('dd'=>"dd");
-        $this->assign("cache",$data);
+        $db_order_calc = M("order_calc");
+        $data_order_calc = $db_order_calc->where(array())->order("add_time desc")->limit(50)->select();
+        p($data_order_calc);
+        $this->assign("data_order_calc",$data_order_calc);
         $this->display();
     }
 }
