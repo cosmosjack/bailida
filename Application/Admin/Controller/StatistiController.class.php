@@ -135,6 +135,20 @@ class StatistiController extends BaseController
         $total_num = $db_order->where($where)->count('id');
         // 插入数据
 
+        /* 获取提成点 先判断是否是顶级的再判断是否有记录如果没有记录则按照白银代理级别计算 start */
+        $db_agent_level = M("agent_level");
+        $data_vip = $db_vip->where(array("id"=>$_GET['agent_id']))->find();
+        // 获取白银代理的 提成点
+        $default_point_info = M("level_set")->where(array("id"=>1))->find();
+        if($data_vip['plv'] == 1){
+            $data_agent_level = $db_agent_level->where(array('vip_id'=>$_GET['agent_id']))->find();
+            $agent_point = $data_agent_level['point'] ? $data_agent_level['point'] : $default_point_info['first_point']; // 这里 需要换成 整站参数 C('default_agent_point');
+        }elseif($data_vip['plv'] == 2){
+            $data_agent_level = $db_agent_level->where(array('vip_id'=>$data_vip['pid']))->find();
+            $agent_point = $data_agent_level['second_point'] ? $data_agent_level['second_point'] : $default_point_info['second_point']; // 这里 需要换成 整站参数 C('default_agent_point');
+        }
+        /* 获取提成点 end */
+
         $insert_order_calc['calc_time'] = $begin_time."|".$end_time;
         $insert_order_calc['add_time'] = time();
         $insert_order_calc['calc_amount'] = $real_price;
@@ -143,6 +157,7 @@ class StatistiController extends BaseController
         $insert_order_calc['calc_cost'] = $cost_price;
         $insert_order_calc['calc_profits'] = $real_price-$cost_price;
         $insert_order_calc['calc_num'] = $total_num;
+        $insert_order_calc['now_point'] = $agent_point;
 //        p($insert_order_calc);
 //        die;
         if(!$insert_order_calc['calc_num']){
@@ -152,9 +167,7 @@ class StatistiController extends BaseController
 //        p($row_calc);
         if($row_calc){
             /* 成功根据合作商的级别及提成点 计算提成 并加钱 并记录日志 start  */
-            $db_agent_level = M("agent_level");
-            $data_agent_level = $db_agent_level->where(array('vip_id'=>$_GET['agent_id']))->find();
-            $agent_point = $data_agent_level['point'] ? $data_agent_level['point'] : "0.02"; // 这里 需要换成 整站参数  C('default_agent_point');
+
             $agent_get_money = $insert_order_calc['calc_profits'] * $agent_point;
 
             $result_money = $db_vip->where(array("id"=>$_GET['agent_id']))->setInc("money",$agent_get_money);
