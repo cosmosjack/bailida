@@ -56,6 +56,13 @@ class StatistiController extends BaseController
         }
 //        array_push($agent_arr,$_GET['agent_id']); // TODO 开启或关闭自己买购买也有提成  去掉注释就会开启
 //        P($agent_arr);
+        /* 如果没有下线则 不用统计计算了 start */
+        if(empty($agent_arr)){
+            $this->error("没有下线,暂无法统计");
+            die();
+        }
+        /* 如果没有下线则 不用统计计算了 end */
+
         /* 统计自己的下线 end  */
 
 
