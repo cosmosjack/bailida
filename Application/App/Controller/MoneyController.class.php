@@ -23,8 +23,8 @@ class MoneyController extends BaseController{
     public function history(){
 //        p($_SESSION);
         $db_order_calc = M("order_calc");
-        $data_order_calc = $db_order_calc->where(array())->order("add_time desc")->limit(50)->select();
-        p($data_order_calc);
+        $data_order_calc = $db_order_calc->where(array('agent_id'=>$_SESSION['WAP']['vipid']))->order("add_time desc")->limit(50)->select();
+//        p($data_order_calc);
         for($i=0;$i<count($data_order_calc);$i++){
             $temp_time = explode("|",$data_order_calc[$i]['calc_time']);
             $data_order_calc[$i]['start_time'] = $temp_time[0];
