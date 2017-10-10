@@ -36,7 +36,7 @@
         <ul class="achos-ul ovflw">
             <volist name="cache" id="vo">
                 <foreach name="data_order_calc" item="val" key="k">
-                    <li class="ovflw border-b1"><h3 class="ads-h3">统计批次：第{$val.id}次统计</h3><p>统计时间：{$val.add_time|date_format:"%Y-%m-%d %H:%M:%S"}</p><p>计时区间：2017年6月-2017年8月</p><p>总销售：18000</p><p>总利润：2000元</p><p>可获佣金:600元</p><p class="ads-p"></p></li>
+                    <li class="ovflw border-b1"><h3 class="ads-h3">统计批次：第{$val.id}次统计</h3><p>统计时间：{$val.add_time|date="Y-m-d",###}</p><p>计时区间：2017年6月-2017年8月</p><p>总销售：18000</p><p>总利润：2000元</p><p>可获佣金:600元</p><p class="ads-p"></p></li>
                 </foreach>
                 <li class="ovflw border-b1"><h3 class="ads-h3">统计批次：第7次统计</h3><p>统计时间：2017年9月28号</p><p>计时区间：2017年6月-2017年8月</p><p>总销售：18000</p><p>总利润：2000元</p><p>可获佣金:600元</p><p class="ads-p">{$vo.ctime|date="Y-m-d",###}</p></li>
                 <li class="ovflw border-b1"><h3 class="ads-h3">统计批次：第8次统计</h3><p>统计时间：2017年9月28号</p><p>计时区间：2017年6月-2017年8月</p><p>总销售：18000</p><p>总利润：2000元</p><p>可获佣金:600元</p><p class="ads-p">{$vo.ctime|date="Y-m-d",###}</p></li>
