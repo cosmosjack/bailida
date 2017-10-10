@@ -49,13 +49,24 @@ class StatistiController extends BaseController
         /* 统计自己的下线 start  */
         $db_vip = M("vip");
         $data_junior = $db_vip->where(array("pid"=>$_GET['agent_id']))->select();
+
 //        p($data_junior); // 下线列表
         $agent_arr = array();
         for($i=0;$i<count($data_junior);$i++){
             $agent_arr[$i] = $data_junior[$i]['id'];
+            // 如果级别是2 则 再次获取下线的下线
+            if($data_junior[$i]['plv'] == 2){
+                $temp_junior = $db_vip->where(array("pid"=>$agent_arr[$i]))->select();
+                for($l=0;$l<count($temp_junior);$l++){
+                    $temp_agent_arr[][$l] = $temp_junior[$l]['id'];
+                }
+            }
+        }
+        for($k=0;$k<count($temp_agent_arr);$k++){
+            $agent_arr = array_merge($agent_arr,$temp_agent_arr[$k]);
         }
 //        array_push($agent_arr,$_GET['agent_id']); // TODO 开启或关闭自己买购买也有提成  去掉注释就会开启
-//        P($agent_arr);
+        P($agent_arr);
         /* 如果没有下线则 不用统计计算了 start */
         if(empty($agent_arr)){
             $this->error("没有下线,暂无法统计");
