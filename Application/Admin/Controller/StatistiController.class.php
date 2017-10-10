@@ -253,6 +253,7 @@ class StatistiController extends BaseController
 //        p($search_end_time);
         $map['ctime'] = array('between',"$search_begin_time,$search_end_time");
         $map['vipid'] = array("in",$agent_arr);
+        $map['ispay'] = 1;
 
         $data_order = $db_order
             ->where($map)
