@@ -35,7 +35,7 @@
         </ul>
         <ul class="achos-ul ovflw">
                 <foreach name="data_order_calc" item="val" key="k">
-                    <li class="ovflw border-b1"><h3 class="ads-h3">统计批次：第{$val.id}次统计</h3><p>统计时间：{$val.add_time|date="Y-m-d",###}</p><p>计时区间：{$val.start_time|date="Y-m",###}至{$val.end_time|date="Y-m",###}</p><p>总销售：{$val.calc_amount}</p><p>总利润：{$val.calc_profits}元</p><p>本次提成点:{$val.now_point}</p><p>可获佣金:{$val.now_point*$val.calc_profits}元</p><p class="ads-p"></p></li>
+                    <li class="ovflw border-b1"><h3 class="ads-h3">统计批次：第{$val.id}次统计</h3><p>统计时间：{$val.add_time|date="Y-m-d",###}</p><p>计时区间：{$val.start_time|date="Y-m",###}至{$val.end_time|date="Y-m",###}</p><p>总销售：{$val.calc_amount}</p><p>总利润：{$val.calc_profits}元</p><p>本次提成点:{$val.now_point}</p><p>可获佣金:{$val['now_point']*$val['calc_profits']}元</p><p class="ads-p"></p></li>
                 </foreach>
         </ul>
     </div>
