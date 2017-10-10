@@ -180,7 +180,7 @@ class StatistiController extends BaseController
                 $insert_vip_log['openid'] = $data_agent_info['openid'];
                 $insert_vip_log['nickname'] = $data_agent_info['nickname'];
                 $insert_vip_log['mobile'] = $data_agent_info['mobile'];
-                $insert_vip_log['money'] = $data_agent_info['money'];
+                $insert_vip_log['money'] = $agent_get_money;
                 $insert_vip_log['score'] = 0;
                 $insert_vip_log['exp'] = 0;
                 $insert_vip_log['status'] = 4;
