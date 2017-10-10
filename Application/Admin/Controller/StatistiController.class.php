@@ -128,10 +128,7 @@ class StatistiController extends BaseController
             "admin_ispass"=>'0',
         );
         /* 检查是否有 没有通过管理员审核的订单 有的话直接跳到审核界面 start */
-            $result_check = $db_order->where($where_check)->buildSql();
-            p($result_check);
-            echo $db_order->getLastSql();
-            die();
+            $result_check = $db_order->where($where_check)->find();
         if($result_check){
             $this->error('存在没有审核的订单','/Order/no_pass_order',3);
             exit;
