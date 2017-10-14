@@ -1028,7 +1028,7 @@ class ShopController extends BaseController
                 $data_vip['levelid'] = $level['levelid'];
                 //会员分销统计字段
                 //会员购买一次变成分销商
-                $data_vip['isfx'] = 1;
+                $data_vip['isfx'] = 0;
                 //会员合计支付
                 $data_vip['total_buy'] = $data_vip['total_buy'] + $cache['payprice'];
             }
