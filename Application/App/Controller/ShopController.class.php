@@ -1347,7 +1347,7 @@ class ShopController extends BaseController
                             // 插入订单支付成功模板消息结束=================
 
                             //首次支付成功自动变为花蜜
-                            if ($vip && !$vip['isfx']) {
+                           /* if ($vip && !$vip['isfx']) {
                                 $rvip = $mvip->where('id=' . $_SESSION['WAP']['vipid'])->setField('isfx', 1);
                                 $data_msg['pids'] = $_SESSION['WAP']['vipid'];
 
@@ -1356,7 +1356,7 @@ class ShopController extends BaseController
                                 $data_msg['content'] = "欢迎成为" . $shopset['name'] . "的" . $shopset['fxname'] . "，开启一个新的旅程！";
                                 $data_msg['ctime'] = time();
                                 $rmsg = M('vip_message')->add($data_msg);
-                            }
+                            }*/
 
                             //代收花生米计算-只减不增
                             $rds = $this->doDs($order);

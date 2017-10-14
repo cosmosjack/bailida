@@ -320,7 +320,7 @@ class WxpayController extends Controller
                     //支付成功后设置为花蜜
                     $mvip = M('Vip');
                     $vip = $mvip->where('id=' . $order['vipid'])->find();
-                    if ($vip && !$vip['isfx']) {
+                    /*if ($vip && !$vip['isfx']) {
                         $rvip = $mvip->where('id=' . $order['vipid'])->setField('isfx', 1);
                         $data_msg['pids'] = $order['vipid'];
                         $data_msg['title'] = "您成功升级为" . self::$SHOP['name'] . "的" . self::$SHOP['fxname'] . "！";
@@ -348,7 +348,7 @@ class WxpayController extends Controller
                             $re = $wx->sendTemplateMessage($data);
                         }
                         // 插入成为会员模板消息结束=================
-                    }
+                    }*/
 
                     //代收花生米计算-只减不增
                     $rds = $this->doDs($order);
