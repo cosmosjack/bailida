@@ -424,7 +424,7 @@ class VipController extends BaseController
                             $temp_path[$i]['path'] = explode($save['id'],$staff_arr[$i]['path']);
                             $new_data['path'] = "0-".$save['id'].$temp_path[$i]['path'][1];
                             $temp_level[$i]['level'] = explode("-",$new_data['path']);
-                            $new_data['level'] = count($temp_level[$i]['level']);
+                            $new_data['plv'] = count($temp_level[$i]['level']);
                             $new_data['id'] = $staff_arr[$i]['id'];
                             @$each_row = $m->save($new_data);
                         }
