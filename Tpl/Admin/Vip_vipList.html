@@ -60,7 +60,7 @@
                             <th width="100px">电子邮箱</th>
                             <th width="100px">姓名</th>
                             <th width="80px">分销等级</th>
-                            <th width="100px">所属员工</th>
+                            <th width="100px">员工</th>
                             <th width="100px">账户金额</th>
                             <th width="100px">积分</th>
                             <!--<th width="100px">经验</th>-->
@@ -96,10 +96,14 @@
                                 <td class=" ">{$vo.ctime|date='Y-m-d',###}</td>
                                 <td class=" ">{$vo.cctime|date='Y-m-d',###}</td>
                                 <!--<td class=" ">{$vo.status}</td>-->
-                                <td class="center "><a href="{:U('Admin/Vip/vipSet/',array('id'=>$vo['id']))}" class="btn btn-success btn-xs" data-loader="App-loader" data-loadername="会员编辑"><i class="fa fa-edit"></i> 编辑</a>&nbsp;&nbsp;
+                                <td class="center ">
+                                    <a href="{:U('Admin/Vip/vipSet/',array('id'=>$vo['id']))}" class="btn btn-success btn-xs" data-loader="App-loader" data-loadername="会员编辑"><i class="fa fa-edit"></i> 编辑</a>&nbsp;&nbsp;
                                     <button class="btn btn-sky btn-xs App-vippath" data-id="{$vo.id}" data-path="{$vo.path}"><i class="fa fa-eye"></i> 层级树</button>
-                                    <!-- &nbsp;&nbsp;<a href="{:U('Admin/Vip/vipFxtj/',array('id'=>$vo['id']))}" class="btn btn-darkorange btn-xs" target="_blank"><i class="fa fa-money"></i> 收益预估</a> -->
-                                    <!--&nbsp;&nbsp;<a href="{:U('Admin/vip/message/')}" class="btn btn-danger btn-xs" data-type = "del" data-ajax="{:U('Admin/vip/messageDel/',array('id'=>$vo['id']))}" ><i class="fa fa-trash-o"></i> 删除</a>--></td>
+                                    <button class="btn btn-sky btn-xs App-setAgent" data-id="{$vo.id}" data-path="{$vo.path}"><i class="fa fa-eye"></i> 设置上级</button>
+                                     <!--&nbsp;&nbsp;<a href="{:U('Admin/Vip/vipFxtj/',array('id'=>$vo['id']))}" class="btn btn-darkorange btn-xs" target="_blank"><i class="fa fa-money"></i> 收益预估</a> -->
+                                    <!--&nbsp;&nbsp;<a href="{:U('Admin/vip/message/')}" class="btn btn-danger btn-xs" data-type = "del" data-ajax="{:U('Admin/vip/messageDel/',array('id'=>$vo['id']))}" ><i class="fa fa-trash-o"></i> 设置上级</a>-->
+
+                                </td>
                             </tr>
                         </volist>
                     </tbody>
@@ -200,6 +204,42 @@ $(btnpath).on('click', function() {
     });
     return false;
 });
+//设置上级
+var setAgent = $('.App-setAgent');
+$(setAgent).on('click', function() {
+    var data = $(this).data('path');
+    var id = $(this).data('id');
+    $.ajax({
+        type: 'post',
+        data: {
+            'data': data,
+            'id': id,
+        },
+        url: "{:U('Admin/Vip/vipTree')}",
+        async: false,
+        dataType: 'json',
+        success: function(e) {
+            bootbox.dialog({
+                message: e.msg,
+                title: "会员完整层级展示",
+                className: "modal-darkorange",
+                buttons: {
+                    "取消": {
+                        className: "btn-danger",
+                        callback: function() {}
+                    }
+                }
+            });
+            return false;
+        },
+        error: function() {
+            $.App.alert('danger','通讯失败！');
+            return false;
+        }
+    });
+    return false;
+});
+
 
 //导出会员数据
 $('#exportVip').on('click', function() {
