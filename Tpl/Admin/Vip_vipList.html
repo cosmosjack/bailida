@@ -209,38 +209,21 @@ var setAgent = $('.App-setAgent');
 $(setAgent).on('click', function() {
     var data = $(this).data('path');
     var id = $(this).data('id');
-    $.ajax({
-        type: 'post',
-        data: {
-            'data': data,
-            'id': id,
-        },
-        url: "{:U('Admin/Vip/vipTree')}",
-        async: false,
-        dataType: 'json',
-        success: function(e) {
-            bootbox.dialog({
-                message: e.msg,
-                title: "设置会员的上级",
-                className: "modal-darkorange",
-                buttons: {
-                    "取消": {
-                        className: "btn-danger",
-                        callback: function() {}
-                    },
-                    "更改":{
-                        className:"btn-primary",
-                        callback:function(){
-                            alert('ddd');
-                        }
-                    }
+    bootbox.dialog({
+        message: "<input name='agent_id' value='' placeholder='填写上级的ID'/>",
+        title: "设置会员的上级",
+        className: "modal-darkorange",
+        buttons: {
+            "取消": {
+                className: "btn-danger",
+                callback: function() {}
+            },
+            "更改":{
+                className:"btn-primary",
+                callback:function(){
+                    alert('ddd');
                 }
-            });
-            return false;
-        },
-        error: function() {
-            $.App.alert('danger','通讯失败！');
-            return false;
+            }
         }
     });
     return false;
