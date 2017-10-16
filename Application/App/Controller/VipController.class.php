@@ -50,6 +50,14 @@ class VipController extends BaseController
             $data['fxname'] = '花股';
         } else {
             if ($data['isfx']) {
+                $db_agent_level = M("agent_level");
+                $data_agent_level = $db_agent_level->where(array("vip_id"=>$vipid))->find();
+                if($data_agent_level){
+                    $this->assign("level_desc",$data_agent_level['level_desc']);
+                }else{
+                    $this->assign("level_desc","黄金代理");
+                }
+                $this->assign("is_fx",1);
                 $data['fxname'] = $_SESSION['SHOP']['set']['fxname'];
             } else {
                 $data['fxname'] = '非' . $_SESSION['SHOP']['set']['fxname'];

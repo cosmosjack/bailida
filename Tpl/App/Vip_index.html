@@ -35,7 +35,7 @@
             <div class="fl home-info">
                 <p>{$data.nickname} &nbsp&nbsp</p>
                 <p style="font-size:0.8em;">ID：<span >{$data.id}</span></p>
-                <p style="font-size:0.8em;">等级：<span class="home-jf" id="fxname">{$data.fxname}</span></p>
+                <p style="font-size:0.8em;">等级：<if condition="$is_fx eq 1">{$level_desc}</if><span class="home-jf" id="fxname">{$data.fxname}</span></p>
             </div>
             <div class="fr home-dj">
                 <eq name="isqiandao" value="1">
