@@ -417,6 +417,16 @@ class VipController extends BaseController
                 if (FALSE !== $row) {
                     $info['status'] = 1;
                     $info['msg'] = '设置成功！';
+                    /* 设置成功后再改变自己的下线 start */
+                    $staff_arr = $m->where(array("path"=>array("like","%{$save['id']}%")))->select();
+                    if($staff_arr){
+                        for($i=0;$i<count($staff_arr);$i++){
+                            $new_path[$i]['path'] = explode($save['id'],$staff_arr[$i]['path']);
+                        }
+                    }
+                    p($new_path);
+                    die();
+                    /* 设置成功后再改变自己的下线 end */
                 } else {
                     $info['status'] = 0;
                     $info['msg'] = '设置失败！';
