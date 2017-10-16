@@ -57,6 +57,11 @@ class VipController extends BaseController
             $this->display();
         }
     }
+    /* 改变会员的上级 start  */
+    public function vipDistribution(){
+
+    }
+    /* 改变会员的上级 end  */
 
     // 获取层级
     public function vipTree()
