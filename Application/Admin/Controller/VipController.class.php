@@ -62,7 +62,7 @@ class VipController extends BaseController
         $db_vip = M("vip");
         $data_agent = $db_vip->where(array("id"=>$_GET['agent_id']))->find();
         $data_vip = $db_vip->where(array("id"=>$_GET['user_id']))->find();
-        if($data_agent['isfx'] != 1 && $data_vip['isfx'] ==1){
+        if($data_agent['isfx'] != 1 || $data_vip['isfx'] == 1){
             $this->ajaxReturn(array('control'=>'vipDistribution','code'=>0,'msg'=>'选择的上级不是合伙人,或你自己已经是合伙人','data'=>$_GET),"JSON");
             die();
         }
