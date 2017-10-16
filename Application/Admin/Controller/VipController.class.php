@@ -407,6 +407,22 @@ class VipController extends BaseController
                 $info['status'] = 0;
                 $info['msg'] = '未获取会员ID！';
             }
+            /* 如果 改变设置成功 并且 isfx 为1 就改变会员为顶级的 start  */
+            if($info['status'] == 1 && $_POST['isfx']){
+                $save['pid'] = 0;
+                $save['plv'] = 1;
+                $save['path'] = 0;
+                $save['id'] = $_POST['id'];
+                $row = $m->save($save);
+                if (FALSE !== $row) {
+                    $info['status'] = 1;
+                    $info['msg'] = '设置成功！';
+                } else {
+                    $info['status'] = 0;
+                    $info['msg'] = '设置失败！';
+                }
+            }
+            /* 如果 改变设置成功 并且 isfx 为1 就改变会员为顶级的 end  */
             if($data['isfx']==1 && isset($_POST['agent_level'])){
                 /* 改变级别 start */
                 $db_level_set = M("level_set");
