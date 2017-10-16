@@ -221,12 +221,18 @@ $(setAgent).on('click', function() {
         success: function(e) {
             bootbox.dialog({
                 message: e.msg,
-                title: "会员完整层级展示",
+                title: "设置会员的上级",
                 className: "modal-darkorange",
                 buttons: {
                     "取消": {
                         className: "btn-danger",
                         callback: function() {}
+                    },
+                    "更改":{
+                        className:"btn-primary",
+                        callback:function(){
+                            alert('ddd');
+                        }
                     }
                 }
             });
