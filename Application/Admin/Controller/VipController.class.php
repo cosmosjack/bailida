@@ -422,7 +422,7 @@ class VipController extends BaseController
                     if($staff_arr){
                         for($i=0;$i<count($staff_arr);$i++){
                             $temp_path[$i]['path'] = explode($save['id'],$staff_arr[$i]['path']);
-                            $new_path[$i]['path'] = "0-".$save['id'].$temp_path[$i][1];
+                            $new_path[$i]['path'] = "0-".$save['id'].$temp_path[$i]['path'][1];
                             $temp_level[$i]['level'] = explode("-",$new_path[$i]['path']);
                             $new_level[$i]['level'] = count($temp_level[$i]['level']);
                         }
