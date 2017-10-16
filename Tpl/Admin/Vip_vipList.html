@@ -221,7 +221,19 @@ $(setAgent).on('click', function() {
             "更改":{
                 className:"btn-primary",
                 callback:function(){
-                    alert('ddd');
+                    var agent_id = $("input[name='agent_id']").val();
+                    $.ajax({
+                        url:"{:U('Admin/Vip/vipDistribution')}",
+                        type:"GET",
+                        data:{"user_id":id,"agent_id":agent_id},
+                        success:function(msg){
+                            alert(msg.msg);
+                            location.reload();
+                        },
+                        error:function(){
+                            console.log("http error");
+                        }
+                    });
                 }
             }
         }

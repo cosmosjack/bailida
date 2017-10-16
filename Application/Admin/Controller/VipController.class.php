@@ -59,7 +59,39 @@ class VipController extends BaseController
     }
     /* 改变会员的上级 start  */
     public function vipDistribution(){
-
+        $db_vip = M("vip");
+        $data_agent = $db_vip->where(array("id"=>$_GET['agent_id']))->find();
+        $data_vip = $db_vip->where(array("id"=>$_GET['user_id']))->find();
+        if($data_agent['isfx'] != 1 && $data_vip['isfx'] ==1){
+            $this->ajaxReturn(array('control'=>'vipDistribution','code'=>0,'msg'=>'选择的上级不是合伙人,或你自己已经是合伙人','data'=>$_GET),"JSON");
+            die();
+        }
+        /* 改变自己的上级 start */
+        $update['path'] = "0-{$_GET['agent_id']}";
+        $update['pid'] = $_GET['agent_id'];
+        $update['plv'] = 2;
+        $update['id'] = $_GET['user_id'];
+        $result = $db_vip->save($update);
+        if($result){
+            /* 自己得道后,下线追随自己升级 start */
+            $staff_arr = $db_vip->where(array("path"=>array("like","%{$update['id']['id']}%")))->select();
+            if($staff_arr){
+                for($i=0;$i<count($staff_arr);$i++){
+                    $temp_path[$i]['path'] = explode($update['id']['id'],$staff_arr[$i]['path']);
+                    $new_data[$i]['path'] = $update['path'].$temp_path[$i]['path'][1];
+                    $temp_level[$i]['level'] = explode("-",$new_data['path']);
+                    $new_data['plv'] = count($temp_level[$i]['level']);
+                    $new_data['id'] = $staff_arr[$i]['id'];
+                    @$each_row = $db_vip->save($new_data);
+                }
+                $this->ajaxReturn(array('control'=>'vipDistribution','code'=>200,'msg'=>'设置成功','data'=>$_GET),"JSON");
+            }
+            /* 自己得道后,下线追随自己升级 end */
+        }else{
+            $this->ajaxReturn(array('control'=>'vipDistribution','code'=>0,'msg'=>'没有设置成功','data'=>$_GET),"JSON");
+            die();
+        }
+        /* 改变自己的上级 end */
     }
     /* 改变会员的上级 end  */
 
