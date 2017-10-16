@@ -408,7 +408,7 @@ class VipController extends BaseController
                 $info['msg'] = '未获取会员ID！';
             }
             /* 如果 改变设置成功 并且 isfx 为1 就改变会员为顶级的 start  */
-            if($info['status'] == 1 && $_POST['isfx']){
+            if($info['status'] == 1 && $_POST['isfx']==1){
                 $save['pid'] = 0;
                 $save['plv'] = 1;
                 $save['path'] = 0;
@@ -422,14 +422,13 @@ class VipController extends BaseController
                     if($staff_arr){
                         for($i=0;$i<count($staff_arr);$i++){
                             $temp_path[$i]['path'] = explode($save['id'],$staff_arr[$i]['path']);
-                            $new_path[$i]['path'] = "0-".$save['id'].$temp_path[$i]['path'][1];
-                            $temp_level[$i]['level'] = explode("-",$new_path[$i]['path']);
-                            $new_level[$i]['level'] = count($temp_level[$i]['level']);
+                            $new_data['path'] = "0-".$save['id'].$temp_path[$i]['path'][1];
+                            $temp_level[$i]['level'] = explode("-",$new_data['path']);
+                            $new_data['level'] = count($temp_level[$i]['level']);
+                            $new_data['id'] = $staff_arr[$i]['id'];
+                            @$each_row = $m->save($new_data);
                         }
                     }
-                    p($new_path);
-                    p($new_level);
-                    die();
                     /* 设置成功后再改变自己的下线 end */
                 } else {
                     $info['status'] = 0;
