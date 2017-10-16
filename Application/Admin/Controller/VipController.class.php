@@ -421,10 +421,14 @@ class VipController extends BaseController
                     $staff_arr = $m->where(array("path"=>array("like","%{$save['id']}%")))->select();
                     if($staff_arr){
                         for($i=0;$i<count($staff_arr);$i++){
-                            $new_path[$i]['path'] = explode($save['id'],$staff_arr[$i]['path']);
+                            $temp_path[$i]['path'] = explode($save['id'],$staff_arr[$i]['path']);
+                            $new_path[$i]['path'] = "0-".$save['id'].$temp_path[$i][1];
+                            $temp_level[$i]['level'] = explode("-",$new_path[$i]['path']);
+                            $new_level[$i]['level'] = count($temp_level[$i]['level']);
                         }
                     }
                     p($new_path);
+                    p($new_level);
                     die();
                     /* 设置成功后再改变自己的下线 end */
                 } else {
