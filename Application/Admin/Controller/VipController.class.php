@@ -870,7 +870,7 @@ class VipController extends BaseController
 
     public function messageDel()
     {
-        $id = $_GET['id']; //必须使用get方法
+        $id = $_REQUEST['id']; //必须使用get方法
         $m = M('vip_message');
         if (!id) {
             $info['status'] = 0;
